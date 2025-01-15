@@ -165,8 +165,8 @@ namespace DataAccessLayer.Migrations
 
                     b.Property<string>("Title")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Views")
                         .HasColumnType("int");
@@ -1028,6 +1028,10 @@ namespace DataAccessLayer.Migrations
                     b.Property<DateTime?>("RefreshTokenEndDate")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("UniversityId")
                         .HasColumnType("int");
 
@@ -1064,6 +1068,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = true,
                             LastName = "Kılınç",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "muhammetkilinc"
@@ -1078,6 +1083,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = false,
                             LastName = "Kılınç",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 12,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "ahmetkilinc"
@@ -1092,6 +1098,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 4,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "osmankaya"
@@ -1106,6 +1113,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 5,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "mehmetkaya"
@@ -1120,6 +1128,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 6,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "alikaya"
@@ -1134,6 +1143,7 @@ namespace DataAccessLayer.Migrations
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
                             UniversityId = 7,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "velikaya"

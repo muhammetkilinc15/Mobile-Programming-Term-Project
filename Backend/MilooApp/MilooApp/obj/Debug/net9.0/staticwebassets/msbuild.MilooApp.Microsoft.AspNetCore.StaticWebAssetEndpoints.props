@@ -648,6 +648,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"tqvobtzuj5"},{"Name":"integrity","Value":"sha256-teUxUCpLjjBikQstS5CbkBzQ5uR/7kwYPRI78roQQes="},{"Name":"label","Value":"_content/MilooApp/images/1/profiles/694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1585884"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022teUxUCpLjjBikQstS5CbkBzQ5uR/7kwYPRI78roQQes=\u0022"},{"Name":"Last-Modified","Value":"Fri, 10 Jan 2025 19:18:18 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MilooApp/images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1\profiles\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-jR8R/1a3G9HONt5Vzg3n/2q0Em\u002BQZHlNKQrl8Klb9Oo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"144866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jR8R/1a3G9HONt5Vzg3n/2q0Em\u002BQZHlNKQrl8Klb9Oo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 16:13:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MilooApp/images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.v5iqy4dhg9.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1\profiles\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v5iqy4dhg9"},{"Name":"integrity","Value":"sha256-jR8R/1a3G9HONt5Vzg3n/2q0Em\u002BQZHlNKQrl8Klb9Oo="},{"Name":"label","Value":"_content/MilooApp/images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"144866"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022jR8R/1a3G9HONt5Vzg3n/2q0Em\u002BQZHlNKQrl8Klb9Oo=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 16:13:58 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MilooApp/images/1/profiles/70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\1\profiles\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -899,6 +911,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VR6NJOihLfh5Gz8z0GKbew69K4wHfF5OmvWfBiqg\u002BFE="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"9648"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022VR6NJOihLfh5Gz8z0GKbew69K4wHfF5OmvWfBiqg\u002BFE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 10 Jan 2025 14:00:52 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MilooApp/images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.4u1zlizm78.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\12\profiles\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"4u1zlizm78"},{"Name":"integrity","Value":"sha256-DGGi7Qjdms5TAuLWB4XVVhjqdxHs\u002Bua9Q\u002BmwL2qij74="},{"Name":"label","Value":"_content/MilooApp/images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"145206"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022DGGi7Qjdms5TAuLWB4XVVhjqdxHs\u002Bua9Q\u002BmwL2qij74=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 16:21:13 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/MilooApp/images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\12\profiles\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DGGi7Qjdms5TAuLWB4XVVhjqdxHs\u002Bua9Q\u002BmwL2qij74="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"145206"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022DGGi7Qjdms5TAuLWB4XVVhjqdxHs\u002Bua9Q\u002BmwL2qij74=\u0022"},{"Name":"Last-Modified","Value":"Tue, 14 Jan 2025 16:21:13 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/MilooApp/images/2/profiles/5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.1oj7mpgb3r.png">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\2\profiles\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png'))</AssetFile>

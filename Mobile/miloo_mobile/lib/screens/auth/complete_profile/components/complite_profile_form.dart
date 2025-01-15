@@ -27,10 +27,10 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
 
-  String firstName = 'Muhammet';
-  String lastName = 'Kılınç';
+  String firstName = 'Yıldız';
+  String lastName = 'oruk';
   String _selectedUniversity = 'Adana Alparslan Türkeş University';
-  int _selectedUniversityId = -1; // Default university id
+  int _selectedUniversityId = 1; // Default university id
 
   @override
   Widget build(BuildContext context) {
@@ -116,7 +116,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
           _selectedUniversityId = _selectedUniversityId;
         });
       },
-      selectedUniversityId: 1,
+      selectedUniversityId: _selectedUniversityId,
     );
   }
 

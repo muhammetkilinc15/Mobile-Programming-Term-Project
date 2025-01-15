@@ -41,8 +41,10 @@ class _BodyState extends State<Body> {
         future: futureUser,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const CircularProgressIndicator(
-              color: kPrimaryColor,
+            return Center(
+              child: const CircularProgressIndicator(
+                color: kPrimaryColor,
+              ),
             );
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));

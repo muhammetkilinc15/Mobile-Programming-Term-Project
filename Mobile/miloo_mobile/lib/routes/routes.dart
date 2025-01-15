@@ -8,7 +8,7 @@ import 'package:miloo_mobile/screens/auth/sign_in/sign_in_screen.dart';
 import 'package:miloo_mobile/screens/auth/sign_up/sign_up_screen.dart';
 import 'package:miloo_mobile/screens/base/base_screen.dart';
 import 'package:miloo_mobile/screens/chat/chat_screen.dart';
-import 'package:miloo_mobile/screens/message/chat_screen.dart';
+import 'package:miloo_mobile/screens/other_populer_users/other_populer_screen.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/my_account/my_account_screen.dart';
 import 'package:miloo_mobile/screens/onboarding/splash_screen.dart';
@@ -27,9 +27,9 @@ final Map<String, WidgetBuilder> routes = {
   BaseScreen.routeName: (context) => const BaseScreen(),
   ProductDetailScreen.routeName: (context) => const ProductDetailScreen(),
   ChatScreen.routeName: (context) => const ChatScreen(),
-  MessageScreen.routeName: (context) => const MessageScreen(),
   UserDetailScreen.routeName: (context) => const UserDetailScreen(),
   MyAccountScreen.routeName: (context) => const MyAccountScreen(),
   MySharedProductsScreen.routeName: (context) => const MySharedProductsScreen(),
   AddProductScreen.routeName: (context) => const AddProductScreen(),
+  OtherPopulerScreen.routerName: (context) => const OtherPopulerScreen(),
 };

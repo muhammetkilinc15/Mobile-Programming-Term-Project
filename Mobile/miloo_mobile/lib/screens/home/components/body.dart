@@ -3,6 +3,7 @@ import 'package:miloo_mobile/screens/home/components/categories.dart';
 import 'package:miloo_mobile/screens/home/components/discount_banner.dart';
 import 'package:miloo_mobile/screens/home/components/popular_products.dart';
 import 'package:miloo_mobile/screens/home/components/section_tile.dart';
+import 'package:miloo_mobile/screens/other_populer_users/other_populer_screen.dart';
 import 'package:miloo_mobile/size_config.dart';
 import 'popular_users.dart';
 
@@ -26,7 +27,9 @@ class _BodyState extends State<Body> {
             SizedBox(height: getProportionateScreenHeight(20)),
             SectionTile(
               title: 'Popular Users',
-              press: () {},
+              press: () {
+                Navigator.of(context).pushNamed(OtherPopulerScreen.routerName);
+              },
             ),
             SizedBox(height: getProportionateScreenHeight(20)),
             const PopularUsers(),

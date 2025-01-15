@@ -9,6 +9,7 @@ using System.Security;
 using System.Security.Claims;
 using System.Text;
 using System.Globalization;
+using MilooApp.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -73,7 +74,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddControllers();
-
+builder.Services.AddSignalR();
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
@@ -119,7 +120,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("AllowAll");
-
+app.MapHub<ChatHub>("/ChatHub");
 app.UseDefaultFiles();
 app.UseResponseCompression();
 app.UseStaticFiles(); // wwwroot klasöründeki statik dosyalara eriþimi etkinleþtirir

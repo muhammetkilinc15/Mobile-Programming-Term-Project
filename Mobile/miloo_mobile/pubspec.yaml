@@ -15,7 +15,7 @@ dependencies:
     sdk: flutter
 
   flutter_svg: ^2.0.16 # Helps to render SVG files
-  intl: ^0.20.1
+  signalr_netcore: ^1.4.0 # A Flutter plugin for ASP.NET Core SignalR
   provider: ^6.1.2 # State Management Library for Flutter Applications
   pinput: ^5.0.0 # A Flutter package for pin input field
   shimmer: ^3.0.0 # A package provides an easy way to add shimmer effect in Flutter project

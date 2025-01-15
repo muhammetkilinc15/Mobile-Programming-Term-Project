@@ -30,7 +30,6 @@ class ProductService {
       Uri.parse(
           "$url/user-products?UserId=$userId&Search=$search&PageNumber=$pageNumber&PageSize=$pageSize"),
     );
-    print("hata : ${response.body}");
     if (response.statusCode == 200) {
       final Map<String, dynamic> jsonResponse = json.decode(response.body);
       final List<dynamic> data = jsonResponse['data'];
@@ -97,7 +96,6 @@ class ProductService {
           "$url/getall?UniversityId=$universityId&CategoryId=$categoryId&SubCategoryId=$subcategoryId&OrderBy=$orderBy"),
     );
 
-    print("hata : ${response.body}");
     if (response.statusCode == 200) {
       // JSON cevabını çözümle
       final Map<String, dynamic> decodedResponse = json.decode(response.body);

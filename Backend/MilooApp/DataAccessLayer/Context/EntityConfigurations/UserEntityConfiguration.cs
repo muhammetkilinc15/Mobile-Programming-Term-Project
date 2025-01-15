@@ -43,6 +43,8 @@ namespace DataAccessLayer.Context.EntityConfigurations
             builder.HasMany(x => x.ReceivedMessages).WithOne(x => x.Receiver).HasForeignKey(x => x.ReceiverId).OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(x => x.University).WithMany(x => x.Users).HasForeignKey(x => x.UniversityId).OnDelete(DeleteBehavior.Restrict);
             builder.HasMany(x => x.UserRoles).WithOne(x => x.User).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
+            builder.HasMany(x => x.UserFavoriteProducts).WithOne(x => x.User).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
+            
         }
     }
 }

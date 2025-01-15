@@ -227,6 +227,59 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "MilooApp.Controllers.ChatController",
+    "Method": "GetChats",
+    "RelativePath": "api/Chat/chats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "toUserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MilooApp.Controllers.ChatController",
+    "Method": "SendMessage",
+    "RelativePath": "api/Chat/SendMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "message",
+        "Type": "BusinessLayer.Dtos.ChatDtos.SendMessageDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MilooApp.Controllers.ChatController",
+    "Method": "GetUsers",
+    "RelativePath": "api/Chat/users/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "MilooApp.Controllers.EmailTest",
     "Method": "SendVerificationEmail",
     "RelativePath": "api/EmailTest/send-verification-email",
@@ -631,6 +684,32 @@
   },
   {
     "ContainingType": "MilooApp.Controllers.UserController",
+    "Method": "GetUsers",
+    "RelativePath": "api/User/get-users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MilooApp.Controllers.UserController",
     "Method": "GetPopularUsers",
     "RelativePath": "api/User/popular-users",
     "HttpMethod": "GET",
@@ -638,7 +717,12 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "userId",
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Top",
         "Type": "System.Int32",
         "IsRequired": false
       }

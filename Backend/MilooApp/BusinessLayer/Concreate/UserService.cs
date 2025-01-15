@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Dtos.UserDtos;
+using BusinessLayer.Dtos.UserDtos.Request;
+using BusinessLayer.Extensions;
 using BusinessLayer.Helpers;
 using BusinessLayer.Helpers.FileHelper;
 using BusinessLayer.Parameters;
@@ -31,12 +33,12 @@ namespace BusinessLayer.Concreate
             bool result = await _repository.DeleteAsync(userId);
             return new()
             {
-              Success = result,
-              Message = result ? "User Deleted Successfully" : "User can not deleted"
+                Success = result,
+                Message = result ? "User Deleted Successfully" : "User can not deleted"
             };
         }
 
-        public async Task<BaseResponse> GetPopularUsers(int top, int userId)
+        public async Task<BaseResponse> GetPopularUsers(PopularUserRequest request)
         {
             // IP adresini alıyoruz
             string ipAddress = IPHelper.GetIpAdress();
@@ -46,7 +48,7 @@ namespace BusinessLayer.Concreate
             var user = await _repository
                 .AsQueryable()
                 .AsNoTracking()
-                .Where(x => x.Id == userId)
+                .Where(x => x.Id == request.UserId)
                 .Select(x => new { x.UniversityId })
                 .FirstOrDefaultAsync();
 
@@ -62,22 +64,21 @@ namespace BusinessLayer.Concreate
             int? universityId = user.UniversityId;
 
 
-            List<PopularUserDto> popularUsers = await _repository
+            var popularUsers = await _repository
                 .AsQueryable()
                 .AsNoTracking()
-                .Where(x => x.UniversityId == universityId && x.Id != userId) // Üniversiteye göre filtreliyoruz
-                .OrderByDescending(x => x.Id)
-                .Take(top)
+                .Where(x => x.UniversityId == universityId && x.Id != request.UserId) // Üniversiteye göre filtreliyoruz
+                .OrderByDescending(x => x.Products.Count)
+                .Take(request.Top)
                 .Select(x => new PopularUserDto
                 {
-                    // Profil fotoğrafı URL'sini oluşturuyoruz
                     ProfileImageUrl = x.UserPhotos
                         .Where(p => p.isProfilePhoto)
-                        .Select(p => $"{baseUrl}/{p.ImagePath}") // Tam URL'yi oluştur
-                        .FirstOrDefault() ?? $"{baseUrl}/default-profile.png", // Varsayılan profil resmi
+                        .Select(p => $"{baseUrl}/{p.ImagePath}")
+                        .FirstOrDefault() ?? $"{baseUrl}/default-profile.png",
                     UserName = x.UserName
-                })
-                .ToListAsync();
+                }).ToListAsync();
+
 
             return new BaseResponse
             {
@@ -164,14 +165,69 @@ namespace BusinessLayer.Concreate
             throw new NotImplementedException();
         }
 
-        public async Task<BaseResponse> GetUsers()
+        public async Task<BaseResponse> GetUsers(UsersRequest request)
         {
-            var resul = await _repository.GetAllAsync();
-            return new()
+            int? universityId = await _repository.AsQueryable()
+                  .Where(x => x.Id == request.UserId)
+                  .Select(x => x.UniversityId)
+                  .FirstOrDefaultAsync();
+            if (universityId == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "User not found"
+                };
+            }
+
+            string ipAddress = IPHelper.GetIpAdress();
+            string baseUrl = $"http://{ipAddress}:5105";
+
+            var users = await _repository.AsQueryable()
+                .Where(x => x.UniversityId == universityId && x.Id != request.UserId)
+                .Select(x => new
+                {
+                    x.FirstName,
+                    x.LastName,
+                    x.UserName,
+                    image = x.UserPhotos
+                        .Where(p => p.isProfilePhoto)
+                        .Select(p => $"{baseUrl}/{p.ImagePath}")
+                        .FirstOrDefault() ?? $"{baseUrl}/default-profile.png"
+
+
+
+                }).GetPageAsync(request.PageNumber, request.PageSize);
+            return new BaseResponse
             {
                 Success = true,
-                Data = resul
+                Data = users.Data
             };
+
+        }
+
+        public Task<BaseResponse> GetUsersByUserId(int userId)
+        {
+            var result = _repository.AsQueryable()
+                 .Where(x => x.Id == userId)
+                 .Select(x => new
+                 {
+                     x.Id,
+                     x.FirstName,
+                     x.LastName,
+                     x.UserName,
+                     x.Email,
+                     x.UniversityId,
+                     x.UserPhotos,
+                     x.UserFavoriteProducts,
+                     x.CreatedOn,
+                     x.UpdatedOn
+                 }).FirstOrDefaultAsync();
+            return Task.FromResult(new BaseResponse
+            {
+                Success = true,
+                Data = result
+            });
         }
 
         public Task UpdatePasswordAsync(User user, string password)

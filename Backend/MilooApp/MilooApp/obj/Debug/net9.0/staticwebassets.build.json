@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dfmwrppoosBaT/MNlEln1pEj87AwNQxDEc9eTOIRBO4=",
+  "Hash": "SSd1lK82Zh3kUlAeuIdEjok6Uw0e0MLeiV7SRC9y3WM=",
   "Source": "MilooApp",
   "BasePath": "_content/MilooApp",
   "Mode": "Default",
@@ -1151,6 +1151,27 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg"
     },
     {
+      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v5iqy4dhg9",
+      "Integrity": "jR8R/1a3G9HONt5Vzg3n/2q0Em+QZHlNKQrl8Klb9Oo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg"
+    },
+    {
       "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
@@ -1590,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg"
+    },
+    {
+      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4u1zlizm78",
+      "Integrity": "DGGi7Qjdms5TAuLWB4XVVhjqdxHs+ua9Q+mwL2qij74=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg"
     },
     {
       "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
@@ -6064,6 +6106,88 @@
       ]
     },
     {
+      "Route": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jR8R/1a3G9HONt5Vzg3n/2q0Em+QZHlNKQrl8Klb9Oo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 16:13:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jR8R/1a3G9HONt5Vzg3n/2q0Em+QZHlNKQrl8Klb9Oo="
+        }
+      ]
+    },
+    {
+      "Route": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.v5iqy4dhg9.jpg",
+      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144866"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jR8R/1a3G9HONt5Vzg3n/2q0Em+QZHlNKQrl8Klb9Oo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 16:13:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v5iqy4dhg9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jR8R/1a3G9HONt5Vzg3n/2q0Em+QZHlNKQrl8Klb9Oo="
+        }
+      ]
+    },
+    {
       "Route": "images/1/profiles/70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "Selectors": [],
@@ -7782,6 +7906,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-VR6NJOihLfh5Gz8z0GKbew69K4wHfF5OmvWfBiqg+FE="
+        }
+      ]
+    },
+    {
+      "Route": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.4u1zlizm78.jpg",
+      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DGGi7Qjdms5TAuLWB4XVVhjqdxHs+ua9Q+mwL2qij74=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 16:21:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4u1zlizm78"
+        },
+        {
+          "Name": "label",
+          "Value": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DGGi7Qjdms5TAuLWB4XVVhjqdxHs+ua9Q+mwL2qij74="
+        }
+      ]
+    },
+    {
+      "Route": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "145206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DGGi7Qjdms5TAuLWB4XVVhjqdxHs+ua9Q+mwL2qij74=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 14 Jan 2025 16:21:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DGGi7Qjdms5TAuLWB4XVVhjqdxHs+ua9Q+mwL2qij74="
         }
       ]
     },

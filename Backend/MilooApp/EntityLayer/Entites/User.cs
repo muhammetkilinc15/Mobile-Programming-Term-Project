@@ -46,6 +46,8 @@ namespace EntityLayer.Entites
         public DateTime CreatedOn { get; set; }
         public DateTime UpdatedOn { get; set; }
 
+        public string Status { get; set; } = "offline"; // online - offline status
+
 
         /// <summary>
         ///         Navigation property

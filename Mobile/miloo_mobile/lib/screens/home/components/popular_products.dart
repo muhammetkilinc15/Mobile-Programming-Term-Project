@@ -4,6 +4,7 @@ import 'package:miloo_mobile/models/product_model.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/home/components/product_card.dart';
 import 'package:miloo_mobile/screens/home/components/section_tile.dart';
+import 'package:miloo_mobile/screens/store/store_screen.dart';
 import 'package:miloo_mobile/services/product_service.dart';
 import 'package:miloo_mobile/size_config.dart';
 
@@ -39,7 +40,13 @@ class _PopularProductsState extends State<PopularProducts> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        SectionTile(title: 'Popular Products', press: () {}),
+        SectionTile(
+            title: 'Popular Products',
+            press: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                builder: (context) => StoreScreen(),
+              ));
+            }),
         SizedBox(height: getProportionateScreenHeight(20)),
         FutureBuilder<List<PopularProductModel>>(
           future: futureProducts,

@@ -1,7 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 
-final storage = FlutterSecureStorage();
+const storage = FlutterSecureStorage();
 
 Future<List<String>?> getUserRole() async {
   String? token = await storage.read(key: 'accessToken');

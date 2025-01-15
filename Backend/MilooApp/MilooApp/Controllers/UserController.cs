@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using BusinessLayer.Dtos.UserDtos;
+using BusinessLayer.Dtos.UserDtos.Request;
 using BusinessLayer.Parameters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -38,10 +39,20 @@ namespace MilooApp.Controllers
 
 
         [HttpGet("popular-users")]
-        public async Task<IActionResult> GetPopularUsers(int userId)
+        public async Task<IActionResult> GetPopularUsers([FromQuery]PopularUserRequest request)
         {
-            BaseResponse response = await _userService.GetPopularUsers(top: 5, userId: userId);
+            BaseResponse response = await _userService.GetPopularUsers(request);
 
+            if (!response.Success)
+            {
+                return BadRequest(response);
+            }
+            return Ok(response.Data);
+        }
+        [HttpGet("get-users")]
+        public async Task<IActionResult> GetUsers([FromQuery]UsersRequest request)
+        {
+            BaseResponse response = await _userService.GetUsers(request);
             if (!response.Success)
             {
                 return BadRequest(response);

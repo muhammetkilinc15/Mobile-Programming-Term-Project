@@ -13,8 +13,8 @@ class SignUpForm extends StatefulWidget {
 
 class _SignUpFormState extends State<SignUpForm> {
   final _formKey = GlobalKey<FormState>();
-  String username = 'mami0715';
-  String email = '210129049@ogr.atu.edu.tr';
+  String username = 'yildiz65';
+  String email = '210129004@ogr.atu.edu.tr';
   String password = '12345678';
 
   @override

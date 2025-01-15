@@ -7,12 +7,13 @@ import 'package:http/http.dart' as http;
 import 'package:miloo_mobile/models/popular_user_model.dart';
 import 'package:miloo_mobile/models/user_detail_model.dart';
 import 'package:miloo_mobile/models/user_with_product_detail.dart';
+import 'package:miloo_mobile/models/users_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserService {
   static const url = "${baseUrl}User";
 
-  static Future<List<PopularUserModel>> getPopularUsers() async {
+  static Future<List<PopularUserModel>> getPopularUsers({int top = 5}) async {
     const storage = FlutterSecureStorage();
     final token = await storage.read(key: "accessToken");
     if (token == null) {
@@ -21,7 +22,7 @@ class UserService {
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
 
     final response =
-        await http.get(Uri.parse("$url/popular-users?userId=$userId"));
+        await http.get(Uri.parse("$url/popular-users?userId=$userId&top=$top"));
 
     if (response.statusCode == 200) {
       List<dynamic> popularUsersJson = jsonDecode(response.body) as List;
@@ -29,6 +30,28 @@ class UserService {
           .map((user) => PopularUserModel.fromJson(user))
           .toList();
       return popularUsers;
+    } else {
+      print('Error: ${response.statusCode} - ${response.reasonPhrase}');
+      throw Exception("Bağlantı hatası oluştu");
+    }
+  }
+
+// /User/get-users?UserId=1
+  static Future<List<UsersModel>> getUsers(
+      {int pageNumber = 1, int PageSize = 9}) async {
+    const storage = FlutterSecureStorage();
+    final token = await storage.read(key: "accessToken");
+    if (token == null) {
+      throw Exception("Token not found");
+    }
+    int userId = int.parse(JwtDecoder.decode(token)["userId"]);
+    final response = await http.get(Uri.parse(
+        "$url/get-users?UserId=$userId&PageNumber=$pageNumber&PageSize=$PageSize"));
+    if (response.statusCode == 200) {
+      List<dynamic> usersJson = jsonDecode(response.body) as List;
+      List<UsersModel> users =
+          usersJson.map((user) => UsersModel.fromJson(user)).toList();
+      return users;
     } else {
       print('Error: ${response.statusCode} - ${response.reasonPhrase}');
       throw Exception("Bağlantı hatası oluştu");
