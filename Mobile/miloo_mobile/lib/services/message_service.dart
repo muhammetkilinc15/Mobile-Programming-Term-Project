@@ -25,9 +25,9 @@ class MessageService {
 
   Future<void> initializeSignalR(Function(Message) onMessageReceived) async {
     _hubConnection = HubConnectionBuilder()
-        .withUrl('http://10.50.113.34:5105/ChatHub')
+        .withUrl(
+            'http://10.0.2.2:5105/ChatHub') // Emülatörde PC'ye erişim için 10.0.2.2 kullanıyoruz
         .build();
-
     await _hubConnection.start()?.then((_) async {
       print('Connection started');
       await _hubConnection.invoke('Connect', args: [userId]);

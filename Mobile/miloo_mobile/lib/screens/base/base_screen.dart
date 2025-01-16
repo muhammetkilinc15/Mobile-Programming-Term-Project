@@ -4,7 +4,6 @@ import 'package:miloo_mobile/screens/favorites/favorites_screen.dart';
 import 'package:miloo_mobile/screens/home/home_screen.dart';
 import 'package:miloo_mobile/screens/profile/profile_screen.dart';
 import 'package:miloo_mobile/screens/store/store_screen.dart';
-import 'package:miloo_mobile/size_config.dart';
 
 class BaseScreen extends StatefulWidget {
   const BaseScreen({super.key});
@@ -16,38 +15,37 @@ class BaseScreen extends StatefulWidget {
 
 class _BaseScreenState extends State<BaseScreen> {
   int _currentIndex = 0;
+  final PageController _pageController = PageController();
 
-  // Alt sayfaların listesini oluşturun
   final List<Widget> _screens = [
-    const HomeScreen(), // Ana sayfa
-    const StoreScreen(),
-    const FavoritesScreen(),
-    const ProfileScreen(), // Profil sayfası
+    HomeScreen(),
+    StoreScreen(),
+    FavoritesScreen(),
+    ProfileScreen(),
   ];
 
   @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context); // Cihaz boyutlarını başlat
     return Scaffold(
-      body: IndexedStack(
-        index: _currentIndex, // Hangi ekranın gösterileceğini belirler
-        children: _screens.map((screen) {
-          // Her ekranda güncelleme tetiklemek için bir `Key` ekliyoruz.
-          return _currentIndex == _screens.indexOf(screen)
-              ? KeyedSubtree(
-                  key: ValueKey<int>(
-                      _currentIndex), // Her ekran için benzersiz bir key
-                  child: screen,
-                )
-              : screen;
-        }).toList(),
+      body: PageView(
+        controller: _pageController,
+        onPageChanged: (index) {
+          setState(() {
+            _currentIndex = index;
+          });
+        },
+        children: _screens,
       ),
       bottomNavigationBar: BottomNavigationBar(
-        currentIndex: _currentIndex, // Seçili olan menü
+        currentIndex: _currentIndex,
         onTap: (index) {
-          setState(() {
-            _currentIndex = index; // Seçim değiştikçe güncellenir
-          });
+          _pageController.jumpToPage(index);
         },
         items: const [
           BottomNavigationBarItem(

@@ -29,6 +29,10 @@ class ProductService {
     final response = await http.get(
       Uri.parse(
           "$url/user-products?UserId=$userId&Search=$search&PageNumber=$pageNumber&PageSize=$pageSize"),
+      headers: {
+        "Authorization": "Bearer $token",
+        "Content-Type": "application/json"
+      },
     );
     if (response.statusCode == 200) {
       final Map<String, dynamic> jsonResponse = json.decode(response.body);
@@ -45,17 +49,16 @@ class ProductService {
     const store = FlutterSecureStorage();
     final token = await store.read(key: "accessToken");
 
-    if (token == null) {
-      throw Exception("Token not found");
-    }
-    Map<String, dynamic> decodedToken = JwtDecoder.decode(token);
-    int universityId = int.parse(decodedToken['universityId'].toString());
-    int userId = int.parse(decodedToken['userId'].toString());
-
     final response = await http.get(
       Uri.parse(
-          "$url/popular-products?top=5&universityId=$universityId&userId=$userId"),
+        "$url/popular-products?top=5",
+      ),
+      headers: {
+        "Authorization": "Bearer $token",
+        "Content-Type": "application/json"
+      },
     );
+
     if (response.statusCode == 200) {
       List<dynamic> data = json.decode(response.body);
       return data
@@ -67,7 +70,12 @@ class ProductService {
   }
 
   static Future<ProductDetailModel> getProductDetail(int id) async {
-    final response = await http.get(Uri.parse("$url/$id"));
+    const store = FlutterSecureStorage();
+    final token = await store.read(key: "accessToken");
+    final response = await http.get(headers: {
+      "Authorization": "Bearer $token",
+      "Content-Type": "application/json"
+    }, Uri.parse("$url/$id"));
 
     if (response.statusCode == 200) {
       Map<String, dynamic> data = json.decode(response.body);
@@ -83,6 +91,8 @@ class ProductService {
     int subcategoryId = -1,
     String orderBy = "popular",
   }) async {
+    const store = FlutterSecureStorage();
+    final token = await store.read(key: "accessToken");
     if (universityId == -1) {
       const store = FlutterSecureStorage();
       final token = await store.read(key: "accessToken");
@@ -93,7 +103,12 @@ class ProductService {
     }
     final response = await http.get(
       Uri.parse(
-          "$url/getall?UniversityId=$universityId&CategoryId=$categoryId&SubCategoryId=$subcategoryId&OrderBy=$orderBy"),
+        "$url/getall?UniversityId=$universityId&CategoryId=$categoryId&SubCategoryId=$subcategoryId&OrderBy=$orderBy",
+      ),
+      headers: {
+        "Authorization": "Bearer $token",
+        "Content-Type": "application/json"
+      },
     );
 
     if (response.statusCode == 200) {
@@ -132,9 +147,14 @@ class ProductService {
   }
 
   static Future<void> increaseView(int productId) async {
+    const store = FlutterSecureStorage();
+    final token = await store.read(key: "accessToken");
     final response = await http.post(
       Uri.parse("$url/increase-view"),
-      headers: {"Content-Type": "application/json"},
+      headers: {
+        "Authorization": "Bearer $token",
+        "Content-Type": "application/json"
+      },
       body: json.encode(
         {
           "productId": productId,
@@ -155,6 +175,10 @@ class ProductService {
     }
     final userId = JwtDecoder.decode(token)['userId'];
     final response = await http.get(
+      headers: {
+        "Authorization": "Bearer $token",
+        "Content-Type": "application/json"
+      },
       Uri.parse(
           "$url/favorite-products?UserId=$userId&PageSize=5&PageNumber=1"),
     );
@@ -185,7 +209,7 @@ class ProductService {
     int publisherId = int.parse(JwtDecoder.decode(token)['userId'].toString());
 
     var request = http.MultipartRequest('POST', Uri.parse("$url/create"));
-    // request.headers['Authorization'] = 'Bearer $token';
+    request.headers['Authorization'] = 'Bearer $token';
     request.fields['Title'] = title;
     request.fields['Description'] = description;
     request.fields['Price'] = price.toString();
@@ -257,7 +281,7 @@ class ProductService {
     }
     final response = await http.put(Uri.parse("$url/update"),
         headers: {
-          // "Authorization": "Bearer $token",
+          "Authorization": "Bearer $token",
           "Content-Type": "application/json"
         },
         body: json.encode({

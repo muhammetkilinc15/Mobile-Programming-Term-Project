@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/components/default_button.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
-import 'package:miloo_mobile/models/message.dart';
 import 'package:miloo_mobile/models/product_detail_model.dart';
-import 'package:miloo_mobile/screens/chat/chat_screen.dart';
-import 'package:miloo_mobile/screens/chat/message_screen.dart';
 import 'package:miloo_mobile/screens/product_detail/components/product_images.dart';
 import 'package:miloo_mobile/screens/product_detail/components/top_rounded_container.dart';
 import 'package:miloo_mobile/size_config.dart';
