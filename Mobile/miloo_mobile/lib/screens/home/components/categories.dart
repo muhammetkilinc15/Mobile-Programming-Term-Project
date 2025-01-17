@@ -14,12 +14,13 @@ class Categories extends StatefulWidget {
 class _CategoriesState extends State<Categories> {
   // Future olan bir kategori veri kaynağını almak için
   late Future<List<CategoryModel>> futureCategories;
+  final CategoryService _categoryService = CategoryService();
 
   @override
   void initState() {
     super.initState();
     futureCategories =
-        CategoryService.getCategories(pageNumber: 1, pageSize: 5);
+        _categoryService.getCategories(pageNumber: 1, pageSize: 5);
   }
 
   @override
@@ -27,7 +28,7 @@ class _CategoriesState extends State<Categories> {
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
     futureCategories =
-        CategoryService.getCategories(pageNumber: 1, pageSize: 5);
+        _categoryService.getCategories(pageNumber: 1, pageSize: 5);
   }
 
   @override
@@ -64,8 +65,7 @@ class _CategoriesState extends State<Categories> {
                     );
                   },
                   child: CategoryCard(
-                    icon: Icons
-                        .gamepad, // İkonu istediğiniz gibi değiştirebilirsiniz
+                    icon: Icons.gamepad,
                     text: category.name,
                   ),
                 );

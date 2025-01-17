@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\",
+  "WorkspaceRootPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|d:\\projelerim\\termproject\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\controllers\\universitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\controllers\\universitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|d:\\projelerim\\termproject\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,29 +34,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Hubs\\ChatHub.cs",
-              "RelativeDocumentMoniker": "MilooApp\\Hubs\\ChatHub.cs",
-              "ToolTip": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Hubs\\ChatHub.cs",
-              "RelativeToolTip": "MilooApp\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAIwBcAAAA2AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UniversityController.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\UniversityController.cs",
+              "RelativeDocumentMoniker": "MilooApp\\Controllers\\UniversityController.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\UniversityController.cs",
+              "RelativeToolTip": "MilooApp\\Controllers\\UniversityController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T17:03:47.853Z",
+              "WhenOpened": "2025-01-17T16:57:55.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "MilooApp\\Controllers\\ChatController.cs",
-              "ToolTip": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
-              "RelativeToolTip": "MilooApp\\Controllers\\ChatController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAUwG8AAAAjAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Program.cs",
+              "RelativeDocumentMoniker": "MilooApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Program.cs",
+              "RelativeToolTip": "MilooApp\\Program.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T13:30:25.198Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T16:52:53.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "MilooApp\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "MilooApp\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T16:51:40.391Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "MilooApp\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "MilooApp\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwHQAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-17T15:59:35.653Z"
             }
           ]
         }

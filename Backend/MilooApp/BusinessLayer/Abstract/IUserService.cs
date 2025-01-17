@@ -16,6 +16,7 @@ namespace BusinessLayer.Abstract
         Task<BaseResponse> GetUserRoles(int userId);
         Task<BaseResponse> GetUsers(UsersRequest request);
         Task<BaseResponse> GetUserById(int userId);
+        Task<BaseResponse> GetUserByUsername(string username);
         Task<BaseResponse> GetUserInfoWithProductById(string username);
         Task<BaseResponse> DeleteUser(int userId);
         Task<BaseResponse> GetPopularUsers(PopularUserRequest request);

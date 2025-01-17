@@ -75,6 +75,8 @@ namespace BusinessLayer.Concreate
 
             var listing = await _productRepository.AsQueryable()
                 .Include(x => x.Images)
+                .Include(x => x.Publisher)
+                .ThenInclude(x => x.UserPhotos)
                 .Where(x => x.Id == id)
                 .Select(x => new
                 {
@@ -83,6 +85,8 @@ namespace BusinessLayer.Concreate
                     x.Description,
                     isFavorite = true,
                     x.Price,
+                    createrId = x.PublisherId,
+                    createrImage = $"{baseUrl}/{x.Publisher.UserPhotos.FirstOrDefault(photo => photo.isProfilePhoto).ImagePath ?? "default-profile.png"}",
                     createrFullName = $"{x.Publisher.FirstName} {x.Publisher.LastName}",
                     createdBy = x.Publisher.UserName,
                     x.Views,
@@ -158,10 +162,18 @@ namespace BusinessLayer.Concreate
                 Success = true
             };
         }
-        public async Task<BaseResponse> GetPopularProducts(int top, int universityId, int userId)
+        public async Task<BaseResponse> GetPopularProducts(int top, int userId)
         {
             string ipAddress = IPHelper.GetIpAdress(); // IP adresi alınır
             string baseUrl = $"http://{ipAddress}:5105"; // Base URL oluşturulur
+
+
+
+            int universityId = (int)await _userRepository.AsQueryable()
+                .Where(u => u.Id == userId)
+                .Select(u => u.UniversityId)
+                .FirstOrDefaultAsync();
+
 
             // Popüler ürünleri al ve favori durumunu kontrol et
             var popularProducts = await _productRepository.AsQueryable()
@@ -179,6 +191,25 @@ namespace BusinessLayer.Concreate
                 })
                 .ToListAsync();
 
+            if (popularProducts.Count > 0)
+            {
+                popularProducts = await _productRepository.AsQueryable()
+                    .AsNoTracking()
+                     .OrderByDescending(p => p.Views) // Görüntülenme sayısına göre sırala
+                .Take(top) // En popüler 'top' ürünü al
+                .Select(p => new
+                {
+                    p.Id,
+                    p.Title,
+                    p.Price,
+                    image = $"{baseUrl}/{p.Images.FirstOrDefault().ImagePath}", // İlk görselin yolunu oluştur
+                    isFavorite = p.UserFavoriteProducts.Any(uf => uf.UserId == userId && uf.Status) // Kullanıcının favorisi mi?
+                })
+                .ToListAsync();
+
+            }
+
+
             return new BaseResponse
             {
                 Data = popularProducts,
@@ -190,7 +221,8 @@ namespace BusinessLayer.Concreate
             await _updateValidator.ValidateAndThrowAsync(request);
 
             Product p = await _productRepository.GetByIdAsync(request.Id) ?? throw new DbValidationException("Product not found");
-            if (p == null) {
+            if (p == null)
+            {
                 throw new DbValidationException("Product not found");
             }
             p.Title = request.Title;

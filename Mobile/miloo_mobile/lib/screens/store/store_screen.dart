@@ -24,7 +24,8 @@ class _StoreScreenState extends State<StoreScreen> {
   List<CategoryModel> categories = [];
   List<PopularProductModel> products = [];
   bool isLoadingProducts = false;
-
+  final ProductService _productService = ProductService();
+  final CategoryService _categoryService = CategoryService();
   @override
   void initState() {
     super.initState();
@@ -41,7 +42,7 @@ class _StoreScreenState extends State<StoreScreen> {
 
     try {
       List<PopularProductModel> fetchedProducts =
-          await ProductService.getProducts(
+          await _productService.getProducts(
         universityId: 1,
         categoryId: categoryId,
         orderBy: orderBy,
@@ -62,7 +63,7 @@ class _StoreScreenState extends State<StoreScreen> {
   Future<void> _loadCategories() async {
     try {
       List<CategoryModel> fetchedCategories =
-          await CategoryService.getCategories(pageNumber: 1, pageSize: 10);
+          await _categoryService.getCategories(pageNumber: 1, pageSize: 10);
 
       fetchedCategories.insert(
           0, CategoryModel(id: -1, name: 'All')); // "All" kategorisi ekleniyor

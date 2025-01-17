@@ -52,6 +52,8 @@ namespace BusinessLayer.Concreate
                 .Select(x => new { x.UniversityId })
                 .FirstOrDefaultAsync();
 
+
+
             if (user == null)
             {
                 return new BaseResponse
@@ -79,6 +81,22 @@ namespace BusinessLayer.Concreate
                     UserName = x.UserName
                 }).ToListAsync();
 
+            if(popularUsers.Count == 0)
+            {
+              popularUsers = await _repository
+                .AsQueryable()
+                .AsNoTracking()
+                .OrderByDescending(x => x.Products.Count)
+                .Take(request.Top)
+                .Select(x => new PopularUserDto
+                {
+                    ProfileImageUrl = x.UserPhotos
+                        .Where(p => p.isProfilePhoto)
+                        .Select(p => $"{baseUrl}/{p.ImagePath}")
+                        .FirstOrDefault() ?? $"{baseUrl}/default-profile.png",
+                    UserName = x.UserName
+                }).ToListAsync();
+            }
 
             return new BaseResponse
             {
@@ -124,6 +142,43 @@ namespace BusinessLayer.Concreate
             };
         }
 
+        public async Task<BaseResponse> GetUserByUsername(string username)
+        {
+            string ipAddress = IPHelper.GetIpAdress();
+            string baseUrl = $"http://{ipAddress}:5105";
+
+            var user = await _repository.AsQueryable()
+                .Where(x => x.UserName == username)
+                .Select(x => new
+                {
+                    x.Id,
+                    x.FirstName,
+                    x.LastName,
+                    x.UserName,
+                    UniversityName = x.University.Name,
+                    ProfileImageUrl = x.UserPhotos
+                        .Where(p => p.isProfilePhoto)
+                        .Select(p => $"{baseUrl}/{p.ImagePath}")
+                        .FirstOrDefault() ?? $"{baseUrl}/default-profile.png"
+                })
+                .FirstOrDefaultAsync();
+
+            if (user == null)
+            {
+                return new BaseResponse
+                {
+                    Success = false,
+                    Message = "User not found"
+                };
+            }
+
+            return new BaseResponse
+            {
+                Success = true,
+                Data = user
+            };
+        }
+
         public async Task<BaseResponse> GetUserInfoWithProductById(string username)
         {
 
@@ -135,6 +190,7 @@ namespace BusinessLayer.Concreate
               .Where(x => x.UserName == username)
               .Select(x => new
               {
+                  x.Id,
                   profilPhoto = x.UserPhotos.Where(p => p.isProfilePhoto).Select(p => $"{baseUrl}/{p.ImagePath}").FirstOrDefault() ?? $"{baseUrl}/default-profile.png",
                   fullName = x.FirstName + " " + x.LastName,
                   universty = x.University.Name,

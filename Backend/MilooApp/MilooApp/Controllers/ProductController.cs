@@ -9,6 +9,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
@@ -27,6 +28,7 @@ namespace MilooApp.Controllers
             return BadRequest();
         }
         [HttpGet("user-products")]
+        [Authorize(Roles ="Seller,Admin")]
         public async Task<IActionResult> GetUserProducts([FromQuery] UserProductRequest request)
         {
             BaseResponse response = await _productService.GetUserProducts(request);
@@ -47,9 +49,14 @@ namespace MilooApp.Controllers
 
 
         [HttpGet("popular-products")]
-        public async Task<IActionResult> GetPopularListing([FromQuery] int top, int universityId,int userId)
+        public async Task<IActionResult> GetPopularProducts([FromQuery] int top)
         {
-            BaseResponse response = await _productService.GetPopularProducts(top=5, universityId: universityId , userId);
+            var  userIdClaim = HttpContext.User.Claims.FirstOrDefault(c => c.Type == "userId");
+            if(userIdClaim == null)
+                return BadRequest("User not found");
+            int userId = int.Parse(userIdClaim.Value);
+
+            BaseResponse response = await _productService.GetPopularProducts(top=5, userId: userId);
             if (response.Success)
                 return Ok(response.Data);
             return BadRequest();
@@ -66,9 +73,9 @@ namespace MilooApp.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles = "Seller")]
         public async Task<IActionResult> AddProduct([FromForm] CreateProductRequest createListingDto)
         {
-            Console.WriteLine("CreateProductRequest: " + createListingDto);
             BaseResponse response = await _productService.AddAsync(createListingDto);
 
             if (response.Success)
@@ -98,7 +105,8 @@ namespace MilooApp.Controllers
 
      
         [HttpDelete("delete/{id}")]
-        public async Task<IActionResult> DeleteListing(int id)
+        [Authorize(Roles = "Seller")]
+        public async Task<IActionResult> DeleteProduct(int id)
         {
             BaseResponse response = await _productService.DeleteAsync(id);
             if (response.Success)
@@ -111,7 +119,7 @@ namespace MilooApp.Controllers
 
 
         [HttpPut("update")]
-        //[Authorize(Roles = "Seller")]
+        [Authorize(Roles = "Seller")]
         public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductDto updateProductRequest)
         {
             BaseResponse response = await _productService.UpdateAsync(updateProductRequest);

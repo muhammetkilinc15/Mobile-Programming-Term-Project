@@ -4,6 +4,7 @@ using BusinessLayer.Dtos.CategoryDtos;
 using BusinessLayer.Dtos.CollageDtos;
 using BusinessLayer.Parameters;
 using DataAccessLayer.Abstract;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UniversityController : ControllerBase
     {
         private readonly ICollageService _service;

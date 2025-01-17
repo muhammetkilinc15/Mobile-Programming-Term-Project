@@ -13,7 +13,7 @@ class ChatScreen extends StatefulWidget {
 
 class _ChatScreenState extends State<ChatScreen> {
   late Future<List<UserMessage>> _chatUsersFuture;
-
+  final ChatService _chatService = ChatService();
   @override
   void initState() {
     super.initState();
@@ -22,7 +22,7 @@ class _ChatScreenState extends State<ChatScreen> {
 
   Future<List<UserMessage>> _fetchChatUsers() async {
     try {
-      return await ChatService.getUsers();
+      return await _chatService.getUsers();
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Failed to load chat users: $e')),

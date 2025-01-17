@@ -1,7 +1,7 @@
 import 'dart:convert';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:http/http.dart' as http;
 import 'package:jwt_decoder/jwt_decoder.dart';
+import 'package:miloo_mobile/helper/token_manager.dart';
 import 'package:miloo_mobile/models/send_message_model.dart';
 import 'package:signalr_netcore/hub_connection.dart';
 import 'package:signalr_netcore/hub_connection_builder.dart';
@@ -12,22 +12,16 @@ class MessageService {
   static String url = "${baseUrl}Chat";
   late HubConnection _hubConnection;
   late int userId;
+  final TokenManager _tokenManager = TokenManager();
 
   Future<void> initializeUserId() async {
-    const storage = FlutterSecureStorage();
-    final token = await storage.read(key: "accessToken");
-    if (token != null) {
-      userId = int.parse(JwtDecoder.decode(token)["userId"]);
-    } else {
-      throw Exception('Failed to load user ID');
-    }
+    final token = await _tokenManager.getAccessToken();
+    userId = int.parse(JwtDecoder.decode(token)["userId"]);
   }
 
   Future<void> initializeSignalR(Function(Message) onMessageReceived) async {
-    _hubConnection = HubConnectionBuilder()
-        .withUrl(
-            'http://10.0.2.2:5105/ChatHub') // Emülatörde PC'ye erişim için 10.0.2.2 kullanıyoruz
-        .build();
+    _hubConnection =
+        HubConnectionBuilder().withUrl('http://10.0.2.2:5105/ChatHub').build();
     await _hubConnection.start()?.then((_) async {
       print('Connection started');
       await _hubConnection.invoke('Connect', args: [userId]);
@@ -38,10 +32,14 @@ class MessageService {
     });
   }
 
-  Future<List<Message>> fetchChats(int toUserId) async {
+  Future<List<Message>> fetchChats(int toUserId, String? username) async {
+    final token = await _tokenManager.getAccessToken();
     final response = await http.get(
-      Uri.parse('$url/chats?userId=$userId&toUserId=$toUserId'),
-    );
+        Uri.parse('$url/chats?userId=$userId&toUserId=$toUserId'),
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': 'Bearer $token',
+        });
     if (response.statusCode == 200) {
       final List<dynamic> data = json.decode(response.body);
       return data.map((json) => Message.fromJson(json)).toList();
@@ -60,10 +58,13 @@ class MessageService {
       message: message,
     ).toJson());
 
+    final token = await _tokenManager.getAccessToken();
+
     final response = await http.post(
       Uri.parse('$url/SendMessage'),
       headers: {
         'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token',
       },
       body: source,
     );

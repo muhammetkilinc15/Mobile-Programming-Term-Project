@@ -57,7 +57,8 @@ class ProductCard extends StatelessWidget {
                   InkWell(
                     borderRadius: BorderRadius.circular(30),
                     onTap: () {
-                      ProductService.makeFavorite(product.id);
+                      ProductService _productService = ProductService();
+                      _productService.makeFavorite(product.id);
                     },
                     child: Container(
                       padding: EdgeInsets.symmetric(

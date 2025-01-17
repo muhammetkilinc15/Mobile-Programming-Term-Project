@@ -21,6 +21,6 @@ namespace BusinessLayer.Abstract
         Task<BaseResponse> IncreaseProductView(IncreaseProductView request);
         Task<BaseResponse> DeleteAsync(int id);
         Task<BaseResponse> GetByIdAsync(int id);
-        Task<BaseResponse> GetPopularProducts(int top,int universityId, int userId);
+        Task<BaseResponse> GetPopularProducts(int top, int userId);
     }
 }

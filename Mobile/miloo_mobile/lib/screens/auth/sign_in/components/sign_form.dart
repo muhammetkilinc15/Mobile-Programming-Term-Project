@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:miloo_mobile/components/custom_surfix_icon.dart';
 import 'package:miloo_mobile/components/default_button.dart';
-import 'package:miloo_mobile/components/form_error.dart';
-import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/constraits/validators.dart';
-import 'package:miloo_mobile/screens/auth/forgot_password/forgot_password_screen.dart';
 import 'package:miloo_mobile/screens/base/base_screen.dart';
-import 'package:miloo_mobile/services/auth_service.dart';
+import 'package:miloo_mobile/providers/auth_provider.dart';
 import 'package:miloo_mobile/size_config.dart';
 
 class SignForm extends StatefulWidget {
@@ -18,7 +16,6 @@ class SignForm extends StatefulWidget {
 
 class _SignFormState extends State<SignForm> {
   final _formKey = GlobalKey<FormState>();
-  final List<String> errors = [];
   String email = '210129049@ogr.atu.edu.tr';
   String password = '12345678';
   bool remember = false;
@@ -34,65 +31,30 @@ class _SignFormState extends State<SignForm> {
           SizedBox(height: getProportionateScreenHeight(20)),
           buildPasswordField(),
           SizedBox(height: getProportionateScreenHeight(20)),
-          FormError(errors: errors),
-          SizedBox(height: getProportionateScreenHeight(20)),
-          Row(
-            children: [
-              Checkbox(
-                value: remember,
-                activeColor: kPrimaryColor,
-                onChanged: (value) {
-                  setState(() {
-                    remember = value!;
-                  });
-                },
-              ),
-              GestureDetector(
-                onTap: () {
-                  setState(() {
-                    remember = !remember;
-                  });
-                },
-                child: const Text('Remember me'),
-              ),
-              const Spacer(),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, ForgotPasswordScreen.routeName);
-                },
-                child: const Text(
-                  'Forgot Password',
-                  style: TextStyle(decoration: TextDecoration.underline),
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: getProportionateScreenHeight(20)),
           DefaultButton(
-            text: 'Continue',
+            text: "Continue",
             press: () async {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                setState(() => load = true);
+                setState(() {
+                  load = true;
+                });
 
-                AuthService authService = AuthService();
-                bool result =
-                    await authService.login(email: email, password: password);
+                // AuthProvider'ı kullanarak login işlemini gerçekleştirdim
+                final authProvider =
+                    Provider.of<AuthProvider>(context, listen: false);
+                final success = await authProvider.login(email, password);
 
-                setState(() => load = false);
+                setState(() {
+                  load = false;
+                });
 
-                if (result) {
-                  Navigator.pushNamedAndRemoveUntil(
-                    context,
-                    BaseScreen.routeName,
-                    (route) => false,
-                  );
+                if (success) {
+                  Navigator.pushNamed(context, MainScreen.routeName);
                 } else {
+                  // Hata mesajı göster
                   ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Invalid email or password!'),
-                      backgroundColor: Colors.red,
-                    ),
+                    SnackBar(content: Text('Login failed')),
                   );
                 }
               }
@@ -106,8 +68,8 @@ class _SignFormState extends State<SignForm> {
 
   TextFormField buildEmailField() {
     return TextFormField(
-      keyboardType: TextInputType.emailAddress,
       initialValue: email,
+      keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => email = newValue!,
       validator: emailValidator,
       onChanged: (value) {
@@ -118,7 +80,7 @@ class _SignFormState extends State<SignForm> {
         hintText: 'Enter your email',
         floatingLabelBehavior: FloatingLabelBehavior.always,
         suffixIcon: CustomSurfixIcon(
-          icon: Icons.mail_outline_outlined,
+          icon: Icons.mail_outline,
         ),
       ),
     );

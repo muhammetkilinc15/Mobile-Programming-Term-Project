@@ -38,9 +38,11 @@ class _BodyState extends State<Body> {
     _fetchCategories();
   }
 
+  final CategoryService _categoryService = CategoryService();
+
   Future<void> _fetchCategories() async {
     try {
-      final categories = await CategoryService.getCategories();
+      final categories = await _categoryService.getCategories();
       setState(() {
         _categories = categories
             .map((category) => SelectedListItem(
@@ -61,7 +63,7 @@ class _BodyState extends State<Body> {
   Future<void> _fetchSubCategories(int categoryId) async {
     try {
       final subCategories =
-          await CategoryService.getSubCategories(categoryId: categoryId);
+          await _categoryService.getSubCategories(categoryId: categoryId);
       setState(() {
         _subCategories = subCategories
             .map((subCategory) => SelectedListItem(
@@ -99,7 +101,8 @@ class _BodyState extends State<Body> {
       });
 
       try {
-        await ProductService.addProduct(
+        ProductService _productService = ProductService();
+        await _productService.addProduct(
           title: _titleController.text,
           description: _descriptionController.text,
           price: double.parse(_priceController.text),

@@ -4,6 +4,8 @@ class ProductDetailModel {
     required this.title,
     required this.description,
     required this.isFavorite,
+    required this.createrId,
+    required this.createrImage,
     required this.price,
     required this.createrFullName,
     required this.createdBy,
@@ -16,6 +18,8 @@ class ProductDetailModel {
   String description;
   bool isFavorite;
   double price;
+  int createrId;
+  String createrImage;
   String createrFullName;
   String createdBy;
   int views;
@@ -28,6 +32,8 @@ class ProductDetailModel {
         description: json["description"],
         isFavorite: json["isFavorite"],
         price: json["price"].toDouble(),
+        createrId: json["createrId"],
+        createrImage: json["createrImage"],
         createrFullName: json["createrFullName"],
         createdBy: json["createdBy"],
         views: json["views"],

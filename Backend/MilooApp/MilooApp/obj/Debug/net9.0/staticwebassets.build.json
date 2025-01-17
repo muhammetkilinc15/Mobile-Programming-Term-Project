@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SSd1lK82Zh3kUlAeuIdEjok6Uw0e0MLeiV7SRC9y3WM=",
+  "Hash": "Mo9qB8n4x+if2Ybxc7iu5nsEBnubj4ao4Ur/kPDPD08=",
   "Source": "MilooApp",
   "BasePath": "_content/MilooApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "MilooApp\\wwwroot",
       "Source": "MilooApp",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "default-profile#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\default-profile.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/0b508098-64bf-4306-b6b5-157aff4ad971#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/0c0457ab-369d-4cf2-8bb2-814c753c944e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/0feb5a17-2ced-46cf-b64e-090b9aeb9d22#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/129ee6d6-feba-41e3-90d7-98ce3dfaac7d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/1d7cc541-5c56-456b-a5e7-e40eddfb785e#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/2bba28f2-3c17-45fa-a775-66f04f968ad8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/2db5d9bc-ad5c-440e-8671-ca54b4873462#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/2f02b5ad-6e83-4aac-ac0f-fa138602abff#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/31b0cf69-d6b0-4b69-8137-38c11bea5c16#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/46ac8338-6b93-4635-83d8-82d8c4b1fad1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/4b53c9c2-17a8-4288-99aa-ca47fb5d0652#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/4b7c3297-ff44-4a40-b613-3d796330db9b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/509e43d2-3685-4471-9f70-972f0234290b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/52198984-5bbe-4cfa-97a9-5494c21c6bfb#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/527f8923-3d88-4a73-871b-5f4026e9ebaf#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/58e07729-4d0b-4416-a1e0-065cff3d6217#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/59752e2d-4e88-4c69-b15b-f6b8af473e23#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/5ba14b22-c39e-43f8-80ef-5d428469c52d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/5c7fde82-15aa-42ec-8ccd-ce73ff6fc908#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/5c9d8f31-2e97-4ff3-a0f9-017323d33a69#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/5da83d8c-97ec-44e6-991f-655328aaf16b#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/60c4c9dc-ea5d-4d8c-8610-b280367ded9c#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/6cd680a5-3df5-4b96-8025-9435cf7152ce#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/6d2ec446-5138-4515-b30b-332417622c76#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/79de55dc-1825-4224-98d6-2bb8e7cbf8cc#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/8708eb43-96ee-46d0-86bf-bff3d957daed#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/8e55dde2-fb62-4eef-9245-3536bf9804b7#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/8eaf001b-b3ed-48a0-b5c5-3168042c280b#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/902f5bf4-4454-4860-9674-11ba41147ead#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/90fd215c-3983-4115-95d0-a51e04802c5d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/915d0fff-dd60-4127-b6a1-9c9636a859f1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/9183ac46-3d05-426f-93c9-b634036f7142#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/96fcd457-4a70-43bf-a1b4-93c35f4302f0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/a09b27fb-28ec-43e8-9044-badc73175966#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/a6de23fc-ae48-4d5e-bcd0-74656ee4b073#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/b2e6694d-bbbb-454c-8ae6-8c4281a78bfd#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/baf0dc14-5d67-4233-a35a-4fd5d702319d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/bb56f11f-c322-4ca9-8eb2-1a517438dee4#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/c7b4e862-643c-4321-b4bb-d83911a950b8#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/d2084114-8bb4-4600-a63a-15bdaa9ba8b0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/d7bd1e6b-6583-4652-9e63-c075e84ecd25#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/d833be26-1990-4bad-b2b6-5db6e9055eb8#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/e1e2b3ec-30be-46de-8b0d-c08d05496c35#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/e4b59a1d-6656-4005-a20b-6f9e9f88cbe2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/f6e404ea-6657-4798-affd-dc53b67a38eb#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/products/fed74401-0604-4d9c-bb73-c27736712db1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/025535b0-01b1-4514-b711-90e56bb23100#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/040e21e0-9c94-4196-bfd6-d8c3f9147939#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/29ad77e4-7e8f-45c6-9daf-ef963882e403#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1088,10 +1088,31 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4288a31f-ea36-470d-ba30-4f96c44748fd.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/1/profiles/4288a31f-ea36-470d-ba30-4f96c44748fd#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4xffsbs1l",
+      "Integrity": "g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\4288a31f-ea36-470d-ba30-4f96c44748fd.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/44e1c220-6e90-4705-8a69-fe8541b7cfac#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1109,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1130,10 +1151,31 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\68e3a156-a378-4417-b155-97fdbf2c0024.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/1/profiles/68e3a156-a378-4417-b155-97fdbf2c0024#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4xffsbs1l",
+      "Integrity": "g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\68e3a156-a378-4417-b155-97fdbf2c0024.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/694ff472-5a5b-4138-9a28-cbd6ceb588f9#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1151,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1172,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/70d1813e-8c4c-4cf6-a305-fb7e2374e34d#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1193,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/713b25ee-0c04-4c3e-826a-5d1975767a8f#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -1214,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/71fbc586-cfd0-4023-8226-f6e3bce6e626#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1235,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/724d6fc2-e8f3-425b-9b2d-c926cb09a91c#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1256,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/839bb349-d27f-4710-85be-a15beaffd2e2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1277,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/8d14a078-04ee-4aa9-85e4-0839f9db32e5#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1298,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1319,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1340,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/9e8ece10-2662-4d68-be37-e0aae47f3158#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1361,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/9ece602e-404b-4f1e-826e-7a0c928be02f#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1382,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/ac702a7b-0589-409b-97ae-9314af706216#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1403,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/b12449f6-e51c-4921-942e-b5256de20301#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1424,10 +1466,31 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/1/profiles/c0aecae3-3833-47bd-a219-0dbbdfd4c9e1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4xffsbs1l",
+      "Integrity": "g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/c1960a1a-38f4-49ec-9a93-f3ec76bd6e25#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1445,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/c57e62cb-051b-4b42-a885-3a42817ce0e6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1466,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1487,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/cf0683b7-77df-43e8-a682-85f735df3067#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1508,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/ef064d21-bdb8-47d8-a412-a30453385469#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1529,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/ef261780-590f-4d20-a40e-68c555c6550e#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1550,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/f7970681-857f-437b-89bc-9aa27098f487#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1571,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/fb095750-3f42-420e-9326-2450889a0d41#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1592,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/1/profiles/ffd47c61-2efc-49ad-9f49-74382bda72d0#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1613,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1634,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/2/profiles/5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1655,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png"
     },
     {
-      "Identity": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
       "SourceId": "MilooApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
       "BasePath": "_content/MilooApp",
       "RelativePath": "images/3/profiles/423ea439-c933-4a00-a42a-dac8056d2a90#[.{fingerprint}]?.jfif",
       "AssetKind": "All",
@@ -1674,12 +1737,33 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\9e903028-baf1-453d-a579-266e92d06299.jpg",
+      "SourceId": "MilooApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\",
+      "BasePath": "_content/MilooApp",
+      "RelativePath": "images/3/profiles/9e903028-baf1-453d-a579-266e92d06299#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z4xffsbs1l",
+      "Integrity": "g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3\\profiles\\9e903028-baf1-453d-a579-266e92d06299.jpg"
     }
   ],
   "Endpoints": [
     {
       "Route": "default-profile.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1716,7 +1800,7 @@
     },
     {
       "Route": "default-profile.t44xn86m5k.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\default-profile.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1761,7 +1845,7 @@
     },
     {
       "Route": "images/1/products/0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1798,7 +1882,7 @@
     },
     {
       "Route": "images/1/products/0b508098-64bf-4306-b6b5-157aff4ad971.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0b508098-64bf-4306-b6b5-157aff4ad971.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1843,7 +1927,7 @@
     },
     {
       "Route": "images/1/products/0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1880,7 +1964,7 @@
     },
     {
       "Route": "images/1/products/0c0457ab-369d-4cf2-8bb2-814c753c944e.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0c0457ab-369d-4cf2-8bb2-814c753c944e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1925,7 +2009,7 @@
     },
     {
       "Route": "images/1/products/0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1962,7 +2046,7 @@
     },
     {
       "Route": "images/1/products/0feb5a17-2ced-46cf-b64e-090b9aeb9d22.w4f1iycsea.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\0feb5a17-2ced-46cf-b64e-090b9aeb9d22.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2007,7 +2091,7 @@
     },
     {
       "Route": "images/1/products/129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2044,7 +2128,7 @@
     },
     {
       "Route": "images/1/products/129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\129ee6d6-feba-41e3-90d7-98ce3dfaac7d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2089,7 +2173,7 @@
     },
     {
       "Route": "images/1/products/1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2126,7 +2210,7 @@
     },
     {
       "Route": "images/1/products/1d7cc541-5c56-456b-a5e7-e40eddfb785e.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\1d7cc541-5c56-456b-a5e7-e40eddfb785e.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2171,7 +2255,7 @@
     },
     {
       "Route": "images/1/products/2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2208,7 +2292,7 @@
     },
     {
       "Route": "images/1/products/2bba28f2-3c17-45fa-a775-66f04f968ad8.v5iqy4dhg9.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2bba28f2-3c17-45fa-a775-66f04f968ad8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2253,7 +2337,7 @@
     },
     {
       "Route": "images/1/products/2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2290,7 +2374,7 @@
     },
     {
       "Route": "images/1/products/2db5d9bc-ad5c-440e-8671-ca54b4873462.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2db5d9bc-ad5c-440e-8671-ca54b4873462.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2335,7 +2419,7 @@
     },
     {
       "Route": "images/1/products/2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2372,7 +2456,7 @@
     },
     {
       "Route": "images/1/products/2f02b5ad-6e83-4aac-ac0f-fa138602abff.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\2f02b5ad-6e83-4aac-ac0f-fa138602abff.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2417,7 +2501,7 @@
     },
     {
       "Route": "images/1/products/31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2454,7 +2538,7 @@
     },
     {
       "Route": "images/1/products/31b0cf69-d6b0-4b69-8137-38c11bea5c16.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\31b0cf69-d6b0-4b69-8137-38c11bea5c16.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2499,7 +2583,7 @@
     },
     {
       "Route": "images/1/products/46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2536,7 +2620,7 @@
     },
     {
       "Route": "images/1/products/46ac8338-6b93-4635-83d8-82d8c4b1fad1.kxfg2xosx0.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\46ac8338-6b93-4635-83d8-82d8c4b1fad1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2581,7 +2665,7 @@
     },
     {
       "Route": "images/1/products/4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2618,7 +2702,7 @@
     },
     {
       "Route": "images/1/products/4b53c9c2-17a8-4288-99aa-ca47fb5d0652.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b53c9c2-17a8-4288-99aa-ca47fb5d0652.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2663,7 +2747,7 @@
     },
     {
       "Route": "images/1/products/4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2700,7 +2784,7 @@
     },
     {
       "Route": "images/1/products/4b7c3297-ff44-4a40-b613-3d796330db9b.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\4b7c3297-ff44-4a40-b613-3d796330db9b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2745,7 +2829,7 @@
     },
     {
       "Route": "images/1/products/509e43d2-3685-4471-9f70-972f0234290b.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2782,7 +2866,7 @@
     },
     {
       "Route": "images/1/products/509e43d2-3685-4471-9f70-972f0234290b.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\509e43d2-3685-4471-9f70-972f0234290b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2827,7 +2911,7 @@
     },
     {
       "Route": "images/1/products/52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2864,7 +2948,7 @@
     },
     {
       "Route": "images/1/products/52198984-5bbe-4cfa-97a9-5494c21c6bfb.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\52198984-5bbe-4cfa-97a9-5494c21c6bfb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2909,7 +2993,7 @@
     },
     {
       "Route": "images/1/products/527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2946,7 +3030,7 @@
     },
     {
       "Route": "images/1/products/527f8923-3d88-4a73-871b-5f4026e9ebaf.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\527f8923-3d88-4a73-871b-5f4026e9ebaf.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +3075,7 @@
     },
     {
       "Route": "images/1/products/58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3028,7 +3112,7 @@
     },
     {
       "Route": "images/1/products/58e07729-4d0b-4416-a1e0-065cff3d6217.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\58e07729-4d0b-4416-a1e0-065cff3d6217.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3073,7 +3157,7 @@
     },
     {
       "Route": "images/1/products/59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3110,7 +3194,7 @@
     },
     {
       "Route": "images/1/products/59752e2d-4e88-4c69-b15b-f6b8af473e23.q4r2h1v9fh.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\59752e2d-4e88-4c69-b15b-f6b8af473e23.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3155,7 +3239,7 @@
     },
     {
       "Route": "images/1/products/5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3192,7 +3276,7 @@
     },
     {
       "Route": "images/1/products/5ba14b22-c39e-43f8-80ef-5d428469c52d.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5ba14b22-c39e-43f8-80ef-5d428469c52d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3237,7 +3321,7 @@
     },
     {
       "Route": "images/1/products/5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.ep7m5oyxh9.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3282,7 +3366,7 @@
     },
     {
       "Route": "images/1/products/5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c7fde82-15aa-42ec-8ccd-ce73ff6fc908.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3319,7 +3403,7 @@
     },
     {
       "Route": "images/1/products/5c9d8f31-2e97-4ff3-a0f9-017323d33a69.4u1zlizm78.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3364,7 +3448,7 @@
     },
     {
       "Route": "images/1/products/5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5c9d8f31-2e97-4ff3-a0f9-017323d33a69.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3401,7 +3485,7 @@
     },
     {
       "Route": "images/1/products/5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3438,7 +3522,7 @@
     },
     {
       "Route": "images/1/products/5da83d8c-97ec-44e6-991f-655328aaf16b.ujm1hh7gtw.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\5da83d8c-97ec-44e6-991f-655328aaf16b.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3483,7 +3567,7 @@
     },
     {
       "Route": "images/1/products/60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3520,7 +3604,7 @@
     },
     {
       "Route": "images/1/products/60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\60c4c9dc-ea5d-4d8c-8610-b280367ded9c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3565,7 +3649,7 @@
     },
     {
       "Route": "images/1/products/6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3602,7 +3686,7 @@
     },
     {
       "Route": "images/1/products/6cd680a5-3df5-4b96-8025-9435cf7152ce.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6cd680a5-3df5-4b96-8025-9435cf7152ce.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3647,7 +3731,7 @@
     },
     {
       "Route": "images/1/products/6d2ec446-5138-4515-b30b-332417622c76.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3684,7 +3768,7 @@
     },
     {
       "Route": "images/1/products/6d2ec446-5138-4515-b30b-332417622c76.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\6d2ec446-5138-4515-b30b-332417622c76.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3729,7 +3813,7 @@
     },
     {
       "Route": "images/1/products/79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3766,7 +3850,7 @@
     },
     {
       "Route": "images/1/products/79de55dc-1825-4224-98d6-2bb8e7cbf8cc.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\79de55dc-1825-4224-98d6-2bb8e7cbf8cc.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3811,7 +3895,7 @@
     },
     {
       "Route": "images/1/products/8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3848,7 +3932,7 @@
     },
     {
       "Route": "images/1/products/8708eb43-96ee-46d0-86bf-bff3d957daed.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8708eb43-96ee-46d0-86bf-bff3d957daed.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3893,7 +3977,7 @@
     },
     {
       "Route": "images/1/products/8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3930,7 +4014,7 @@
     },
     {
       "Route": "images/1/products/8e55dde2-fb62-4eef-9245-3536bf9804b7.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8e55dde2-fb62-4eef-9245-3536bf9804b7.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3975,7 +4059,7 @@
     },
     {
       "Route": "images/1/products/8eaf001b-b3ed-48a0-b5c5-3168042c280b.ep7m5oyxh9.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4020,7 +4104,7 @@
     },
     {
       "Route": "images/1/products/8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\8eaf001b-b3ed-48a0-b5c5-3168042c280b.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4057,7 +4141,7 @@
     },
     {
       "Route": "images/1/products/902f5bf4-4454-4860-9674-11ba41147ead.h4z8nkjddx.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4102,7 +4186,7 @@
     },
     {
       "Route": "images/1/products/902f5bf4-4454-4860-9674-11ba41147ead.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\902f5bf4-4454-4860-9674-11ba41147ead.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4139,7 +4223,7 @@
     },
     {
       "Route": "images/1/products/90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4176,7 +4260,7 @@
     },
     {
       "Route": "images/1/products/90fd215c-3983-4115-95d0-a51e04802c5d.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\90fd215c-3983-4115-95d0-a51e04802c5d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4221,7 +4305,7 @@
     },
     {
       "Route": "images/1/products/915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4258,7 +4342,7 @@
     },
     {
       "Route": "images/1/products/915d0fff-dd60-4127-b6a1-9c9636a859f1.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\915d0fff-dd60-4127-b6a1-9c9636a859f1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4303,7 +4387,7 @@
     },
     {
       "Route": "images/1/products/9183ac46-3d05-426f-93c9-b634036f7142.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4340,7 +4424,7 @@
     },
     {
       "Route": "images/1/products/9183ac46-3d05-426f-93c9-b634036f7142.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\9183ac46-3d05-426f-93c9-b634036f7142.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4385,7 +4469,7 @@
     },
     {
       "Route": "images/1/products/96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4422,7 +4506,7 @@
     },
     {
       "Route": "images/1/products/96fcd457-4a70-43bf-a1b4-93c35f4302f0.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\96fcd457-4a70-43bf-a1b4-93c35f4302f0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4467,7 +4551,7 @@
     },
     {
       "Route": "images/1/products/a09b27fb-28ec-43e8-9044-badc73175966.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4504,7 +4588,7 @@
     },
     {
       "Route": "images/1/products/a09b27fb-28ec-43e8-9044-badc73175966.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a09b27fb-28ec-43e8-9044-badc73175966.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4549,7 +4633,7 @@
     },
     {
       "Route": "images/1/products/a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4670,7 @@
     },
     {
       "Route": "images/1/products/a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\a6de23fc-ae48-4d5e-bcd0-74656ee4b073.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4631,7 +4715,7 @@
     },
     {
       "Route": "images/1/products/b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4668,7 +4752,7 @@
     },
     {
       "Route": "images/1/products/b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\b2e6694d-bbbb-454c-8ae6-8c4281a78bfd.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4713,7 +4797,7 @@
     },
     {
       "Route": "images/1/products/baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4750,7 +4834,7 @@
     },
     {
       "Route": "images/1/products/baf0dc14-5d67-4233-a35a-4fd5d702319d.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\baf0dc14-5d67-4233-a35a-4fd5d702319d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4795,7 +4879,7 @@
     },
     {
       "Route": "images/1/products/bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4832,7 +4916,7 @@
     },
     {
       "Route": "images/1/products/bb56f11f-c322-4ca9-8eb2-1a517438dee4.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\bb56f11f-c322-4ca9-8eb2-1a517438dee4.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4877,7 +4961,7 @@
     },
     {
       "Route": "images/1/products/c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4914,7 +4998,7 @@
     },
     {
       "Route": "images/1/products/c7b4e862-643c-4321-b4bb-d83911a950b8.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\c7b4e862-643c-4321-b4bb-d83911a950b8.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4959,7 +5043,7 @@
     },
     {
       "Route": "images/1/products/cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.1p958gbems.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5004,7 +5088,7 @@
     },
     {
       "Route": "images/1/products/cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\cf50aad7-bbca-4a7d-8d1d-e16d4d2762f9.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5041,7 +5125,7 @@
     },
     {
       "Route": "images/1/products/d2084114-8bb4-4600-a63a-15bdaa9ba8b0.dce4yeyg0v.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5086,7 +5170,7 @@
     },
     {
       "Route": "images/1/products/d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d2084114-8bb4-4600-a63a-15bdaa9ba8b0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5123,7 +5207,7 @@
     },
     {
       "Route": "images/1/products/d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5160,7 +5244,7 @@
     },
     {
       "Route": "images/1/products/d7bd1e6b-6583-4652-9e63-c075e84ecd25.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d7bd1e6b-6583-4652-9e63-c075e84ecd25.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5205,7 +5289,7 @@
     },
     {
       "Route": "images/1/products/d833be26-1990-4bad-b2b6-5db6e9055eb8.4zkld6s89i.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5250,7 +5334,7 @@
     },
     {
       "Route": "images/1/products/d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\d833be26-1990-4bad-b2b6-5db6e9055eb8.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5287,7 +5371,7 @@
     },
     {
       "Route": "images/1/products/e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5324,7 +5408,7 @@
     },
     {
       "Route": "images/1/products/e1e2b3ec-30be-46de-8b0d-c08d05496c35.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e1e2b3ec-30be-46de-8b0d-c08d05496c35.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5369,7 +5453,7 @@
     },
     {
       "Route": "images/1/products/e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5406,7 +5490,7 @@
     },
     {
       "Route": "images/1/products/e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\e4b59a1d-6656-4005-a20b-6f9e9f88cbe2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5451,7 +5535,7 @@
     },
     {
       "Route": "images/1/products/f6e404ea-6657-4798-affd-dc53b67a38eb.9x5585unhe.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5496,7 +5580,7 @@
     },
     {
       "Route": "images/1/products/f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\f6e404ea-6657-4798-affd-dc53b67a38eb.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5533,7 +5617,7 @@
     },
     {
       "Route": "images/1/products/fed74401-0604-4d9c-bb73-c27736712db1.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5570,7 +5654,7 @@
     },
     {
       "Route": "images/1/products/fed74401-0604-4d9c-bb73-c27736712db1.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\products\\fed74401-0604-4d9c-bb73-c27736712db1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5615,7 +5699,7 @@
     },
     {
       "Route": "images/1/profiles/025535b0-01b1-4514-b711-90e56bb23100.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5652,7 +5736,7 @@
     },
     {
       "Route": "images/1/profiles/025535b0-01b1-4514-b711-90e56bb23100.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\025535b0-01b1-4514-b711-90e56bb23100.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5697,7 +5781,7 @@
     },
     {
       "Route": "images/1/profiles/040e21e0-9c94-4196-bfd6-d8c3f9147939.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5742,7 +5826,7 @@
     },
     {
       "Route": "images/1/profiles/040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\040e21e0-9c94-4196-bfd6-d8c3f9147939.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5779,7 +5863,7 @@
     },
     {
       "Route": "images/1/profiles/29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5816,7 +5900,7 @@
     },
     {
       "Route": "images/1/profiles/29ad77e4-7e8f-45c6-9daf-ef963882e403.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\29ad77e4-7e8f-45c6-9daf-ef963882e403.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5860,8 +5944,90 @@
       ]
     },
     {
+      "Route": "images/1/profiles/4288a31f-ea36-470d-ba30-4f96c44748fd.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4288a31f-ea36-470d-ba30-4f96c44748fd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 09:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
+      "Route": "images/1/profiles/4288a31f-ea36-470d-ba30-4f96c44748fd.z4xffsbs1l.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4288a31f-ea36-470d-ba30-4f96c44748fd.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 09:37:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4xffsbs1l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1/profiles/4288a31f-ea36-470d-ba30-4f96c44748fd.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
       "Route": "images/1/profiles/44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5898,7 +6064,7 @@
     },
     {
       "Route": "images/1/profiles/44e1c220-6e90-4705-8a69-fe8541b7cfac.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\44e1c220-6e90-4705-8a69-fe8541b7cfac.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5943,7 +6109,7 @@
     },
     {
       "Route": "images/1/profiles/4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5980,7 +6146,7 @@
     },
     {
       "Route": "images/1/profiles/4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\4f57dbd2-3b7c-4542-a8c4-ddcc1c1bb67a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6024,8 +6190,90 @@
       ]
     },
     {
+      "Route": "images/1/profiles/68e3a156-a378-4417-b155-97fdbf2c0024.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\68e3a156-a378-4417-b155-97fdbf2c0024.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 09:34:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
+      "Route": "images/1/profiles/68e3a156-a378-4417-b155-97fdbf2c0024.z4xffsbs1l.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\68e3a156-a378-4417-b155-97fdbf2c0024.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 17 Jan 2025 09:34:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4xffsbs1l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1/profiles/68e3a156-a378-4417-b155-97fdbf2c0024.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
       "Route": "images/1/profiles/694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6062,7 +6310,7 @@
     },
     {
       "Route": "images/1/profiles/694ff472-5a5b-4138-9a28-cbd6ceb588f9.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\694ff472-5a5b-4138-9a28-cbd6ceb588f9.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6107,7 +6355,7 @@
     },
     {
       "Route": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6144,7 +6392,7 @@
     },
     {
       "Route": "images/1/profiles/6d63b5da-263f-460c-aa1d-ffcd359a5792.v5iqy4dhg9.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\6d63b5da-263f-460c-aa1d-ffcd359a5792.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6189,7 +6437,7 @@
     },
     {
       "Route": "images/1/profiles/70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6226,7 +6474,7 @@
     },
     {
       "Route": "images/1/profiles/70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\70d1813e-8c4c-4cf6-a305-fb7e2374e34d.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6271,7 +6519,7 @@
     },
     {
       "Route": "images/1/profiles/713b25ee-0c04-4c3e-826a-5d1975767a8f.hhehlqozq9.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6316,7 +6564,7 @@
     },
     {
       "Route": "images/1/profiles/713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\713b25ee-0c04-4c3e-826a-5d1975767a8f.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6353,7 +6601,7 @@
     },
     {
       "Route": "images/1/profiles/71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6390,7 +6638,7 @@
     },
     {
       "Route": "images/1/profiles/71fbc586-cfd0-4023-8226-f6e3bce6e626.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\71fbc586-cfd0-4023-8226-f6e3bce6e626.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6435,7 +6683,7 @@
     },
     {
       "Route": "images/1/profiles/724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6472,7 +6720,7 @@
     },
     {
       "Route": "images/1/profiles/724d6fc2-e8f3-425b-9b2d-c926cb09a91c.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\724d6fc2-e8f3-425b-9b2d-c926cb09a91c.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6517,7 +6765,7 @@
     },
     {
       "Route": "images/1/profiles/839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6554,7 +6802,7 @@
     },
     {
       "Route": "images/1/profiles/839bb349-d27f-4710-85be-a15beaffd2e2.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\839bb349-d27f-4710-85be-a15beaffd2e2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6599,7 +6847,7 @@
     },
     {
       "Route": "images/1/profiles/8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6636,7 +6884,7 @@
     },
     {
       "Route": "images/1/profiles/8d14a078-04ee-4aa9-85e4-0839f9db32e5.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8d14a078-04ee-4aa9-85e4-0839f9db32e5.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6681,7 +6929,7 @@
     },
     {
       "Route": "images/1/profiles/8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6718,7 +6966,7 @@
     },
     {
       "Route": "images/1/profiles/8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\8f30c9b2-d700-4e7f-abe2-cc7f6a3ab200.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6763,7 +7011,7 @@
     },
     {
       "Route": "images/1/profiles/979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6800,7 +7048,7 @@
     },
     {
       "Route": "images/1/profiles/979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\979b31f0-1b1b-4f3e-8cee-2d4a08c8fdd2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6845,7 +7093,7 @@
     },
     {
       "Route": "images/1/profiles/9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6882,7 +7130,7 @@
     },
     {
       "Route": "images/1/profiles/9e8ece10-2662-4d68-be37-e0aae47f3158.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9e8ece10-2662-4d68-be37-e0aae47f3158.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6927,7 +7175,7 @@
     },
     {
       "Route": "images/1/profiles/9ece602e-404b-4f1e-826e-7a0c928be02f.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6972,7 +7220,7 @@
     },
     {
       "Route": "images/1/profiles/9ece602e-404b-4f1e-826e-7a0c928be02f.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\9ece602e-404b-4f1e-826e-7a0c928be02f.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7009,7 +7257,7 @@
     },
     {
       "Route": "images/1/profiles/ac702a7b-0589-409b-97ae-9314af706216.11n3jhn9wd.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7054,7 +7302,7 @@
     },
     {
       "Route": "images/1/profiles/ac702a7b-0589-409b-97ae-9314af706216.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ac702a7b-0589-409b-97ae-9314af706216.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7091,7 +7339,7 @@
     },
     {
       "Route": "images/1/profiles/b12449f6-e51c-4921-942e-b5256de20301.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7128,7 +7376,7 @@
     },
     {
       "Route": "images/1/profiles/b12449f6-e51c-4921-942e-b5256de20301.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\b12449f6-e51c-4921-942e-b5256de20301.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7172,8 +7420,90 @@
       ]
     },
     {
+      "Route": "images/1/profiles/c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 17:18:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
+      "Route": "images/1/profiles/c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.z4xffsbs1l.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 16 Jan 2025 17:18:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4xffsbs1l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/1/profiles/c0aecae3-3833-47bd-a219-0dbbdfd4c9e1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
       "Route": "images/1/profiles/c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7210,7 +7540,7 @@
     },
     {
       "Route": "images/1/profiles/c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.tqvobtzuj5.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c1960a1a-38f4-49ec-9a93-f3ec76bd6e25.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7255,7 +7585,7 @@
     },
     {
       "Route": "images/1/profiles/c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7292,7 +7622,7 @@
     },
     {
       "Route": "images/1/profiles/c57e62cb-051b-4b42-a885-3a42817ce0e6.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\c57e62cb-051b-4b42-a885-3a42817ce0e6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7337,7 +7667,7 @@
     },
     {
       "Route": "images/1/profiles/cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7382,7 +7712,7 @@
     },
     {
       "Route": "images/1/profiles/cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cd8d4c2d-2cbf-4990-89ec-38422d2ae5f5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7419,7 +7749,7 @@
     },
     {
       "Route": "images/1/profiles/cf0683b7-77df-43e8-a682-85f735df3067.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7456,7 +7786,7 @@
     },
     {
       "Route": "images/1/profiles/cf0683b7-77df-43e8-a682-85f735df3067.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\cf0683b7-77df-43e8-a682-85f735df3067.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7501,7 +7831,7 @@
     },
     {
       "Route": "images/1/profiles/ef064d21-bdb8-47d8-a412-a30453385469.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7546,7 +7876,7 @@
     },
     {
       "Route": "images/1/profiles/ef064d21-bdb8-47d8-a412-a30453385469.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef064d21-bdb8-47d8-a412-a30453385469.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7583,7 +7913,7 @@
     },
     {
       "Route": "images/1/profiles/ef261780-590f-4d20-a40e-68c555c6550e.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7628,7 +7958,7 @@
     },
     {
       "Route": "images/1/profiles/ef261780-590f-4d20-a40e-68c555c6550e.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ef261780-590f-4d20-a40e-68c555c6550e.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7665,7 +7995,7 @@
     },
     {
       "Route": "images/1/profiles/f7970681-857f-437b-89bc-9aa27098f487.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7702,7 +8032,7 @@
     },
     {
       "Route": "images/1/profiles/f7970681-857f-437b-89bc-9aa27098f487.kvmogga69p.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\f7970681-857f-437b-89bc-9aa27098f487.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7747,7 +8077,7 @@
     },
     {
       "Route": "images/1/profiles/fb095750-3f42-420e-9326-2450889a0d41.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7784,7 +8114,7 @@
     },
     {
       "Route": "images/1/profiles/fb095750-3f42-420e-9326-2450889a0d41.jur8bkyi8l.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\fb095750-3f42-420e-9326-2450889a0d41.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7829,7 +8159,7 @@
     },
     {
       "Route": "images/1/profiles/ffd47c61-2efc-49ad-9f49-74382bda72d0.11n3jhn9wd.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7874,7 +8204,7 @@
     },
     {
       "Route": "images/1/profiles/ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\1\\profiles\\ffd47c61-2efc-49ad-9f49-74382bda72d0.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7911,7 +8241,7 @@
     },
     {
       "Route": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.4u1zlizm78.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7956,7 +8286,7 @@
     },
     {
       "Route": "images/12/profiles/db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\12\\profiles\\db2ba465-5d64-4b9f-b02e-1a5c5c3c0579.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7993,7 +8323,7 @@
     },
     {
       "Route": "images/2/profiles/5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.1oj7mpgb3r.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8038,7 +8368,7 @@
     },
     {
       "Route": "images/2/profiles/5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\2\\profiles\\5e7a3bfb-f925-43fb-b08f-64c6ecb6bdb9.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8075,7 +8405,7 @@
     },
     {
       "Route": "images/3/profiles/423ea439-c933-4a00-a42a-dac8056d2a90.hhehlqozq9.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8120,7 +8450,7 @@
     },
     {
       "Route": "images/3/profiles/423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
-      "AssetFile": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\423ea439-c933-4a00-a42a-dac8056d2a90.jfif",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8152,6 +8482,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-a3/qFjUDDjjc2oAIdYb3WeM8IB13/mV5TF+sJzx0VDo="
+        }
+      ]
+    },
+    {
+      "Route": "images/3/profiles/9e903028-baf1-453d-a579-266e92d06299.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\9e903028-baf1-453d-a579-266e92d06299.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:20:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
+        }
+      ]
+    },
+    {
+      "Route": "images/3/profiles/9e903028-baf1-453d-a579-266e92d06299.z4xffsbs1l.jpg",
+      "AssetFile": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\3\\profiles\\9e903028-baf1-453d-a579-266e92d06299.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "144740"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Jan 2025 18:20:14 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "z4xffsbs1l"
+        },
+        {
+          "Name": "label",
+          "Value": "images/3/profiles/9e903028-baf1-453d-a579-266e92d06299.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-g2SvHatFZVFOg6g8iLDeVMP0JfFuOnbyz2wlSDDYL6w="
         }
       ]
     }

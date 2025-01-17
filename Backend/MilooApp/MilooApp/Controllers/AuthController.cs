@@ -46,6 +46,12 @@ namespace MilooApp.Controllers
             TokenDto token = await _authService.LoginAsync(request);
             return Ok(token);
         }
+        [HttpPost("refresh-token")]
+        public async Task<IActionResult> RefreshTokenLogin([FromBody] string refreshToken)
+        {
+            TokenDto token = await _authService.RefreshTokenLoginAsync(refreshToken);
+            return Ok(token);
+        }
 
         [HttpPost("google-login")]
         public async Task<IActionResult> GoogleLogin([FromBody] GoogleLoginDto request)

@@ -26,6 +26,8 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
   int _selectedUniversityId = 0;
   String _profilePictureUrl = '';
 
+  final UserService _userService = UserService();
+
   @override
   void initState() {
     super.initState();
@@ -34,7 +36,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
 
   Future<void> _fetchUserDetails() async {
     try {
-      final userDetails = await UserService.getUserDetail();
+      final userDetails = await _userService.getUserDetail();
 
       if (mounted) {
         setState(() {
@@ -196,7 +198,7 @@ class _MyAccountScreenState extends State<MyAccountScreen> {
 
   Future<void> _updateUserInfo() async {
     try {
-      await UserService.updateUserInfo(
+      await _userService.updateUserInfo(
         firstName: _firstNameController.text,
         lastName: _lastNameController.text,
         userName: _userNameController.text,

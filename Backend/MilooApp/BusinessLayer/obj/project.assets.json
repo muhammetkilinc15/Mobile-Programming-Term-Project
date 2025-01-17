@@ -3459,11 +3459,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\Bemu\\.nuget\\packages\\",
-      "outputPath": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3484,8 +3484,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\DataAccessLayer.csproj": {
-              "projectPath": "D:\\Projelerim\\TermProject\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\DataAccessLayer.csproj"
+            "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\DataAccessLayer.csproj": {
+              "projectPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\DataAccessLayer.csproj"
             }
           }
         }

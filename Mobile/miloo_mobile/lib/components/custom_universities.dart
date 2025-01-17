@@ -56,6 +56,14 @@ class _CustomUniversitiesState extends State<CustomUniversities> {
     }
   }
 
+  List<SelectedListItem<University>> _searchUniversities(
+      String query, List<SelectedListItem<University>> dataItems) {
+    return dataItems
+        .where((item) =>
+            item.data.name.toLowerCase().contains(query.toLowerCase()))
+        .toList();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -69,6 +77,7 @@ class _CustomUniversitiesState extends State<CustomUniversities> {
           DropDownState(
             dropDown: DropDown<University>(
               data: _universities,
+              isSearchVisible: true,
               dropDownBackgroundColor: const Color.fromARGB(255, 232, 230, 230),
               bottomSheetTitle: Container(
                 padding: const EdgeInsets.all(16),
@@ -80,7 +89,6 @@ class _CustomUniversitiesState extends State<CustomUniversities> {
                   ),
                 ),
               ),
-              // Customize how the items in the list will look
               listItemBuilder: (index, selectedItem) {
                 final University university = selectedItem.data;
                 return ListTile(
@@ -101,6 +109,7 @@ class _CustomUniversitiesState extends State<CustomUniversities> {
                   }
                 }
               },
+              searchDelegate: _searchUniversities,
             ),
           ).showModal(context);
         },

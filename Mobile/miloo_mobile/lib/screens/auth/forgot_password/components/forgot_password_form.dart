@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/components/custom_surfix_icon.dart';
 import 'package:miloo_mobile/components/default_button.dart';
-import 'package:miloo_mobile/components/form_error.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/size_config.dart';
 
@@ -62,7 +61,6 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
               ),
             ),
           ),
-          FormError(errors: errors),
           SizedBox(height: getProportionateScreenHeight(30)),
           DefaultButton(
             text: 'Continue',

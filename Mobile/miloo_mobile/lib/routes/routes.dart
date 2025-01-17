@@ -13,7 +13,7 @@ import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/my_account/my_account_screen.dart';
 import 'package:miloo_mobile/screens/onboarding/splash_screen.dart';
 import 'package:miloo_mobile/screens/profile/profile_screen.dart';
-import 'package:miloo_mobile/screens/user/user_detail_screen.dart';
+import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
 
 // We use name route for easy navigation
 final Map<String, WidgetBuilder> routes = {
@@ -24,7 +24,7 @@ final Map<String, WidgetBuilder> routes = {
   CompleteProfileScreen.routerName: (context) => const CompleteProfileScreen(),
   ConfirmEmailScreen.routerName: (context) => const ConfirmEmailScreen(),
   ProfileScreen.routeName: (context) => const ProfileScreen(),
-  BaseScreen.routeName: (context) => const BaseScreen(),
+  MainScreen.routeName: (context) => const MainScreen(),
   ProductDetailScreen.routeName: (context) => const ProductDetailScreen(),
   ChatScreen.routeName: (context) => const ChatScreen(),
   UserDetailScreen.routeName: (context) => const UserDetailScreen(),

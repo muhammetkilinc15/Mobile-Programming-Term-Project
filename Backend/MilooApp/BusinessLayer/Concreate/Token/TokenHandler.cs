@@ -33,6 +33,7 @@ namespace BusinessLayer.Concreate.Token
                 new Claim("roles", string.Join(",",user.UserRoles))
             };
 
+
             JwtSecurityToken securityToken = new(
                 issuer: _configuration["Token:Issuer"],
                 audience: _configuration["Token:Audience"],

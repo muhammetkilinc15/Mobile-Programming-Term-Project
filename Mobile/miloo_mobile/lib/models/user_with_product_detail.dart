@@ -1,4 +1,5 @@
 class UserWithProductDetail {
+  final int id;
   final String profilPhoto;
   final String fullName;
   final String universty;
@@ -7,6 +8,7 @@ class UserWithProductDetail {
   final List<PopularUserProducts> products;
 
   UserWithProductDetail({
+    required this.id,
     required this.profilPhoto,
     required this.fullName,
     required this.universty,
@@ -17,6 +19,7 @@ class UserWithProductDetail {
 
   factory UserWithProductDetail.fromJson(Map<String, dynamic> json) {
     return UserWithProductDetail(
+      id: json['id'],
       profilPhoto: json['profilPhoto'],
       fullName: json['fullName'],
       universty: json['universty'],

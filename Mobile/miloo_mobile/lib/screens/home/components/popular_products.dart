@@ -17,6 +17,7 @@ class PopularProducts extends StatefulWidget {
 
 class _PopularProductsState extends State<PopularProducts> {
   late Future<List<PopularProductModel>> futureProducts;
+  ProductService _productService = ProductService();
 
   @override
   void initState() {
@@ -32,7 +33,7 @@ class _PopularProductsState extends State<PopularProducts> {
 
   void _fetchProducts() {
     setState(() {
-      futureProducts = ProductService.getPopularProducts();
+      futureProducts = _productService.getPopularProducts();
     });
   }
 

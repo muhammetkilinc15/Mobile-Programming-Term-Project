@@ -1,9 +1,8 @@
 import 'dart:convert';
-
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:http/http.dart' as http;
+import 'package:miloo_mobile/helper/token_manager.dart';
 import 'package:miloo_mobile/models/popular_user_model.dart';
 import 'package:miloo_mobile/models/user_detail_model.dart';
 import 'package:miloo_mobile/models/user_with_product_detail.dart';
@@ -11,18 +10,19 @@ import 'package:miloo_mobile/models/users_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserService {
-  static const url = "${baseUrl}User";
+  final url = "${baseUrl}User";
+  final TokenManager _tokenManager = TokenManager();
 
-  static Future<List<PopularUserModel>> getPopularUsers({int top = 5}) async {
-    const storage = FlutterSecureStorage();
-    final token = await storage.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<List<PopularUserModel>> getPopularUsers({int top = 5}) async {
+    final token = await _tokenManager.getAccessToken();
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
-
-    final response =
-        await http.get(Uri.parse("$url/popular-users?userId=$userId&top=$top"));
+    final response = await http.get(
+      Uri.parse("$url/popular-users?userId=$userId&top=$top"),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token'
+      },
+    );
 
     if (response.statusCode == 200) {
       List<dynamic> popularUsersJson = jsonDecode(response.body) as List;
@@ -31,22 +31,23 @@ class UserService {
           .toList();
       return popularUsers;
     } else {
-      print('Error: ${response.statusCode} - ${response.reasonPhrase}');
       throw Exception("Bağlantı hatası oluştu");
     }
   }
 
-// /User/get-users?UserId=1
-  static Future<List<UsersModel>> getUsers(
-      {int pageNumber = 1, int PageSize = 9}) async {
-    const storage = FlutterSecureStorage();
-    final token = await storage.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<List<UsersModel>> getUsers(
+      {int pageNumber = 1, int pageSize = 9}) async {
+    final token = await _tokenManager.getAccessToken();
+
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
-    final response = await http.get(Uri.parse(
-        "$url/get-users?UserId=$userId&PageNumber=$pageNumber&PageSize=$PageSize"));
+    final response = await http.get(
+      Uri.parse(
+          "$url/get-users?UserId=$userId&PageNumber=$pageNumber&PageSize=$pageSize"),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token'
+      },
+    );
     if (response.statusCode == 200) {
       List<dynamic> usersJson = jsonDecode(response.body) as List;
       List<UsersModel> users =
@@ -58,10 +59,16 @@ class UserService {
     }
   }
 
-  static Future<UserWithProductDetail> getUserWithProductDetail(
+  Future<UserWithProductDetail> getUserWithProductDetail(
       String username) async {
-    var response =
-        await http.get(Uri.parse("$url/user-info-with-product/$username"));
+    final token = await _tokenManager.getAccessToken();
+    var response = await http.get(
+      Uri.parse("$url/user-info-with-product/$username"),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token'
+      },
+    );
 
     if (response.statusCode == 200) {
       var userWithProductDetail = jsonDecode(response.body);
@@ -71,14 +78,16 @@ class UserService {
     }
   }
 
-  static Future<UserDetailModel> getUserDetail() async {
-    const storege = FlutterSecureStorage();
-    final token = await storege.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<UserDetailModel> getUserDetail() async {
+    final token = await _tokenManager.getAccessToken();
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
-    final response = await http.get(Uri.parse("$url/user-info/$userId"));
+    final response = await http.get(
+      Uri.parse("$url/user-info/$userId"),
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer $token'
+      },
+    );
     if (response.statusCode == 200) {
       var userDetail = jsonDecode(response.body);
       return UserDetailModel.fromJson(userDetail);
@@ -87,21 +96,19 @@ class UserService {
     }
   }
 
-  static Future<String> updateUserInfo({
+  Future<String> updateUserInfo({
     required String profileImage,
     required String userName,
     required String firstName,
     required String lastName,
     required int universityId,
   }) async {
-    const storage = FlutterSecureStorage();
-    final token = await storage.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+    final token = await _tokenManager.getAccessToken();
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
-
-    var request = http.MultipartRequest('PUT', Uri.parse("$url/update"));
+    var request = http.MultipartRequest(
+      'PUT',
+      Uri.parse("$url/update"),
+    );
     request.headers['Authorization'] = 'Bearer $token';
     request.fields['UserId'] = userId.toString();
     request.fields['UserName'] = userName;

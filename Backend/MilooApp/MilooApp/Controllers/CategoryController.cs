@@ -12,7 +12,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-
+    [Authorize] 
     public class CategoryController(ICategoryService categoryService) : ControllerBase
     {
         private readonly ICategoryService _categoryService = categoryService;

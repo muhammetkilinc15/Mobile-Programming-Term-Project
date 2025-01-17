@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/screens/home/components/popular_user_card.dart';
-import 'package:miloo_mobile/screens/user/user_detail_screen.dart';
+import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
 import 'package:miloo_mobile/models/popular_user_model.dart';
 import 'package:miloo_mobile/services/user_service.dart';
 import 'package:shimmer/shimmer.dart'; // Shimmer importu
@@ -13,10 +13,11 @@ class PopularUsers extends StatefulWidget {
 }
 
 class _PopularUsersState extends State<PopularUsers> {
+  final UserService _userService = UserService();
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<List<PopularUserModel>>(
-      future: UserService.getPopularUsers(),
+      future: _userService.getPopularUsers(),
       builder: (context, snapshot) {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return SingleChildScrollView(

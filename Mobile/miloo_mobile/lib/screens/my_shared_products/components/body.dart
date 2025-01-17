@@ -14,18 +14,18 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   late Future<List<UserProductsModel>> _userProductsFuture;
-
+  ProductService _productService = ProductService();
   @override
   void initState() {
     super.initState();
-    _userProductsFuture = ProductService.getUserProducts();
+    _userProductsFuture = _productService.getUserProducts();
   }
 
   Future<void> _deleteProduct(int id) async {
     try {
-      await ProductService.deleteProduct(id);
+      await _productService.deleteProduct(id);
       setState(() {
-        _userProductsFuture = ProductService.getUserProducts();
+        _userProductsFuture = _productService.getUserProducts();
       });
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Product deleted successfully')),
@@ -39,9 +39,9 @@ class _BodyState extends State<Body> {
 
   Future<void> _markAsSold(int id) async {
     try {
-      await ProductService.markAsSold(id);
+      await _productService.markAsSold(id);
       setState(() {
-        _userProductsFuture = ProductService.getUserProducts();
+        _userProductsFuture = _productService.getUserProducts();
       });
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Product marked as sold')),
@@ -54,13 +54,13 @@ class _BodyState extends State<Body> {
   }
 
   Future<void> _update(int id, String title, double price) async {
-    ProductService.updateProduct(
+    _productService.updateProduct(
       id: id,
       title: title,
       price: price,
     );
     setState(() {
-      _userProductsFuture = ProductService.getUserProducts();
+      _userProductsFuture = _productService.getUserProducts();
     });
   }
 

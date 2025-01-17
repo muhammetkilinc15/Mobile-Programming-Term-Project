@@ -11,7 +11,6 @@ class AuthService {
   final storage = const FlutterSecureStorage();
 
   Future<bool> register({required UserRegisterModel registerModel}) async {
-    print(registerModel.toJson());
     final response = await http.post(
       Uri.parse("${url}register"),
       headers: <String, String>{
@@ -25,9 +24,10 @@ class AuthService {
     return false;
   }
 
-  Future<bool> verifyEmail(
-      {required String email, required String code}) async {
-    print(code);
+  Future<bool> verifyEmail({
+    required String email,
+    required String code,
+  }) async {
     final response = await http.post(
       Uri.parse("${url}verify-email"),
       headers: <String, String>{
@@ -45,9 +45,10 @@ class AuthService {
   }
 
   Future<bool> login({required String email, required String password}) async {
+    print("email: $email, password: $password");
     final response = await http.post(
       Uri.parse("${url}login"),
-      headers: <String, String>{
+      headers: {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: json.encode({
@@ -74,7 +75,6 @@ class AuthService {
     return false;
   }
 
-  // AccessToken'ı alma (eğer yoksa refresh token ile yenile)
   Future<String?> getAccessToken() async {
     final token = await storage.read(key: "accessToken");
 
@@ -90,7 +90,6 @@ class AuthService {
     return null;
   }
 
-  // RefreshToken kullanarak accessToken yenileme
   Future<String?> refreshAccessToken(String refreshToken) async {
     final response = await http.post(
       Uri.parse("${url}refresh-token"),
@@ -115,9 +114,19 @@ class AuthService {
     return null;
   }
 
-  // Çıkış işlemi
+  Future<void> forgotPassword(String email) async {
+    await http.post(
+      Uri.parse("${url}forgot-password"),
+      headers: <String, String>{
+        'Content-Type': 'application/json; charset=UTF-8',
+      },
+      body: json.encode({
+        "email": email,
+      }),
+    );
+  }
+
   Future<void> logout() async {
-    // Tüm tokenları temizle
     await storage.deleteAll();
   }
 }

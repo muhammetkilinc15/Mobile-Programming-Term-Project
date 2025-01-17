@@ -2,6 +2,7 @@
 using BusinessLayer.Helpers;
 using DataAccessLayer.Context;
 using EntityLayer.Entites;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
@@ -14,6 +15,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class ChatController : ControllerBase
     {
         private readonly IHubContext<ChatHub> _hubContext;

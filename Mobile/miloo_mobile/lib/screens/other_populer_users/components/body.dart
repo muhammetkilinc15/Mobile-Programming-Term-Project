@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/models/users_model.dart';
-import 'package:miloo_mobile/screens/user/user_detail_screen.dart';
+import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
 import 'package:miloo_mobile/services/user_service.dart';
 
 class Body extends StatefulWidget {
@@ -16,7 +16,7 @@ class _BodyState extends State<Body> {
   bool _isLoading = false;
   int _currentPage = 1;
   final int _pageSize = 10;
-
+  final UserService _userService = UserService();
   @override
   void initState() {
     super.initState();
@@ -37,8 +37,8 @@ class _BodyState extends State<Body> {
     });
 
     try {
-      final newUsers = await UserService.getUsers(
-          pageNumber: _currentPage, PageSize: _pageSize);
+      final newUsers = await _userService.getUsers(
+          pageNumber: _currentPage, pageSize: _pageSize);
       setState(() {
         _users.addAll(newUsers);
         _currentPage++;

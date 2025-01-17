@@ -49,6 +49,22 @@
   },
   {
     "ContainingType": "MilooApp.Controllers.AuthController",
+    "Method": "RefreshTokenLogin",
+    "RelativePath": "api/Auth/refresh-token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "refreshToken",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MilooApp.Controllers.AuthController",
     "Method": "Register",
     "RelativePath": "api/Auth/register",
     "HttpMethod": "POST",
@@ -364,7 +380,7 @@
   },
   {
     "ContainingType": "MilooApp.Controllers.ProductController",
-    "Method": "DeleteListing",
+    "Method": "DeleteProduct",
     "RelativePath": "api/Product/delete/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -500,7 +516,7 @@
   },
   {
     "ContainingType": "MilooApp.Controllers.ProductController",
-    "Method": "GetPopularListing",
+    "Method": "GetPopularProducts",
     "RelativePath": "api/Product/popular-products",
     "HttpMethod": "GET",
     "IsController": true,
@@ -508,16 +524,6 @@
     "Parameters": [
       {
         "Name": "top",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "universityId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "userId",
         "Type": "System.Int32",
         "IsRequired": false
       }

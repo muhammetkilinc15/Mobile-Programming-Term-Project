@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/screens/product_detail/components/body.dart';
 import 'package:miloo_mobile/screens/product_detail/components/custom_app_bar.dart';
 import 'package:miloo_mobile/services/product_service.dart';
@@ -14,7 +15,7 @@ class ProductDetailScreen extends StatefulWidget {
 
 class _DetailScreenState extends State<ProductDetailScreen> {
   late Future<ProductDetailModel> futureProductDetail;
-
+  final ProductService _productService = ProductService();
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
@@ -32,9 +33,9 @@ class _DetailScreenState extends State<ProductDetailScreen> {
         ModalRoute.of(context)!.settings.arguments as ProductDetailsArgument;
     setState(() {
       futureProductDetail =
-          ProductService.getProductDetail(arguments.productId);
+          _productService.getProductDetail(arguments.productId);
     });
-    ProductService.increaseView(arguments.productId);
+    _productService.increaseView(arguments.productId);
   }
 
   @override
@@ -45,7 +46,10 @@ class _DetailScreenState extends State<ProductDetailScreen> {
         future: futureProductDetail,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(
+                child: CircularProgressIndicator(
+              color: kPrimaryColor,
+            ));
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else if (!snapshot.hasData) {

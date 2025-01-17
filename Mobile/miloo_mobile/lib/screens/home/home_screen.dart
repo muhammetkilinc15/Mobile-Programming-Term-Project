@@ -16,32 +16,33 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Home'),
-          leading: Padding(
-            padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
-            child: SvgPicture.asset(
-              'assets/logo/Shoplon.svg',
-              width: getProportionateScreenWidth(50),
-              height: getProportionateScreenHeight(50),
-            ),
+      appBar: AppBar(
+        title: const Text('Home'),
+        leading: Padding(
+          padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
+          child: SvgPicture.asset(
+            'assets/logo/Shoplon.svg',
+            width: getProportionateScreenWidth(50),
+            height: getProportionateScreenHeight(50),
           ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {
-                showSearch(context: context, delegate: CustomSearchDelegate());
-              },
-            ),
-            IconButton(
-              icon: const Icon(Icons.message_outlined),
-              onPressed: () {
-                Navigator.pushNamed(context, ChatScreen.routeName);
-              },
-            ),
-          ],
         ),
-        body: const Body());
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {
+              showSearch(context: context, delegate: CustomSearchDelegate());
+            },
+          ),
+          IconButton(
+            icon: const Icon(Icons.message_outlined),
+            onPressed: () {
+              Navigator.pushNamed(context, ChatScreen.routeName);
+            },
+          ),
+        ],
+      ),
+      body: const Body(),
+    );
   }
 }
 

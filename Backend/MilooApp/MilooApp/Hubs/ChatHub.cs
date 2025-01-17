@@ -19,7 +19,7 @@ namespace MilooApp.Hubs
 
                 await Clients.All.SendAsync("Users", user);
             }
-            Console.WriteLine($"User {user.FirstName} connected");
+            Console.WriteLine($"User {user?.FirstName} connected");
         }
         public override async Task OnDisconnectedAsync(Exception? exception)
         {
@@ -34,6 +34,7 @@ namespace MilooApp.Hubs
 
                 await Clients.All.SendAsync("Users", user);
             }
+            Console.WriteLine($"User {user?.FirstName} disconnected");
         }
 
     }

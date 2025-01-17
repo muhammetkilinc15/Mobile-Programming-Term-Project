@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miloo_mobile/components/default_button.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/models/product_detail_model.dart';
+import 'package:miloo_mobile/screens/chat/message_screen.dart';
 import 'package:miloo_mobile/screens/product_detail/components/product_images.dart';
 import 'package:miloo_mobile/screens/product_detail/components/top_rounded_container.dart';
 import 'package:miloo_mobile/size_config.dart';
@@ -148,7 +149,14 @@ class _BodyState extends State<Body> {
                       child: DefaultButton(
                           text:
                               "${widget.product.createrFullName} ile iletişime geç",
-                          press: () {})),
+                          press: () {
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (context) => MessageScreen(
+                                      toUserId: widget.product.createrId,
+                                      fullName: widget.product.createrFullName,
+                                      toUserImage: widget.product.createrImage,
+                                    )));
+                          })),
                 ],
               ),
             ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
 import 'package:miloo_mobile/services/message_service.dart';
 import 'package:miloo_mobile/models/message.dart';
 
@@ -6,13 +7,14 @@ class MessageScreen extends StatefulWidget {
   final int toUserId;
   final String? toUserImage;
   final String? fullName;
+  static const routeName = '/message';
 
   const MessageScreen({
-    Key? key,
+    super.key,
     required this.toUserId,
     this.toUserImage,
     this.fullName,
-  }) : super(key: key);
+  });
 
   @override
   _MessageScreenState createState() => _MessageScreenState();
@@ -39,7 +41,8 @@ class _MessageScreenState extends State<MessageScreen> {
         });
         _scrollToBottom();
       });
-      final fetchedMessages = await _messageService.fetchChats(widget.toUserId);
+      final fetchedMessages =
+          await _messageService.fetchChats(widget.toUserId, "mamikilinc15");
       setState(() {
         messages.addAll(fetchedMessages);
       });
@@ -88,7 +91,7 @@ class _MessageScreenState extends State<MessageScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _scrollController.animateTo(
         _scrollController.position.maxScrollExtent,
-        duration: const Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 200),
         curve: Curves.easeOut,
       );
     });
@@ -112,14 +115,8 @@ class _MessageScreenState extends State<MessageScreen> {
           PopupMenuButton<String>(
             onSelected: (value) {
               if (value == 'view_user') {
-                // Kullanıcıyı görüntüleme ekranına yönlendirin
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        UserDetailScreen(userId: widget.toUserId),
-                  ),
-                );
+                Navigator.pushNamed(context, UserDetailScreen.routeName,
+                    arguments: widget.toUserId);
               }
             },
             itemBuilder: (BuildContext context) {
@@ -187,25 +184,6 @@ class _MessageScreenState extends State<MessageScreen> {
             ),
           ),
         ],
-      ),
-    );
-  }
-}
-
-class UserDetailScreen extends StatelessWidget {
-  final int userId;
-
-  const UserDetailScreen({Key? key, required this.userId}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    // Kullanıcı detaylarını gösteren ekranı burada oluşturun
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Kullanıcı Detayları'),
-      ),
-      body: Center(
-        child: Text('Kullanıcı ID: $userId'),
       ),
     );
   }

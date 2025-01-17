@@ -80,8 +80,6 @@ namespace BusinessLayer.Concreate
                 Message = "Kullanıcı başarıyla oluşturuldu."
             };
         }
-
-
         public async Task<BaseResponse> VerifyEmailAsync(VerfifyUserEmailDto request)
         {
             if (string.IsNullOrEmpty(request.Email) || string.IsNullOrEmpty(request.Code))
@@ -164,13 +162,11 @@ namespace BusinessLayer.Concreate
             return tokenDto;
         }
 
-
-
-
         public async Task<TokenDto> RefreshTokenLoginAsync(string refreshToken)
         {
             // Kullanıcıyı refresh token üzerinden bul
             User user = await _repository.AsQueryable()
+                .Include(x => x.UserPhotos)
                 .Include(x => x.UserRoles)
                 .ThenInclude(ur => ur.Role)
                 .Where(x => x.RefreshToken == refreshToken)
@@ -183,11 +179,18 @@ namespace BusinessLayer.Concreate
             }
 
             // Yeni access token oluştur
+            string ipAddress = IPHelper.GetIpAdress();
+            string baseUrl = $"http://{ipAddress}:5105";
             UserTokenDto requierementDto = new()
             {
                 Email = user.Email,
                 UserName = user.UserName,
                 UserId = user.Id,
+                ProfileImage = user.UserPhotos
+                    .Where(p => p.isProfilePhoto)
+                    .Select(p => $"{baseUrl}/{p.ImagePath}")
+                    .FirstOrDefault(),
+                UniversityId = user.UniversityId ?? -1,
                 UserRoles = user.UserRoles.Select(ur => ur.Role.Name).ToList()
             };
 
@@ -200,8 +203,6 @@ namespace BusinessLayer.Concreate
 
             return tokenDto;
         }
-
-
 
         public async Task<BaseResponse> ForgotPasswordAsync(string email)
         {
@@ -223,22 +224,17 @@ namespace BusinessLayer.Concreate
             };
         }
 
-
         public async Task<TokenDto> GoogleLoginAsync(string idToken, int accessTokenLifeTime)
         {
-            // Google Client ID'yi çekiyoruz
             string clientId = _configuration["ExternalLoginSettings:Google:Client_ID"];
 
-            // Google token doğrulama ayarları
             var settings = new GoogleJsonWebSignature.ValidationSettings
             {
                 Audience = [clientId]
             };
 
-            // Token doğrulama
             var payload = await GoogleJsonWebSignature.ValidateAsync(idToken, settings);
 
-            // Kullanıcıyı email'e göre veritabanından arıyoruz
             User user = await _repository.GetSingleAsync(x => x.Email == payload.Email);
 
             if (user == null)

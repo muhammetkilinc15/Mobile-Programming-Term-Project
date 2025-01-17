@@ -1,6 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
+import 'package:miloo_mobile/helper/token_manager.dart';
 import 'package:miloo_mobile/models/popular_product_model.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -9,31 +10,25 @@ import 'package:miloo_mobile/models/product_detail_model.dart';
 import 'package:miloo_mobile/models/user_products_model.dart';
 
 class ProductService {
-  static String url = "${baseUrl}Product";
+  String url = "${baseUrl}Product";
+  TokenManager _tokenManager = TokenManager();
 
-  static Future<List<UserProductsModel>> getUserProducts({
+  Future<List<UserProductsModel>> getUserProducts({
     int pageNumber = 1,
     int pageSize = 10,
     String? search,
   }) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+    final token = await _tokenManager.getAccessToken();
     final userId = JwtDecoder.decode(token)['userId'];
-
-    if (search == null) {
-      search = "";
-    }
     final response = await http.get(
       Uri.parse(
-          "$url/user-products?UserId=$userId&Search=$search&PageNumber=$pageNumber&PageSize=$pageSize"),
+          "$url/user-products?UserId=$userId&Search=${search ??= ""}&PageNumber=$pageNumber&PageSize=$pageSize"),
       headers: {
         "Authorization": "Bearer $token",
         "Content-Type": "application/json"
       },
     );
+
     if (response.statusCode == 200) {
       final Map<String, dynamic> jsonResponse = json.decode(response.body);
       final List<dynamic> data = jsonResponse['data'];
@@ -45,9 +40,8 @@ class ProductService {
     }
   }
 
-  static Future<List<PopularProductModel>> getPopularProducts() async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
+  Future<List<PopularProductModel>> getPopularProducts() async {
+    final token = await _tokenManager.getAccessToken();
 
     final response = await http.get(
       Uri.parse(
@@ -69,9 +63,8 @@ class ProductService {
     }
   }
 
-  static Future<ProductDetailModel> getProductDetail(int id) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
+  Future<ProductDetailModel> getProductDetail(int id) async {
+    final token = await _tokenManager.getAccessToken();
     final response = await http.get(headers: {
       "Authorization": "Bearer $token",
       "Content-Type": "application/json"
@@ -85,20 +78,14 @@ class ProductService {
     }
   }
 
-  static Future<List<PopularProductModel>> getProducts({
+  Future<List<PopularProductModel>> getProducts({
     int universityId = -1,
     int categoryId = -1,
     int subcategoryId = -1,
     String orderBy = "popular",
   }) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
+    final token = await _tokenManager.getAccessToken();
     if (universityId == -1) {
-      const store = FlutterSecureStorage();
-      final token = await store.read(key: "accessToken");
-      if (token == null) {
-        throw Exception("Token not found");
-      }
       universityId = JwtDecoder.decode(token)['universityId'];
     }
     final response = await http.get(
@@ -127,12 +114,8 @@ class ProductService {
     }
   }
 
-  static Future<void> makeFavorite(int productId) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<void> makeFavorite(int productId) async {
+    final token = await _tokenManager.getAccessToken();
     int userId = int.parse(JwtDecoder.decode(token)['userId'].toString());
     final response = await http.post(Uri.parse("$url/make-favorite"),
         headers: {
@@ -146,9 +129,8 @@ class ProductService {
     }
   }
 
-  static Future<void> increaseView(int productId) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
+  Future<void> increaseView(int productId) async {
+    final token = await _tokenManager.getAccessToken();
     final response = await http.post(
       Uri.parse("$url/increase-view"),
       headers: {
@@ -167,12 +149,8 @@ class ProductService {
   }
 
 //favorite-products?UserId=6&PageSize=5&PageNumber=1
-  static Future<List<PopularProductModel>> getFavoriteProducts() async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<List<PopularProductModel>> getFavoriteProducts() async {
+    final token = await _tokenManager.getAccessToken();
     final userId = JwtDecoder.decode(token)['userId'];
     final response = await http.get(
       headers: {
@@ -194,18 +172,14 @@ class ProductService {
     }
   }
 
-  static Future<void> addProduct({
+  Future<void> addProduct({
     required String title,
     required String description,
     required double price,
     required int subcategoryId,
     required List<String> images,
   }) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+    final token = await _tokenManager.getAccessToken();
     int publisherId = int.parse(JwtDecoder.decode(token)['userId'].toString());
 
     var request = http.MultipartRequest('POST', Uri.parse("$url/create"));
@@ -229,12 +203,8 @@ class ProductService {
     }
   }
 
-  static Future<void> deleteProduct(int id) async {
-    const store = FlutterSecureStorage();
-    final token = await store.read(key: "accessToken");
-    if (token == null) {
-      throw Exception("Token not found");
-    }
+  Future<void> deleteProduct(int id) async {
+    final token = await _tokenManager.getAccessToken();
     final response = await http.delete(
       Uri.parse("$url/delete/$id"),
       headers: {
@@ -248,7 +218,7 @@ class ProductService {
     }
   }
 
-  static Future<void> markAsSold(int id) async {
+  Future<void> markAsSold(int id) async {
     const store = FlutterSecureStorage();
     final token = await store.read(key: "accessToken");
     if (token == null) {
@@ -269,7 +239,7 @@ class ProductService {
     }
   }
 
-  static Future<void> updateProduct({
+  Future<void> updateProduct({
     required int id,
     required String title,
     required double price,

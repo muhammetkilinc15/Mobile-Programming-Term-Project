@@ -40,6 +40,7 @@ CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 //     options.HttpsPort = null; 
 // });
 
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("Bearer", options =>
     {
@@ -53,7 +54,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidIssuer = builder.Configuration["Token:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
             LifetimeValidator = (notBefore, expires, securityToken, validationParameters) => expires != null ? expires > DateTime.UtcNow : false,
-            RoleClaimType = ClaimTypes.Role,
+            
+            
         };
         options.Events = new JwtBearerEvents
         {

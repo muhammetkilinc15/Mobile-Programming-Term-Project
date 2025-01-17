@@ -16,7 +16,7 @@ class FavoritesScreen extends StatefulWidget {
 
 class _FavoritesScreenState extends State<FavoritesScreen> {
   late Future<List<PopularProductModel>> favoriteProducts;
-
+  ProductService _productService = ProductService();
   @override
   void initState() {
     super.initState();
@@ -26,7 +26,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
   /// API'den favori ürünleri yükler.
   void _loadFavoriteProducts() {
     setState(() {
-      favoriteProducts = ProductService.getFavoriteProducts();
+      favoriteProducts = _productService.getFavoriteProducts();
     });
   }
 
