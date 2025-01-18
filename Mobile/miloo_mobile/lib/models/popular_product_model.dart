@@ -1,9 +1,9 @@
 class PopularProductModel {
-  final int id;
-  final String title;
-  final bool isFavorite;
-  final double price;
-  final String? image;
+  late int id;
+  late String title;
+  late bool isFavorite;
+  late double price;
+  late String? image;
 
   PopularProductModel({
     required this.id,

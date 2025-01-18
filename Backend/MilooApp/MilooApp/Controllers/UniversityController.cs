@@ -12,7 +12,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+   
     public class UniversityController : ControllerBase
     {
         private readonly ICollageService _service;
@@ -30,6 +30,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpGet("id/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetById(int id)
         {
             BaseResponse response = await _service.GetByIdAsync(id);
@@ -41,6 +42,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpGet("name/{name}")]
+        [Authorize]
         public async Task<IActionResult> GetByName(string name)
         {
             BaseResponse response = await _service.GetByNameAsync(name);
@@ -52,6 +54,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpPost("create")]
+        [Authorize(Roles ="Admin")]
         public async Task<IActionResult> Create([FromBody] CreateCollageDto category)
         {
             BaseResponse response = await _service.AddAsync(category);
@@ -63,6 +66,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpPut("update")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update([FromBody] UpdateCollageDto category)
         {
             BaseResponse response = await _service.UpdateAsync(category);
@@ -74,6 +78,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             BaseResponse response = await _service.DeleteAsync(id);

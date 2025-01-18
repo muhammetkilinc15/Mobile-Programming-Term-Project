@@ -1,40 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:miloo_mobile/models/popular_product_model.dart';
 import 'package:miloo_mobile/models/product_model.dart';
+import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/home/components/product_card.dart';
-import 'package:miloo_mobile/services/product_service.dart';
 import 'package:miloo_mobile/size_config.dart';
+import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart';
 
 class FavoritesScreen extends StatefulWidget {
   const FavoritesScreen({super.key});
-
   @override
   State<FavoritesScreen> createState() => _FavoritesScreenState();
 }
 
 class _FavoritesScreenState extends State<FavoritesScreen> {
-  late Future<List<PopularProductModel>> favoriteProducts;
-  ProductService _productService = ProductService();
   @override
   void initState() {
     super.initState();
-    _loadFavoriteProducts();
-  }
-
-  /// API'den favori ürünleri yükler.
-  void _loadFavoriteProducts() {
-    setState(() {
-      favoriteProducts = _productService.getFavoriteProducts();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<ProductProvider>().getFavoriteProducts();
     });
   }
 
-  /// Ekrana her dönüldüğünde API çağrısını tekrar yapar.
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _loadFavoriteProducts();
+  Future<void> _refreshProducts() async {
+    await Future.delayed(const Duration(seconds: 3));
+    await context.read<ProductProvider>().getFavoriteProducts();
   }
 
   @override
@@ -53,28 +43,39 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
               'Your Favorite Products',
               style: Theme.of(context).textTheme.headlineSmall,
             ),
-            SizedBox(
-              height: getProportionateScreenHeight(20),
-            ),
+            SizedBox(height: getProportionateScreenHeight(20)),
             Expanded(
-              child: FutureBuilder<List<PopularProductModel>>(
-                future: favoriteProducts,
-                builder: (context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.waiting) {
-                    return _buildShimmerEffect(); // Shimmer efekti göster
-                  } else if (snapshot.hasError) {
-                    return Center(child: Text('Error: ${snapshot.error}'));
-                  } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-                    return const Center(
-                        child: Text('No favorite products found.'));
-                  } else {
-                    // Sadece favori ürünleri filtreleme
-                    var favoriteOnly = snapshot.data!
-                        .where((product) => product.isFavorite)
-                        .toList();
+              child: Consumer<ProductProvider>(
+                builder: (context, provider, child) {
+                  if (provider.isLoading) {
+                    return _buildShimmerEffect();
+                  }
 
-                    return GridView.builder(
-                      itemCount: favoriteOnly.length,
+                  if (provider.error.isNotEmpty) {
+                    return Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text('Error: ${provider.error}'),
+                          ElevatedButton(
+                            onPressed: _refreshProducts,
+                            child: const Text('Retry'),
+                          ),
+                        ],
+                      ),
+                    );
+                  }
+
+                  if (provider.favoriteProducts.isEmpty) {
+                    return const Center(
+                      child: Text('No favorite products found.'),
+                    );
+                  }
+
+                  return RefreshIndicator(
+                    onRefresh: _refreshProducts,
+                    child: GridView.builder(
+                      itemCount: provider.favoriteProducts.length,
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 2,
@@ -83,7 +84,7 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                         childAspectRatio: 0.75,
                       ),
                       itemBuilder: (context, index) {
-                        final product = favoriteOnly[index];
+                        final product = provider.favoriteProducts[index];
                         return ProductCard(
                           product: ProductModel(
                             id: product.id,
@@ -100,12 +101,17 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
                               arguments: ProductDetailsArgument(
                                 productId: product.id,
                               ),
-                            );
+                            ).then((_) => _refreshProducts());
+                          },
+                          onFavorite: () async {
+                            await context
+                                .read<ProductProvider>()
+                                .makeFavorite(product.id);
                           },
                         );
                       },
-                    );
-                  }
+                    ),
+                  );
                 },
               ),
             ),

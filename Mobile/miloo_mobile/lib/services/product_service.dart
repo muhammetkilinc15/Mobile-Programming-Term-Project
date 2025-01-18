@@ -11,7 +11,7 @@ import 'package:miloo_mobile/models/user_products_model.dart';
 
 class ProductService {
   String url = "${baseUrl}Product";
-  TokenManager _tokenManager = TokenManager();
+  final TokenManager _tokenManager = TokenManager();
 
   Future<List<UserProductsModel>> getUserProducts({
     int pageNumber = 1,

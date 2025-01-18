@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:miloo_mobile/models/popular_product_model.dart';
 import 'package:miloo_mobile/models/product_model.dart';
+import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/home/components/product_card.dart';
 import 'package:miloo_mobile/screens/home/components/section_tile.dart';
 import 'package:miloo_mobile/screens/store/store_screen.dart';
-import 'package:miloo_mobile/services/product_service.dart';
 import 'package:miloo_mobile/size_config.dart';
+import 'package:provider/provider.dart';
 
 class PopularProducts extends StatefulWidget {
   const PopularProducts({super.key});
@@ -16,24 +16,11 @@ class PopularProducts extends StatefulWidget {
 }
 
 class _PopularProductsState extends State<PopularProducts> {
-  late Future<List<PopularProductModel>> futureProducts;
-  ProductService _productService = ProductService();
-
   @override
   void initState() {
     super.initState();
-    _fetchProducts();
-  }
-
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    _fetchProducts(); // Ekran her göründüğünde veriyi yenile
-  }
-
-  void _fetchProducts() {
-    setState(() {
-      futureProducts = _productService.getPopularProducts();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<ProductProvider>().getPopularProducts();
     });
   }
 
@@ -49,50 +36,52 @@ class _PopularProductsState extends State<PopularProducts> {
               ));
             }),
         SizedBox(height: getProportionateScreenHeight(20)),
-        FutureBuilder<List<PopularProductModel>>(
-          future: futureProducts,
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const CircularProgressIndicator();
-            } else if (snapshot.hasError) {
-              return Text('Error: ${snapshot.error}');
-            } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-              return const Text('No popular products found');
-            } else {
-              return SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ...List.generate(
-                      snapshot.data!.length,
-                      (index) => ProductCard(
+        Consumer<ProductProvider>(
+          builder: (context, provider, child) {
+            if (provider.isLoading) {
+              return CircularProgressIndicator();
+            }
+
+            if (provider.error.isNotEmpty) {
+              return Text('Error: ${provider.error}');
+            }
+
+            return SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  ...List.generate(
+                    provider.popularProducts.length,
+                    (index) {
+                      final product = provider.popularProducts[index];
+                      return ProductCard(
                         product: ProductModel(
-                          id: snapshot.data![index].id,
-                          title: snapshot.data![index].title,
+                          id: product.id,
+                          title: product.title,
                           description: '',
-                          isFavourite: snapshot.data![index].isFavorite,
-                          price: snapshot.data![index].price,
-                          image: snapshot.data![index].image!,
+                          price: product.price,
+                          isFavourite: product.isFavorite,
+                          image: product.image!,
                         ),
                         press: () {
                           Navigator.pushNamed(
                             context,
                             ProductDetailScreen.routeName,
                             arguments: ProductDetailsArgument(
-                              productId: snapshot.data![index].id,
+                              productId: product.id,
                             ),
-                          ).then((_) {
-                            // Navigator.pop sonrası verileri yenile
-                            _fetchProducts();
-                          });
+                          );
                         },
-                      ),
-                    ),
-                    SizedBox(width: getProportionateScreenWidth(20)),
-                  ],
-                ),
-              );
-            }
+                        onFavorite: () async {
+                          await provider.makeFavorite(product.id);
+                        },
+                      );
+                    },
+                  ),
+                  SizedBox(width: getProportionateScreenWidth(20)),
+                ],
+              ),
+            );
           },
         ),
       ],

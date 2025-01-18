@@ -11,12 +11,14 @@ class ProductCard extends StatelessWidget {
     this.aspectRatio = 1.02,
     required this.product,
     required this.press,
+    this.onFavorite, // Add this
   });
 
   final double Width, aspectRatio;
   final GestureTapCallback press;
-
+  final Function()? onFavorite; // Add this
   final ProductModel product;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -56,10 +58,11 @@ class ProductCard extends StatelessWidget {
                   ),
                   InkWell(
                     borderRadius: BorderRadius.circular(30),
-                    onTap: () {
-                      ProductService _productService = ProductService();
-                      _productService.makeFavorite(product.id);
-                    },
+                    onTap: onFavorite ??
+                        () {
+                          ProductService _productService = ProductService();
+                          _productService.makeFavorite(product.id);
+                        },
                     child: Container(
                       padding: EdgeInsets.symmetric(
                           horizontal: getProportionateScreenWidth(5),

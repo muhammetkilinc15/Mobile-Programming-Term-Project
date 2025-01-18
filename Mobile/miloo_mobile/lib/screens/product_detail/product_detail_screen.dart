@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
+import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:miloo_mobile/screens/product_detail/components/body.dart';
 import 'package:miloo_mobile/screens/product_detail/components/custom_app_bar.dart';
-import 'package:miloo_mobile/services/product_service.dart';
-import 'package:miloo_mobile/models/product_detail_model.dart';
+import 'package:provider/provider.dart';
 
 class ProductDetailScreen extends StatefulWidget {
   const ProductDetailScreen({super.key});
@@ -14,52 +14,38 @@ class ProductDetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<ProductDetailScreen> {
-  late Future<ProductDetailModel> futureProductDetail;
-  final ProductService _productService = ProductService();
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    _fetchProductDetails();
-  }
-
-  @override
-  void didUpdateWidget(covariant ProductDetailScreen oldWidget) {
-    super.didUpdateWidget(oldWidget);
-    _fetchProductDetails();
-  }
-
-  void _fetchProductDetails() {
     final ProductDetailsArgument arguments =
         ModalRoute.of(context)!.settings.arguments as ProductDetailsArgument;
-    setState(() {
-      futureProductDetail =
-          _productService.getProductDetail(arguments.productId);
-    });
-    _productService.increaseView(arguments.productId);
+    context.read<ProductProvider>().getProductDetail(arguments.productId);
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFF5F6F9),
-      body: FutureBuilder<ProductDetailModel>(
-        future: futureProductDetail,
-        builder: (context, snapshot) {
-          if (snapshot.connectionState == ConnectionState.waiting) {
+      body: Consumer<ProductProvider>(
+        builder: (context, provider, child) {
+          if (provider.isDetailLoading) {
             return const Center(
-                child: CircularProgressIndicator(
-              color: kPrimaryColor,
-            ));
-          } else if (snapshot.hasError) {
-            return Center(child: Text('Error: ${snapshot.error}'));
-          } else if (!snapshot.hasData) {
-            return const Center(child: Text('No product details found'));
-          } else {
-            return Scaffold(
-              appBar: CustomAppbar(views: snapshot.data!.views),
-              body: Body(product: snapshot.data!),
+              child: CircularProgressIndicator(color: kPrimaryColor),
             );
           }
+
+          if (provider.detailError.isNotEmpty) {
+            return Center(child: Text('Error: ${provider.detailError}'));
+          }
+
+          if (provider.productDetail == null) {
+            return const Center(child: Text('No product details found'));
+          }
+
+          return Scaffold(
+            appBar: CustomAppbar(views: provider.productDetail!.views),
+            body: Body(product: provider.productDetail!),
+          );
         },
       ),
     );
