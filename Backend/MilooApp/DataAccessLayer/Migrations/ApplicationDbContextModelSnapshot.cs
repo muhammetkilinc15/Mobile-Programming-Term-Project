@@ -1375,7 +1375,7 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entites.Product", "Product")
                         .WithMany("UserFavoriteProducts")
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.NoAction)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("EntityLayer.Entites.User", "User")

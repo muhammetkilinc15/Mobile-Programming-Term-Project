@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/helper/jwt_helper.dart';
+import 'package:miloo_mobile/providers/auth_provider.dart';
+import 'package:miloo_mobile/providers/navigation_provider.dart';
 import 'package:miloo_mobile/screens/add_product/add_product_screen.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/sign_in_screen.dart';
 import 'package:miloo_mobile/screens/my_shared_products/my_shared_products_screen.dart';
 import 'package:miloo_mobile/screens/my_account/my_account_screen.dart';
 import 'package:miloo_mobile/screens/profile/components/profile_menu.dart';
 import 'package:miloo_mobile/screens/profile/components/profile_picture.dart';
-import 'package:miloo_mobile/services/auth_service.dart';
 import 'package:miloo_mobile/size_config.dart';
+import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Body extends StatefulWidget {
@@ -20,6 +22,22 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   List<String> userRoles = [];
   String profileImage = '';
+
+  Future<void> _handleLogout(BuildContext context) async {
+    try {
+      context.read<NavigationProvider>().setIndex(0);
+      // Logout
+      await context.read<AuthProvider>().logout();
+      if (mounted) {
+        Navigator.pushNamedAndRemoveUntil(
+            context, SignInScreen.routerName, (route) => false);
+      }
+    } catch (e) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Logout failed: $e')),
+      );
+    }
+  }
 
   @override
   void initState() {
@@ -103,10 +121,12 @@ class _BodyState extends State<Body> {
               text: "Log Out",
               icon: Icons.logout,
               press: () async {
-                AuthService authService = AuthService();
-                await authService.logout();
-                Navigator.pushNamedAndRemoveUntil(
-                    context, SignInScreen.routerName, (route) => false);
+                _handleLogout(context);
+
+                if (mounted) {
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, SignInScreen.routerName, (route) => false);
+                }
               },
             ),
             SizedBox(

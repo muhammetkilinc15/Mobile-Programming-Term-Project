@@ -26,7 +26,7 @@ namespace DataAccessLayer
             services.AddScoped<ISubCategoryRepository, SubCategoryRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
-            services.AddScoped<IListingImagesRepository, ListingImagesRepository>();
+            services.AddScoped<IListingImagesRepository, ProductImagesRepository>();
             services.AddScoped<IMessageRepository, MessageRepository>();
             services.AddScoped<IMessageFileRepository,MessageFilesRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();

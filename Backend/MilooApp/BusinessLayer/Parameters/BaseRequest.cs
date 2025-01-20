@@ -11,6 +11,6 @@ namespace BusinessLayer.Parameters
         public int PageNumber { get; set; } = 1;
         public int PageSize { get; set; } = 9;
         public string OrderBy { get; set; } = "Id"; 
-        public string Search { get; set; } = string.Empty; 
+        public string? Search { get; set; }
     }
 }

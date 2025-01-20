@@ -19,7 +19,7 @@ class ProductModel {
 
   factory ProductModel.fromJson(Map<String, dynamic> json) {
     return ProductModel(
-      id: json['id'],
+      id: int.parse(json['id'].toString()), // Convert string to int safely
       title: json['title'],
       description: json['description'],
       price: json['price'],

@@ -28,7 +28,7 @@ namespace DataAccessLayer.Context.EntityConfigurations
             builder.HasOne(x => x.Product)
                 .WithMany(x => x.UserFavoriteProducts)
                 .HasForeignKey(x => x.ProductId)
-                .OnDelete(DeleteBehavior.NoAction); // ON DELETE CASCADE yerine NO ACTION kullanıyoruz.
+                .OnDelete(DeleteBehavior.Cascade); // ON DELETE CASCADE yerine NO ACTION kullanıyoruz.
 
 
         }

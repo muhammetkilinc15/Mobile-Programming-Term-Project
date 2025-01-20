@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/providers/user_provider.dart';
 import 'package:miloo_mobile/screens/home/components/popular_user_card.dart';
 import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
 import 'package:miloo_mobile/models/popular_user_model.dart';
-import 'package:miloo_mobile/services/user_service.dart';
+import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart'; // Shimmer importu
 
 class PopularUsers extends StatefulWidget {
@@ -13,13 +14,19 @@ class PopularUsers extends StatefulWidget {
 }
 
 class _PopularUsersState extends State<PopularUsers> {
-  final UserService _userService = UserService();
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<UserProvider>().getPopularUsers();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<PopularUserModel>>(
-      future: _userService.getPopularUsers(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
+    return Consumer<UserProvider>(
+      builder: (context, userProvider, _) {
+        if (userProvider.isLoading && userProvider.popularUsers.isEmpty) {
           return SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -42,16 +49,12 @@ class _PopularUsersState extends State<PopularUsers> {
               }),
             ),
           );
-        }
-        if (snapshot.hasError) {
-          return Center(
-            child: Text('Error: ${snapshot.error}'),
-          );
-        }
-
-        // Veriler geldiyse, popüler kullanıcıları gösteriyoruz
-        if (snapshot.hasData && snapshot.data!.isNotEmpty) {
-          List<PopularUserModel> popularUsers = snapshot.data!;
+        } else if (userProvider.error.isNotEmpty) {
+          return Center(child: Text('Error: ${userProvider.error}'));
+        } else if (userProvider.popularUsers.isEmpty) {
+          return const Center(child: Text('No popular users found'));
+        } else {
+          List<PopularUserModel> popularUsers = userProvider.popularUsers;
 
           return SingleChildScrollView(
             scrollDirection: Axis.horizontal,
@@ -76,9 +79,6 @@ class _PopularUsersState extends State<PopularUsers> {
             ),
           );
         }
-
-        // Veriler boşsa bir mesaj göster
-        return const Center(child: Text('No popular users found.'));
       },
     );
   }

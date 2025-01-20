@@ -282,6 +282,5 @@ namespace BusinessLayer.Concreate
             return (randomNumber % 900000 + 100000).ToString();
         }
 
-
     }
 }

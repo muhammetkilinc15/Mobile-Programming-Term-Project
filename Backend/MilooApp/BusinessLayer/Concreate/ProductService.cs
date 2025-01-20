@@ -39,7 +39,6 @@ namespace BusinessLayer.Concreate
             // Validate the request data
             await _createValidator.ValidateAndThrowAsync(createListingDto);
 
-            Console.WriteLine("Ürün fiyat :Ç  " + createListingDto.Price);
             // Save images first
             List<string> imagePaths = await _fileHelper.SaveUserProductsAsync(createListingDto.Images, createListingDto.PublisherId);
 
@@ -52,20 +51,20 @@ namespace BusinessLayer.Concreate
             // Save the Product entity to the database
             bool result = await _productRepository.AddAsync(mappedListing);
 
-            // Return response
             return new BaseResponse
             {
                 Success = result,
-                Message = result ? "Listing added successfully" : "Listing could not be added"
+                Message = result ? "Product added successfully" : "Product could not be added"
             };
         }
         public async Task<BaseResponse> DeleteAsync(int id)
         {
-            bool result = await _productRepository.DeleteAsync(id);
+            Product p = await _productRepository.GetByIdAsync(id) ?? throw new DbValidationException("Product not found");
+            bool result = await _productRepository.DeleteAsync(p);
             return new()
             {
                 Success = result,
-                Message = result ? "Listing deleted successfully" : "Listing could not be deleted"
+                Message = result ? "Product deleted successfully" : "Product could not be deleted"
             };
         }
         public async Task<BaseResponse> GetByIdAsync(int id)
@@ -112,7 +111,7 @@ namespace BusinessLayer.Concreate
 
             // Eğer arama varsa, ürünleri başlıkla filtreleyin
             if (!string.IsNullOrEmpty(request.Search))
-                query = query.Where(x => x.Title.Contains(request.Search, StringComparison.OrdinalIgnoreCase));
+                query = query.Where(x => x.Title.Contains(request.Search.ToLower()));
 
             // Kategori filtresi
             if (request.CategoryId != -1)
@@ -139,6 +138,9 @@ namespace BusinessLayer.Concreate
                     break;
                 case "newest":
                     query = query.OrderByDescending(x => x.CreatedAt);
+                    break;
+                case "title":
+                    query = query.OrderBy(x => x.Title);
                     break;
                 default:
                     query = query.OrderByDescending(x => x.Views);
@@ -178,7 +180,7 @@ namespace BusinessLayer.Concreate
             // Popüler ürünleri al ve favori durumunu kontrol et
             var popularProducts = await _productRepository.AsQueryable()
                 .AsNoTracking()
-                .Where(p => p.Publisher.UniversityId == universityId) // Üniversiteye göre filtrele
+                .Where(p => p.Publisher.UniversityId == universityId && p.PublisherId != userId) // Üniversiteye göre filtrele
                 .OrderByDescending(p => p.Views) // Görüntülenme sayısına göre sırala
                 .Take(top) // En popüler 'top' ürünü al
                 .Select(p => new
@@ -191,23 +193,7 @@ namespace BusinessLayer.Concreate
                 })
                 .ToListAsync();
 
-            if (popularProducts.Count > 0)
-            {
-                popularProducts = await _productRepository.AsQueryable()
-                    .AsNoTracking()
-                     .OrderByDescending(p => p.Views) // Görüntülenme sayısına göre sırala
-                .Take(top) // En popüler 'top' ürünü al
-                .Select(p => new
-                {
-                    p.Id,
-                    p.Title,
-                    p.Price,
-                    image = $"{baseUrl}/{p.Images.FirstOrDefault().ImagePath}", // İlk görselin yolunu oluştur
-                    isFavorite = p.UserFavoriteProducts.Any(uf => uf.UserId == userId && uf.Status) // Kullanıcının favorisi mi?
-                })
-                .ToListAsync();
-
-            }
+           
 
 
             return new BaseResponse
@@ -319,6 +305,7 @@ namespace BusinessLayer.Concreate
                 Success = true
             };
         }
+
 
         public async Task<BaseResponse> MarkSold(int id)
         {

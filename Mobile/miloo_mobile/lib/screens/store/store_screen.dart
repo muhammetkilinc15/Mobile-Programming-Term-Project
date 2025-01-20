@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
-import 'package:miloo_mobile/models/category_model.dart';
-import 'package:miloo_mobile/models/popular_product_model.dart';
+import 'package:miloo_mobile/models/product_model.dart';
+import 'package:miloo_mobile/providers/category_provider.dart';
+import 'package:miloo_mobile/providers/product_provider.dart';
+import 'package:miloo_mobile/screens/home/components/product_card.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
-import 'package:miloo_mobile/services/category_service.dart';
-import 'package:miloo_mobile/services/product_service.dart';
-import 'package:shimmer/shimmer.dart';
+import 'package:miloo_mobile/size_config.dart';
+import 'package:provider/provider.dart';
 
 class StoreScreen extends StatefulWidget {
-  final int? initialCategoryId; // Başlangıç kategorisi ID
+  final int? initialCategoryId;
   const StoreScreen({
     super.key,
     this.initialCategoryId,
@@ -19,62 +21,58 @@ class StoreScreen extends StatefulWidget {
 }
 
 class _StoreScreenState extends State<StoreScreen> {
-  int selectedCategoryId = -1; // Varsayılan kategori ID
-  String sortBy = 'popular'; // Varsayılan sıralama kriteri
-  List<CategoryModel> categories = [];
-  List<PopularProductModel> products = [];
-  bool isLoadingProducts = false;
-  final ProductService _productService = ProductService();
-  final CategoryService _categoryService = CategoryService();
   @override
   void initState() {
     super.initState();
-    _loadCategories();
-  }
-
-  Future<void> _loadProducts({
-    int categoryId = -1,
-    String orderBy = 'popular',
-  }) async {
-    setState(() {
-      isLoadingProducts = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _loadInitialData();
     });
+  }
 
+  Future<void> _loadInitialData() async {
     try {
-      List<PopularProductModel> fetchedProducts =
-          await _productService.getProducts(
-        universityId: 1,
-        categoryId: categoryId,
-        orderBy: orderBy,
-      );
+      final categoryProvider = context.read<CategoryProvider>();
+      final productProvider = context.read<ProductProvider>();
 
-      setState(() {
-        products = fetchedProducts;
-      });
+      await categoryProvider.getCategories();
+
+      if (widget.initialCategoryId != null) {
+        categoryProvider.setSelectedCategory(widget.initialCategoryId!);
+        await productProvider.getProducts(
+          categoryId: widget.initialCategoryId!,
+          orderBy: productProvider.sortBy,
+        );
+      } else {
+        await productProvider.getProducts(
+          orderBy: productProvider.sortBy,
+        );
+      }
     } catch (e) {
-      print('Error fetching products: $e');
-    } finally {
-      setState(() {
-        isLoadingProducts = false;
-      });
+      print('Error loading initial data: $e');
     }
   }
 
-  Future<void> _loadCategories() async {
-    try {
-      List<CategoryModel> fetchedCategories =
-          await _categoryService.getCategories(pageNumber: 1, pageSize: 10);
+  Future<void> _onCategorySelected(int categoryId) async {
+    final categoryProvider = context.read<CategoryProvider>();
+    final productProvider = context.read<ProductProvider>();
 
-      fetchedCategories.insert(
-          0, CategoryModel(id: -1, name: 'All')); // "All" kategorisi ekleniyor
-      setState(() {
-        categories = fetchedCategories;
-        selectedCategoryId = widget.initialCategoryId ?? -1;
-        _loadProducts(categoryId: selectedCategoryId, orderBy: sortBy);
-      });
-    } catch (e) {
-      print('Error fetching categories: $e');
-    }
+    categoryProvider.setSelectedCategory(categoryId);
+    await productProvider.getProducts(
+      categoryId: categoryId,
+      orderBy: productProvider.sortBy,
+    );
+  }
+
+  Future<void> _onSubCategorySelected(int subcategoryId) async {
+    final categoryProvider = context.read<CategoryProvider>();
+    final productProvider = context.read<ProductProvider>();
+
+    categoryProvider.setSelectedSubcategory(subcategoryId);
+    await productProvider.getProducts(
+      categoryId: categoryProvider.selectedCategoryId,
+      subcategoryId: subcategoryId,
+      orderBy: productProvider.sortBy,
+    );
   }
 
   @override
@@ -82,102 +80,156 @@ class _StoreScreenState extends State<StoreScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Store'),
+        leading: Padding(
+          padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
+          child: widget.initialCategoryId != null
+              ? IconButton(
+                  icon: const Icon(Icons.arrow_back_ios_new),
+                  onPressed: () => Navigator.pop(context),
+                )
+              : SvgPicture.asset(
+                  'assets/logo/Shoplon.svg',
+                  width: getProportionateScreenWidth(50),
+                  height: getProportionateScreenHeight(50),
+                ),
+        ),
         actions: [
-          DropdownButton<String>(
-            value: sortBy,
-            underline: const SizedBox(),
-            icon: const Icon(Icons.sort, color: Colors.white),
-            items: const [
-              DropdownMenuItem(value: 'popular', child: Text('Popular')),
-              DropdownMenuItem(value: 'price', child: Text('Price')),
-              DropdownMenuItem(value: 'newest', child: Text('Newest')),
-              DropdownMenuItem(value: 'university', child: Text('University')),
-            ],
-            onChanged: (value) {
-              setState(() {
-                sortBy = value!;
-                _loadProducts(categoryId: selectedCategoryId, orderBy: sortBy);
-              });
-            },
+          Consumer<ProductProvider>(
+            builder: (context, provider, _) => DropdownButton<String>(
+              value: provider.sortBy,
+              underline: const SizedBox(),
+              icon: const Icon(Icons.sort, color: Colors.white),
+              items: const [
+                DropdownMenuItem(value: 'popular', child: Text('Popular')),
+                DropdownMenuItem(value: 'price', child: Text('Price')),
+                DropdownMenuItem(value: 'newest', child: Text('Newest')),
+              ],
+              onChanged: (value) async {
+                if (value != null) {
+                  final categoryProvider = context.read<CategoryProvider>();
+                  await provider.getProducts(
+                    categoryId: categoryProvider.selectedCategoryId,
+                    subcategoryId: categoryProvider.selectedSubcategoryId,
+                    orderBy: value,
+                  );
+                }
+              },
+            ),
           ),
         ],
       ),
       body: Column(
         children: [
-          // Kategori Seçimi
-          SingleChildScrollView(
-            scrollDirection: Axis.horizontal,
-            child: Row(
-              children: categories.map((category) {
-                final isSelected = selectedCategoryId == category.id;
-
-                return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                  child: ChoiceChip(
-                    label: Text(category.name),
-                    selected: isSelected,
-                    selectedColor: kPrimaryColor,
-                    onSelected: (selected) {
-                      setState(() {
-                        selectedCategoryId = category.id;
-                        _loadProducts(categoryId: category.id, orderBy: sortBy);
-                      });
-                    },
+          // Main Categories
+          Consumer<CategoryProvider>(
+            builder: (context, categoryProvider, _) => SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: ChoiceChip(
+                      label: const Text('All'),
+                      selected: categoryProvider.selectedCategoryId == -1,
+                      selectedColor: kPrimaryColor,
+                      onSelected: (_) => _onCategorySelected(-1),
+                    ),
                   ),
-                );
-              }).toList(),
+                  ...categoryProvider.categories.map((category) {
+                    return Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                      child: ChoiceChip(
+                        label: Text(category.name),
+                        selected:
+                            categoryProvider.selectedCategoryId == category.id,
+                        selectedColor: kPrimaryColor,
+                        onSelected: (_) => _onCategorySelected(category.id),
+                      ),
+                    );
+                  }).toList(),
+                ],
+              ),
             ),
           ),
-          const SizedBox(height: 10),
 
-          // Ürünler
+          // Subcategories (only shown when a main category is selected)
+          Consumer<CategoryProvider>(
+            builder: (context, categoryProvider, _) {
+              if (categoryProvider.selectedCategoryId == -1 ||
+                  categoryProvider.subcategories.isEmpty) {
+                return const SizedBox.shrink();
+              }
+
+              return SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    ...categoryProvider.subcategories.map(
+                      (subcategory) {
+                        return Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: ChoiceChip(
+                            backgroundColor:
+                                categoryProvider.selectedSubcategoryId ==
+                                        subcategory.id
+                                    ? kPrimaryColor
+                                    : Colors.grey[200],
+                            label: Text(subcategory.name),
+                            selected: categoryProvider.selectedSubcategoryId ==
+                                subcategory.id,
+                            selectedColor: kPrimaryColor,
+                            onSelected: (_) =>
+                                _onSubCategorySelected(subcategory.id),
+                          ),
+                        );
+                      },
+                    )
+                  ],
+                ),
+              );
+            },
+          ),
+
+          // Products Grid
           Expanded(
-            child: isLoadingProducts
-                ? Shimmer.fromColors(
-                    period: const Duration(seconds: 5),
-                    baseColor: Colors.grey[300]!,
-                    highlightColor: Colors.grey[100]!,
-                    child: ListView.builder(
-                      itemCount: 10,
-                      itemBuilder: (context, index) => ListTile(
-                        leading: Container(
-                          width: 50,
-                          height: 50,
-                          color: Colors.white,
-                        ),
-                        title: Container(
-                          width: double.infinity,
-                          height: 10,
-                          color: Colors.white,
-                        ),
-                        subtitle: Container(
-                          width: double.infinity,
-                          height: 10,
-                          color: Colors.white,
-                        ),
+            child: Consumer<ProductProvider>(
+              builder: (context, provider, _) {
+                if (provider.isLoading) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                if (provider.filteredProducts.isEmpty) {
+                  return const Center(child: Text('No products found'));
+                }
+                return GridView.builder(
+                  padding: const EdgeInsets.all(8),
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    childAspectRatio: 0.75,
+                    mainAxisSpacing: 8,
+                    crossAxisSpacing: 8,
+                  ),
+                  itemCount: provider.filteredProducts.length,
+                  itemBuilder: (_, index) {
+                    final product = provider.filteredProducts[index];
+                    return ProductCard(
+                      product: ProductModel(
+                        id: product.id,
+                        title: product.title,
+                        description: '',
+                        price: product.price,
+                        image: product.image!,
                       ),
-                    ),
-                  )
-                : products.isEmpty
-                    ? const Center(child: Text('No products available.'))
-                    : ListView.builder(
-                        itemCount: products.length,
-                        itemBuilder: (context, index) {
-                          final product = products[index];
-                          return ListTile(
-                            leading: Image.network(product.image!),
-                            title: Text(product.title),
-                            subtitle: Text('\$${product.price}'),
-                            onTap: () {
-                              Navigator.pushNamed(
-                                  context, ProductDetailScreen.routeName,
-                                  arguments: ProductDetailsArgument(
-                                    productId: product.id,
-                                  ));
-                            },
-                          );
-                        },
+                      press: () => Navigator.pushNamed(
+                        context,
+                        ProductDetailScreen.routeName,
+                        arguments:
+                            ProductDetailsArgument(productId: product.id),
                       ),
+                    );
+                  },
+                );
+              },
+            ),
           ),
         ],
       ),

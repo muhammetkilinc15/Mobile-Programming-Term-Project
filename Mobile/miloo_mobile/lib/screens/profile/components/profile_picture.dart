@@ -1,9 +1,9 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/size_config.dart';
-import 'package:shimmer/shimmer.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class ProfilePicture extends StatefulWidget {
   final String? imageUrl;
@@ -24,80 +24,117 @@ class ProfilePicture extends StatefulWidget {
 class _ProfilePictureState extends State<ProfilePicture> {
   final ImagePicker _picker = ImagePicker();
   XFile? _image;
-
-  bool _isLoading = false; // Resim yükleme durumunu kontrol etmek için flag
-
   Future<void> _pickImage(ImageSource source) async {
-    setState(() {
-      _isLoading = true; // Yükleme başlıyor
-    });
-
-    final pickedFile = await _picker.pickImage(source: source);
-    if (pickedFile != null) {
-      setState(() {
-        _image = pickedFile;
-      });
-      widget.onImageSelected(pickedFile.path);
+    try {
+      final XFile? image = await _picker.pickImage(source: source);
+      if (image != null) {
+        setState(() {
+          _image = image;
+        });
+        widget.onImageSelected(image.path);
+      }
+    } catch (e) {
+      debugPrint('Error picking image: $e');
     }
+  }
 
-    setState(() {
-      _isLoading = false; // Yükleme tamamlandı
-    });
+  void _showImageSourceDialog() {
+    showModalBottomSheet(
+      context: context,
+      builder: (BuildContext context) {
+        return SafeArea(
+          child: Wrap(
+            children: [
+              ListTile(
+                leading: const Icon(Icons.camera_alt),
+                title: const Text('Take a photo'),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickImage(ImageSource.camera);
+                },
+              ),
+              ListTile(
+                leading: const Icon(Icons.photo_library),
+                title: const Text('Choose from gallery'),
+                onTap: () {
+                  Navigator.pop(context);
+                  _pickImage(ImageSource.gallery);
+                },
+              ),
+            ],
+          ),
+        );
+      },
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: getProportionateScreenHeight(115),
+      height: getProportionateScreenWidth(115),
       width: getProportionateScreenWidth(115),
       child: Stack(
         fit: StackFit.expand,
+        clipBehavior: Clip.none,
         children: [
-          _isLoading
-              ? _buildShimmerEffect() // Yükleme sırasında shimmer göster
-              : CircleAvatar(
-                  backgroundImage: _image != null
-                      ? FileImage(File(_image!.path))
-                      : (widget.imageUrl != null
-                              ? NetworkImage(widget.imageUrl!)
-                              : AssetImage('assets/images/default_profile.png'))
-                          as ImageProvider,
-                ),
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(
+                color: Colors.white,
+                width: 3,
+              ),
+            ),
+            child: ClipOval(
+              child: _image != null
+                  ? Image.file(
+                      File(_image!.path),
+                      fit: BoxFit.cover,
+                    )
+                  : widget.imageUrl != null
+                      ? CachedNetworkImage(
+                          imageUrl: widget.imageUrl!,
+                          fit: BoxFit.cover,
+                          placeholder: (context, url) => const Center(
+                            child: CircularProgressIndicator(
+                              color: kPrimaryColor,
+                            ),
+                          ),
+                          errorWidget: (context, url, error) => const Icon(
+                            Icons.person,
+                            size: 50,
+                          ),
+                        )
+                      : const Icon(
+                          Icons.person,
+                          size: 50,
+                        ),
+            ),
+          ),
           if (widget.isEdit)
             Positioned(
-              right: 0,
+              right: -16,
               bottom: 0,
-              child: GestureDetector(
-                onTap: () => _pickImage(ImageSource.gallery),
-                child: Container(
-                  height: getProportionateScreenHeight(35),
-                  width: getProportionateScreenWidth(35),
-                  decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    shape: BoxShape.circle,
+              child: SizedBox(
+                height: getProportionateScreenWidth(46),
+                width: getProportionateScreenWidth(46),
+                child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.zero,
+                    backgroundColor: Colors.grey[200],
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(50),
+                    ),
                   ),
-                  child: Icon(
+                  onPressed: _showImageSourceDialog,
+                  child: const Icon(
                     Icons.camera_alt,
-                    color: Colors.grey[800],
+                    color: Colors.black,
                   ),
                 ),
               ),
             ),
         ],
-      ),
-    );
-  }
-
-  // Shimmer efekti için widget
-  Widget _buildShimmerEffect() {
-    return Shimmer.fromColors(
-      baseColor: Colors.grey[300]!,
-      highlightColor: Colors.grey[100]!,
-      child: Container(
-        decoration: const BoxDecoration(
-          color: Colors.white,
-          shape: BoxShape.circle,
-        ),
       ),
     );
   }

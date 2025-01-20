@@ -50,7 +50,8 @@ class _SignFormState extends State<SignForm> {
                 });
 
                 if (success) {
-                  Navigator.pushNamed(context, MainScreen.routeName);
+                  Navigator.pushNamedAndRemoveUntil(
+                      context, MainScreen.routeName, (route) => false);
                 } else {
                   // Hata mesajı göster
                   ScaffoldMessenger.of(context).showSnackBar(

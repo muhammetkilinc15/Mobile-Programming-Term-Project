@@ -8,6 +8,7 @@ class ProductProvider extends ChangeNotifier {
   final ProductService _productService = ProductService();
   bool isDetailLoading = false;
   String detailError = '';
+  String sortBy = 'popular';
   List<UserProductsModel> userProducts = [];
   List<PopularProductModel> popularProducts = [];
   List<PopularProductModel> favoriteProducts = [];
@@ -16,11 +17,32 @@ class ProductProvider extends ChangeNotifier {
 
   bool isLoading = false;
   String error = '';
+  String userProductsError = '';
 
-  Future<void> getUserProducts(
-      {int pageNumber = 1, int pageSize = 10, String? search}) async {
+  @override
+  void dispose() {
+    clearData();
+    super.dispose();
+  }
+
+  void clearData() {
+    userProducts.clear();
+    popularProducts.clear();
+    favoriteProducts.clear();
+    productDetail = null;
+    error = '';
+    userProductsError = '';
+    notifyListeners();
+  }
+
+  Future<void> getUserProducts({
+    int pageNumber = 1,
+    int pageSize = 10,
+    String? search,
+  }) async {
     try {
       isLoading = true;
+      userProductsError = '';
       notifyListeners();
       userProducts = await _productService.getUserProducts(
         pageNumber: pageNumber,
@@ -28,7 +50,7 @@ class ProductProvider extends ChangeNotifier {
         search: search,
       );
     } catch (e) {
-      error = e.toString();
+      userProductsError = e.toString();
     } finally {
       isLoading = false;
       notifyListeners();
@@ -40,8 +62,10 @@ class ProductProvider extends ChangeNotifier {
       isLoading = true;
       notifyListeners();
       popularProducts = await _productService.getPopularProducts();
+      error = '';
     } catch (e) {
       error = e.toString();
+      popularProducts = [];
     } finally {
       isLoading = false;
       notifyListeners();
@@ -66,19 +90,57 @@ class ProductProvider extends ChangeNotifier {
     int universityId = -1,
     int categoryId = -1,
     int subcategoryId = -1,
-    String orderBy = "popular",
+    String? orderBy,
+    int pageNumber = 1,
+    int pageSize = 10,
   }) async {
     try {
       isLoading = true;
       notifyListeners();
-      filteredProducts = await _productService.getProducts(
-        universityId: universityId,
+
+      if (orderBy != null) {
+        sortBy = orderBy;
+      }
+      final newProducts = await _productService.getProducts(
+        universityId: -1,
         categoryId: categoryId,
         subcategoryId: subcategoryId,
-        orderBy: orderBy,
+        orderBy: sortBy,
+        pageNumber: pageNumber,
+        pageSize: pageSize,
       );
+
+      if (pageNumber == 1) {
+        filteredProducts = newProducts;
+      } else {
+        filteredProducts.addAll(newProducts);
+      }
     } catch (e) {
       error = e.toString();
+      print('Error loading products: $e'); // Debug log
+    } finally {
+      isLoading = false;
+      notifyListeners();
+    }
+  }
+
+  Future<List<PopularProductModel>> searchProducts(String query) async {
+    try {
+      isLoading = true;
+      notifyListeners();
+
+      final searchResults = await _productService.getProducts(
+        universityId: -1,
+        pageNumber: 1,
+        pageSize: 10,
+        search: query,
+        orderBy: 'title',
+      );
+
+      return searchResults;
+    } catch (e) {
+      error = e.toString();
+      return [];
     } finally {
       isLoading = false;
       notifyListeners();
@@ -153,20 +215,33 @@ class ProductProvider extends ChangeNotifier {
   Future<void> deleteProduct(int id) async {
     try {
       await _productService.deleteProduct(id);
-      await getUserProducts(); // Refresh user products
+      userProducts.removeWhere((product) => product.id == id);
+      notifyListeners();
     } catch (e) {
       error = e.toString();
       notifyListeners();
+      rethrow;
     }
   }
 
   Future<void> markAsSold(int id) async {
     try {
       await _productService.markAsSold(id);
-      await getUserProducts(); // Refresh user products
+      final index = userProducts.indexWhere((product) => product.id == id);
+      if (index != -1) {
+        userProducts[index] = UserProductsModel(
+          id: userProducts[index].id,
+          title: userProducts[index].title,
+          price: userProducts[index].price,
+          image: userProducts[index].image,
+          isSold: true,
+        );
+        notifyListeners();
+      }
     } catch (e) {
       error = e.toString();
       notifyListeners();
+      rethrow;
     }
   }
 
@@ -181,10 +256,21 @@ class ProductProvider extends ChangeNotifier {
         title: title,
         price: price,
       );
-      await getUserProducts(); // Refresh user products
+      final index = userProducts.indexWhere((product) => product.id == id);
+      if (index != -1) {
+        userProducts[index] = UserProductsModel(
+          id: userProducts[index].id,
+          title: title,
+          price: price,
+          image: userProducts[index].image,
+          isSold: userProducts[index].isSold,
+        );
+        notifyListeners();
+      }
     } catch (e) {
       error = e.toString();
       notifyListeners();
+      rethrow;
     }
   }
 }

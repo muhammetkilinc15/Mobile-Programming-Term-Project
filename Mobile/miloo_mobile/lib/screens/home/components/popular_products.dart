@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/models/product_model.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
@@ -32,14 +33,24 @@ class _PopularProductsState extends State<PopularProducts> {
             title: 'Popular Products',
             press: () {
               Navigator.of(context).push(MaterialPageRoute(
-                builder: (context) => StoreScreen(),
+                builder: (context) => const StoreScreen(
+                  initialCategoryId: -1,
+                ),
               ));
             }),
         SizedBox(height: getProportionateScreenHeight(20)),
         Consumer<ProductProvider>(
           builder: (context, provider, child) {
             if (provider.isLoading) {
-              return CircularProgressIndicator();
+              return const Center(
+                child: CircularProgressIndicator(
+                  color: kPrimaryColor,
+                ),
+              );
+            }
+
+            if (provider.popularProducts.isEmpty) {
+              return const Text('No popular products found');
             }
 
             if (provider.error.isNotEmpty) {

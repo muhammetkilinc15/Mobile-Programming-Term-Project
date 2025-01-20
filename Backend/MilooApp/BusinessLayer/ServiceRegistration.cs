@@ -45,6 +45,7 @@ namespace BusinessLayer
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IChatService, ChatService>();
             services.AddScoped<ITokenHandler, TokenHandler>();
         }
 

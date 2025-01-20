@@ -21,7 +21,7 @@ namespace BusinessLayer.Concreate.Token
             TokenDto token = new(); 
             SymmetricSecurityKey key = new(Encoding.UTF8.GetBytes(_configuration["Token:SecurityKey"])); 
             SigningCredentials credentials = new(key, SecurityAlgorithms.HmacSha256);
-            token.Expiration = DateTime.Now.AddMinutes(30);
+            token.Expiration = DateTime.Now.AddDays(30);
 
             List<Claim> claims = new List<Claim>
             {

@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "email",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "Microsoft.AspNetCore.Identity.Data.ForgotPasswordRequest",
         "IsRequired": true
       }
     ],
@@ -56,8 +56,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "refreshToken",
-        "Type": "System.String",
+        "Name": "request",
+        "Type": "BusinessLayer.Dtos.AuthDtos.RefreshTokenDto",
         "IsRequired": true
       }
     ],

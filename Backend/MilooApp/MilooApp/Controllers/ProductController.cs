@@ -73,7 +73,7 @@ namespace MilooApp.Controllers
         }
 
         [HttpPost("create")]
-        [Authorize(Roles = "Seller")]
+        [Authorize(Roles = "Seller,Admin")]
         public async Task<IActionResult> AddProduct([FromForm] CreateProductRequest createListingDto)
         {
             BaseResponse response = await _productService.AddAsync(createListingDto);
@@ -105,7 +105,7 @@ namespace MilooApp.Controllers
 
      
         [HttpDelete("delete/{id}")]
-        [Authorize(Roles = "Seller")]
+        [Authorize(Roles = "Seller,Admin")]
         public async Task<IActionResult> DeleteProduct(int id)
         {
             BaseResponse response = await _productService.DeleteAsync(id);

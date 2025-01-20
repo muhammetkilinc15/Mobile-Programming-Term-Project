@@ -1,35 +1,35 @@
 class PopularProductModel {
-  late int id;
-  late String title;
-  late bool isFavorite;
-  late double price;
-  late String? image;
+  final int id;
+  final String title;
+  final double price;
+  final String? image;
+  bool isFavorite;
 
   PopularProductModel({
     required this.id,
     required this.title,
-    required this.isFavorite,
     required this.price,
     this.image,
+    this.isFavorite = false,
   });
 
   factory PopularProductModel.fromJson(Map<String, dynamic> json) {
     return PopularProductModel(
-      id: json['id'],
-      title: json['title'],
-      isFavorite: json['isFavorite'],
-      price: json['price'].toDouble(),
+      id: int.parse(json['id'].toString()),
+      title: json['title'] ?? '',
+      price: double.parse(json['price'].toString()),
       image: json['image'],
+      isFavorite: json['isFavorite'] ?? false,
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'id': id,
+      'id': id.toString(),
       'title': title,
-      'isFavorite': isFavorite,
-      'price': price,
+      'price': price.toString(),
       'image': image,
+      'isFavorite': isFavorite,
     };
   }
 }

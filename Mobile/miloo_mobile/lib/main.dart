@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/providers/auth_provider.dart';
+import 'package:miloo_mobile/providers/category_provider.dart';
+import 'package:miloo_mobile/providers/navigation_provider.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
+import 'package:miloo_mobile/providers/user_provider.dart';
 import 'package:miloo_mobile/routes/routes.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/sign_in_screen.dart';
 import 'package:miloo_mobile/screens/onboarding/splash_screen.dart';
@@ -16,8 +19,11 @@ void main() async {
   prefs.setBool('isFirstTime', false);
   runApp(MultiProvider(
     providers: [
+      ChangeNotifierProvider(create: (context) => NavigationProvider()),
       ChangeNotifierProvider(create: (context) => AuthProvider()),
+      ChangeNotifierProvider(create: (context) => CategoryProvider()),
       ChangeNotifierProvider(create: (context) => ProductProvider()),
+      ChangeNotifierProvider(create: (context) => UserProvider()),
     ],
     child: MyApp(
       isFirstTime: isFirstTime,

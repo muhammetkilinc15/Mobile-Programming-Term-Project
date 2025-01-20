@@ -44,52 +44,6 @@ class AuthService {
     return false;
   }
 
-  Future<bool> login({required String email, required String password}) async {
-    print("email: $email, password: $password");
-    final response = await http.post(
-      Uri.parse("${url}login"),
-      headers: {
-        'Content-Type': 'application/json; charset=UTF-8',
-      },
-      body: json.encode({
-        "usernameOrEmail": email,
-        "password": password,
-      }),
-    );
-
-    if (response.statusCode == 200) {
-      final Map<String, dynamic> body = json.decode(response.body);
-
-      await storage.write(key: "accessToken", value: body["accessToken"]);
-      await storage.write(key: "refreshToken", value: body["refreshToken"]);
-      await storage.write(key: "tokenExpiration", value: body["expiration"]);
-      final prefs = await SharedPreferences.getInstance();
-      String profileImage =
-          JwtDecoder.decode(body["accessToken"])["profileImage"];
-      prefs.setString("profileImage", profileImage);
-
-      print(prefs.get("profileImage"));
-
-      return true;
-    }
-    return false;
-  }
-
-  Future<String?> getAccessToken() async {
-    final token = await storage.read(key: "accessToken");
-
-    if (token != null) {
-      return token;
-    } else {
-      // Eğer token geçerli değilse refreshToken kullanarak yenile
-      final refreshToken = await storage.read(key: "refreshToken");
-      if (refreshToken != null) {
-        return await refreshAccessToken(refreshToken);
-      }
-    }
-    return null;
-  }
-
   Future<String?> refreshAccessToken(String refreshToken) async {
     final response = await http.post(
       Uri.parse("${url}refresh-token"),
@@ -126,7 +80,84 @@ class AuthService {
     );
   }
 
+  Future<bool> login({required String email, required String password}) async {
+    try {
+      final response = await http.post(
+        Uri.parse("${url}login"),
+        headers: {
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+        body: json.encode({
+          "usernameOrEmail": email,
+          "password": password,
+        }),
+      );
+
+      if (response.statusCode == 200) {
+        final Map<String, dynamic> body = json.decode(response.body);
+
+        // Store tokens securely
+        await Future.wait([
+          storage.write(key: "accessToken", value: body["accessToken"]),
+          storage.write(key: "refreshToken", value: body["refreshToken"]),
+          storage.write(key: "tokenExpiration", value: body["expiration"]),
+        ]);
+
+        // Verify token storage
+        final storedToken = await storage.read(key: "accessToken");
+        if (storedToken == null) {
+          throw Exception("Failed to store access token");
+        }
+
+        final prefs = await SharedPreferences.getInstance();
+        String profileImage =
+            JwtDecoder.decode(body["accessToken"])["profileImage"];
+        await prefs.setString("profileImage", profileImage);
+
+        return true;
+      }
+      return false;
+    } catch (e) {
+      print('Login error: $e');
+      return false;
+    }
+  }
+
+  Future<String?> getAccessToken() async {
+    try {
+      final token = await storage.read(key: "accessToken");
+      if (token == null) {
+        // Try refresh token
+        final refreshToken = await storage.read(key: "refreshToken");
+        if (refreshToken != null) {
+          return await refreshAccessToken(refreshToken);
+        }
+        throw Exception("No access token found");
+      }
+
+      // Check if token is expired
+      if (JwtDecoder.isExpired(token)) {
+        final refreshToken = await storage.read(key: "refreshToken");
+        if (refreshToken != null) {
+          return await refreshAccessToken(refreshToken);
+        }
+      }
+
+      return token;
+    } catch (e) {
+      print('GetAccessToken error: $e');
+      return null;
+    }
+  }
+
   Future<void> logout() async {
-    await storage.deleteAll();
+    try {
+      await storage.deleteAll();
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove("profileImage");
+      await prefs.remove("userRoles");
+    } catch (e) {
+      print('Logout error: $e');
+    }
   }
 }

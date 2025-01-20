@@ -5,7 +5,7 @@ final emailValidator = MultiValidator(
     RequiredValidator(errorText: 'Email is required'),
     EmailValidator(errorText: 'Enter a valid email address'),
     PatternValidator(
-      r"^[0-9]{9}@ogr\.[a-zA-Z0-9.-]+\.(edu(\.[a-zA-Z]{2,})?)$",
+      r"^[0-9]+@ogr\.[a-zA-Z0-9.-]+\.(edu(\.[a-zA-Z]{2,})?)$",
       errorText: "Please enter your student mail",
     )
   ],

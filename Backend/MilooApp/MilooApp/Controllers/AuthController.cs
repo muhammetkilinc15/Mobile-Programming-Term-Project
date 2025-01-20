@@ -47,9 +47,9 @@ namespace MilooApp.Controllers
             return Ok(token);
         }
         [HttpPost("refresh-token")]
-        public async Task<IActionResult> RefreshTokenLogin([FromBody] string refreshToken)
+        public async Task<IActionResult> RefreshTokenLogin([FromBody] RefreshTokenDto request )
         {
-            TokenDto token = await _authService.RefreshTokenLoginAsync(refreshToken);
+            TokenDto token = await _authService.RefreshTokenLoginAsync(request.refreshToken);
             return Ok(token);
         }
 
@@ -61,9 +61,9 @@ namespace MilooApp.Controllers
         }
 
         [HttpPost("forgot-password")]
-        public async Task<IActionResult> ForgotPassword([FromBody] string email)
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
         {
-            BaseResponse response = await _authService.ForgotPasswordAsync(email);
+            BaseResponse response = await _authService.ForgotPasswordAsync(request.Email);
             return Ok(response.Message);
         }
 

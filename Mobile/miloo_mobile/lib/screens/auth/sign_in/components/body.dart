@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/screens/auth/forgot_password/forgot_password_screen.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/components/no_account_text.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/components/sign_form.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/components/social_card.dart';
@@ -36,6 +37,24 @@ class _BodyState extends State<Body> {
                 ),
                 SizedBox(height: SizeConfig.screenHeight * 0.04),
                 const SignForm(),
+                SizedBox(height: getProportionateScreenHeight(10)),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    TextButton(
+                      onPressed: () {
+                        Navigator.pushNamed(
+                            context, ForgotPasswordScreen.routeName);
+                      },
+                      child: const Text(
+                        'Forgot Password',
+                        style: TextStyle(
+                            color: Colors.grey,
+                            decoration: TextDecoration.underline),
+                      ),
+                    )
+                  ],
+                ),
                 SizedBox(height: getProportionateScreenHeight(20)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

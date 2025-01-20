@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/constraits/constrait.dart';
+import 'package:provider/provider.dart';
 import 'package:miloo_mobile/models/category_model.dart';
 import 'package:miloo_mobile/screens/home/components/category_card.dart';
 import 'package:miloo_mobile/screens/store/store_screen.dart';
-import 'package:miloo_mobile/services/category_service.dart';
+import 'package:miloo_mobile/providers/category_provider.dart';
 
 class Categories extends StatefulWidget {
   const Categories({super.key});
@@ -12,41 +14,31 @@ class Categories extends StatefulWidget {
 }
 
 class _CategoriesState extends State<Categories> {
-  // Future olan bir kategori veri kaynağını almak için
-  late Future<List<CategoryModel>> futureCategories;
-  final CategoryService _categoryService = CategoryService();
-
   @override
   void initState() {
     super.initState();
-    futureCategories =
-        _categoryService.getCategories(pageNumber: 1, pageSize: 5);
-  }
-
-  @override
-  void didChangeDependencies() {
-    // TODO: implement didChangeDependencies
-    super.didChangeDependencies();
-    futureCategories =
-        _categoryService.getCategories(pageNumber: 1, pageSize: 5);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<CategoryProvider>().getHomeCategories();
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<CategoryModel>>(
-      future: futureCategories,
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          // Eğer veri bekleniyorsa, bir yükleniyor göstergesi gösterebiliriz
-          return CircularProgressIndicator();
-        } else if (snapshot.hasError) {
-          // Eğer hata varsa, hatayı göster
-          return Text('Error: ${snapshot.error}');
-        } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-          // Eğer veri yoksa, kategori bulunamadı yazabiliriz
-          return Text('No categories found');
+    return Consumer<CategoryProvider>(
+      builder: (context, categoryProvider, _) {
+        if (categoryProvider.isLoading &&
+            categoryProvider.homecategories.isEmpty) {
+          return const Center(
+            child: CircularProgressIndicator(
+              color: kPrimaryColor,
+            ),
+          );
+        } else if (categoryProvider.error.isNotEmpty) {
+          return Center(child: Text('Error: ${categoryProvider.error}'));
+        } else if (categoryProvider.homecategories.isEmpty) {
+          return const Center(child: Text('No categories found'));
         } else {
-          List<CategoryModel> categories = snapshot.data!;
+          List<CategoryModel> categories = categoryProvider.homecategories;
 
           return SingleChildScrollView(
             scrollDirection: Axis.horizontal,

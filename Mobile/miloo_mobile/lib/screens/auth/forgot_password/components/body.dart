@@ -33,6 +33,7 @@ class _BodyState extends State<Body> {
                 'Please enter your email and we will send\nyou a link to return to your account',
                 textAlign: TextAlign.center,
               ),
+              SizedBox(height: SizeConfig.screenHeight * 0.1),
               const ForgotPasswordForm(),
             ],
           ),

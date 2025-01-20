@@ -9,5 +9,7 @@ namespace DataAccessLayer.Abstract
 {
     public interface IMessageRepository : IGenericRepository<Message>
     {
+        Task<List<Message>> GetMessagesByUserId(int userId);
+        Task<List<Message>> GetMessagesBetweenUsers(int userId, int toUserId, CancellationToken cancellationToken);
     }
 }

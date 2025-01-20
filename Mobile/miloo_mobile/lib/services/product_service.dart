@@ -42,7 +42,6 @@ class ProductService {
 
   Future<List<PopularProductModel>> getPopularProducts() async {
     final token = await _tokenManager.getAccessToken();
-
     final response = await http.get(
       Uri.parse(
         "$url/popular-products?top=5",
@@ -83,14 +82,17 @@ class ProductService {
     int categoryId = -1,
     int subcategoryId = -1,
     String orderBy = "popular",
+    int pageNumber = 1,
+    int pageSize = 10,
+    String? search,
   }) async {
     final token = await _tokenManager.getAccessToken();
     if (universityId == -1) {
-      universityId = JwtDecoder.decode(token)['universityId'];
+      universityId = int.parse(JwtDecoder.decode(token)['universityId']);
     }
     final response = await http.get(
       Uri.parse(
-        "$url/getall?UniversityId=$universityId&CategoryId=$categoryId&SubCategoryId=$subcategoryId&OrderBy=$orderBy",
+        "$url/getall?UniversityId=$universityId&CategoryId=$categoryId&SubCategoryId=$subcategoryId&OrderBy=$orderBy&PageNumber=$pageNumber&PageSize=$pageSize&Search=${search ?? ""}",
       ),
       headers: {
         "Authorization": "Bearer $token",
@@ -99,16 +101,18 @@ class ProductService {
     );
 
     if (response.statusCode == 200) {
-      // JSON cevabını çözümle
       final Map<String, dynamic> decodedResponse = json.decode(response.body);
-
-      // "data" kısmını alın
       final List<dynamic> data = decodedResponse["data"];
 
-      // "data" kısmındaki her öğeyi Popüler ürün modeline dönüştürün
-      return data
-          .map((product) => PopularProductModel.fromJson(product))
-          .toList();
+      return data.map((product) {
+        return PopularProductModel(
+          id: int.parse(product['id'].toString()),
+          title: product['title'],
+          price: double.parse(product['price'].toString()),
+          image: product['image'],
+          isFavorite: product['isFavorite'] ?? false,
+        );
+      }).toList();
     } else {
       throw Exception('Failed to load products');
     }

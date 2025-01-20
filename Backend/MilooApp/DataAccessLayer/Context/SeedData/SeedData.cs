@@ -28,13 +28,12 @@ namespace DataAccessLayer.Context.SeedData
                 new User
                 {
                     Id = 2,
-                    FirstName = "Ahmet",
+                    FirstName = "Beyza",
                     LastName = "Kılınç",
-                    UserName = "ahmetkilinc",
-                    Email = "ahmet@gmail.com",
+                    UserName = "beyza",
+                    Email = "210129001@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
-
-                    UniversityId = 12,
+                    UniversityId = 1,
                 },
                 new User
                 {
@@ -42,19 +41,19 @@ namespace DataAccessLayer.Context.SeedData
                     FirstName = "Osman",
                     LastName = "Kaya",
                     UserName = "osmankaya",
-                    Email = "osmankaya@gmail.com",
+                    Email = "210129002@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
-                    UniversityId = 4,
+                    UniversityId = 1,
                 },
                 new User
                 {
                     Id = 4,
                     FirstName = "Mehmet",
-                    LastName = "Kaya",
-                    UserName = "mehmetkaya",
+                    LastName = "Ulutaş",
+                    UserName = "mehmetulutas",
                     Email = "mehmet@gmail.com",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
-                    UniversityId = 5,
+                    UniversityId = 1,
                 },
                 new User
                 {
@@ -62,9 +61,100 @@ namespace DataAccessLayer.Context.SeedData
                     FirstName = "Ali",
                     LastName = "Kaya",
                     UserName = "alikaya",
-                    Email = "ali@gmail.com",
+                    Email = "210129003@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
-                    UniversityId = 6,
+                    UniversityId = 1,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "210129004@ogr.atu.edu.tr",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 1,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "210129006@ogr.atu.edu.tr",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 2,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "210129005@ogr.atu.edu.tr",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 2,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "210129007@ogr.atu.edu.tr",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 2,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "veli@gmail.com",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 2,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "veli@gmail.com",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 7,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "veli@gmail.com",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 7,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "veli@gmail.com",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 7,
+                },
+                new User
+                {
+                    Id = 6,
+                    FirstName = "Veli",
+                    LastName = "Kaya",
+                    UserName = "velikaya",
+                    Email = "veli@gmail.com",
+                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                    UniversityId = 7,
+
                 },
                 new User
                 {
@@ -77,6 +167,7 @@ namespace DataAccessLayer.Context.SeedData
                     UniversityId = 7,
                 }
                 );
+
 
             builder.Entity<Role>().HasData(
                 new Role { Id = 1, Name = "Admin" },

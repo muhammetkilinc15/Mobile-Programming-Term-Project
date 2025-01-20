@@ -7,14 +7,14 @@ import 'package:miloo_mobile/size_config.dart';
 class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
-    this.Width = 140,
+    this.width = 140,
     this.aspectRatio = 1.02,
     required this.product,
     required this.press,
     this.onFavorite, // Add this
   });
 
-  final double Width, aspectRatio;
+  final double width, aspectRatio;
   final GestureTapCallback press;
   final Function()? onFavorite; // Add this
   final ProductModel product;
@@ -26,7 +26,7 @@ class ProductCard extends StatelessWidget {
       child: GestureDetector(
         onTap: press,
         child: SizedBox(
-          width: getProportionateScreenWidth(Width),
+          width: getProportionateScreenWidth(width),
           child: Column(
             children: [
               AspectRatio(

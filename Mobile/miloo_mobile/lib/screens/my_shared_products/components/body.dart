@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cache_manager/flutter_cache_manager.dart';
-import 'package:miloo_mobile/components/default_button.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
-import 'package:miloo_mobile/services/product_service.dart';
-import 'package:miloo_mobile/models/user_products_model.dart'; // Assuming this is the correct model
+import 'package:miloo_mobile/models/user_products_model.dart';
+import 'package:miloo_mobile/size_config.dart';
+import 'package:provider/provider.dart';
+import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -13,20 +13,17 @@ class Body extends StatefulWidget {
 }
 
 class _BodyState extends State<Body> {
-  late Future<List<UserProductsModel>> _userProductsFuture;
-  ProductService _productService = ProductService();
   @override
   void initState() {
     super.initState();
-    _userProductsFuture = _productService.getUserProducts();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      context.read<ProductProvider>().getUserProducts();
+    });
   }
 
   Future<void> _deleteProduct(int id) async {
     try {
-      await _productService.deleteProduct(id);
-      setState(() {
-        _userProductsFuture = _productService.getUserProducts();
-      });
+      await context.read<ProductProvider>().deleteProduct(id);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Product deleted successfully')),
       );
@@ -39,10 +36,7 @@ class _BodyState extends State<Body> {
 
   Future<void> _markAsSold(int id) async {
     try {
-      await _productService.markAsSold(id);
-      setState(() {
-        _userProductsFuture = _productService.getUserProducts();
-      });
+      await context.read<ProductProvider>().markAsSold(id);
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('Product marked as sold')),
       );
@@ -53,205 +47,154 @@ class _BodyState extends State<Body> {
     }
   }
 
-  Future<void> _update(int id, String title, double price) async {
-    _productService.updateProduct(
-      id: id,
-      title: title,
-      price: price,
-    );
-    setState(() {
-      _userProductsFuture = _productService.getUserProducts();
-    });
-  }
+  Future<void> _editProduct(UserProductsModel product) async {
+    final TextEditingController titleController =
+        TextEditingController(text: product.title);
+    final TextEditingController priceController =
+        TextEditingController(text: product.price.toString());
 
-  void _editProduct(UserProductsModel product) {
-    showModalBottomSheet(
-      backgroundColor: const Color.fromARGB(255, 247, 241, 233),
+    await showDialog(
       context: context,
-      isScrollControlled: true,
-      builder: (context) {
-        final titleController = TextEditingController(text: product.title);
-        final priceController =
-            TextEditingController(text: product.price.toString());
-        return Padding(
-          padding: EdgeInsets.only(
-            bottom: MediaQuery.of(context).viewInsets.bottom,
-            left: 16,
-            right: 16,
-            top: 16,
+      builder: (context) => AlertDialog(
+        title: const Text('Edit Product'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextField(
+              controller: titleController,
+              decoration: const InputDecoration(labelText: 'Title'),
+            ),
+            SizedBox(
+              height: getProportionateScreenHeight(20),
+            ),
+            TextField(
+              controller: priceController,
+              decoration: const InputDecoration(labelText: 'Price'),
+              keyboardType: TextInputType.number,
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text(
+              'Cancel',
+              style: TextStyle(color: kPrimaryColor),
+            ),
           ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              TextField(
-                controller: titleController,
-                decoration: const InputDecoration(labelText: 'Title'),
-              ),
-              const SizedBox(height: 8),
-              TextField(
-                controller: priceController,
-                decoration: const InputDecoration(labelText: 'Price'),
-                keyboardType: TextInputType.number,
-              ),
-              const SizedBox(height: 16),
-              DefaultButton(
-                  text: "Update",
-                  press: () {
-                    _update(
-                      product.id,
-                      titleController.text,
-                      double.parse(priceController.text),
-                    );
-                    Navigator.pop(context);
-                  })
-            ],
+          TextButton(
+            onPressed: () async {
+              await context.read<ProductProvider>().updateProduct(
+                    id: product.id,
+                    title: titleController.text,
+                    price: double.parse(priceController.text),
+                  );
+              Navigator.pop(context);
+            },
+            child: const Text(
+              'Save',
+              style: TextStyle(color: kPrimaryColor),
+            ),
           ),
-        );
-      },
+        ],
+      ),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder<List<UserProductsModel>>(
-      future: _userProductsFuture,
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
+    return Consumer<ProductProvider>(
+      builder: (context, productProvider, _) {
+        if (productProvider.isLoading && productProvider.userProducts.isEmpty) {
           return const Center(child: CircularProgressIndicator());
-        } else if (snapshot.hasError) {
-          return Center(child: Text('Error: ${snapshot.error}'));
-        } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
-          return const Center(child: Text('No products found.'));
-        } else {
-          final products = snapshot.data!;
-          return ListView.builder(
-            itemCount: products.length,
-            itemBuilder: (context, index) {
-              final product = products[index];
-              return Card(
-                color: Colors.grey[50],
-                margin: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                elevation: 5,
-                child: Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(10),
-                            child: CachedNetworkImage(
-                              imageUrl: product.image,
-                              width: 80,
-                              height: 80,
-                              fit: BoxFit.cover,
-                              placeholder: (context, url) => Shimmer.fromColors(
-                                baseColor: Colors.grey[300]!,
-                                highlightColor: Colors.grey[100]!,
-                                child: Container(
-                                  width: 80,
-                                  height: 80,
-                                  color: Colors.white,
-                                ),
-                              ),
-                              errorWidget: (context, url, error) =>
-                                  const Icon(Icons.error),
-                              cacheManager: CacheManager(
-                                Config(
-                                  'customCacheKey',
-                                  stalePeriod: const Duration(hours: 1),
-                                ),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  product.title,
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
-                                  ),
-                                ),
-                                const SizedBox(height: 8),
-                                Text(
-                                  '\$${product.price.toStringAsFixed(2)}',
-                                  style: const TextStyle(
-                                    fontSize: 14,
-                                    fontWeight: FontWeight.bold,
-                                    color: kPrimaryColor,
-                                  ),
-                                ),
-                                if (product.isSold)
-                                  Container(
-                                    padding: const EdgeInsets.symmetric(
-                                      vertical: 4,
-                                      horizontal: 8,
-                                    ),
-                                    decoration: BoxDecoration(
-                                      color: Colors.red,
-                                      borderRadius: BorderRadius.circular(8),
-                                    ),
-                                    child: const Text(
-                                      'Sold',
-                                      style: TextStyle(
-                                        fontSize: 14,
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                  ),
-                              ],
-                            ),
-                          ),
-                        ],
+        }
+
+        if (productProvider.error.isNotEmpty) {
+          return Center(child: Text('Error: ${productProvider.error}'));
+        }
+
+        if (productProvider.userProducts.isEmpty) {
+          return const Center(child: Text('No products found'));
+        }
+
+        return ListView.builder(
+          itemCount: productProvider.userProducts.length,
+          itemBuilder: (context, index) {
+            final product = productProvider.userProducts[index];
+            return Card(
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+              child: ListTile(
+                leading: ClipRRect(
+                  borderRadius: BorderRadius.circular(8),
+                  child: CachedNetworkImage(
+                    imageUrl: product.image,
+                    width: 60,
+                    height: 60,
+                    fit: BoxFit.cover,
+                    placeholder: (context, url) => Shimmer.fromColors(
+                      baseColor: Colors.grey[300]!,
+                      highlightColor: Colors.grey[100]!,
+                      child: Container(
+                        width: 60,
+                        height: 60,
+                        color: Colors.grey[300],
                       ),
-                      const SizedBox(height: 10),
-                      SingleChildScrollView(
-                        scrollDirection: Axis.horizontal,
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            TextButton.icon(
-                              icon: const Icon(Icons.edit, color: Colors.blue),
-                              label: const Text('Edit',
-                                  style: TextStyle(color: Colors.blue)),
-                              onPressed: () => _editProduct(product),
-                            ),
-                            const SizedBox(width: 8),
-                            TextButton.icon(
-                              icon: const Icon(Icons.delete, color: Colors.red),
-                              label: const Text('Delete',
-                                  style: TextStyle(color: Colors.red)),
-                              onPressed: () => _deleteProduct(product.id),
-                            ),
-                            const SizedBox(width: 8),
-                            TextButton.icon(
-                              icon:
-                                  const Icon(Icons.check, color: Colors.green),
-                              label: const Text('Mark as Sold',
-                                  style: TextStyle(
-                                    color: Colors.green,
-                                  )),
-                              onPressed: () => _markAsSold(product.id),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ],
+                    ),
+                    errorWidget: (context, url, error) =>
+                        const Icon(Icons.error),
                   ),
                 ),
-              );
-            },
-          );
-        }
+                title: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        product.title,
+                        style: const TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                    if (product.isSold)
+                      Container(
+                        padding: const EdgeInsets.symmetric(
+                            horizontal: 8, vertical: 4),
+                        decoration: BoxDecoration(
+                          color: Colors.red[100],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: const Text(
+                          'SOLD',
+                          style: TextStyle(
+                            color: Colors.red,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+                subtitle: Text('\$${product.price.toStringAsFixed(2)}'),
+                trailing: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    IconButton(
+                      icon: const Icon(Icons.edit, color: Colors.blue),
+                      onPressed: () => _editProduct(product),
+                    ),
+                    if (!product.isSold)
+                      IconButton(
+                        icon: const Icon(Icons.check_circle_outline,
+                            color: Colors.green),
+                        onPressed: () => _markAsSold(product.id),
+                      ),
+                    IconButton(
+                      icon: const Icon(Icons.delete_outline, color: Colors.red),
+                      onPressed: () => _deleteProduct(product.id),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        );
       },
     );
   }

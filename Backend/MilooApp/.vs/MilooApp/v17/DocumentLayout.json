@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\controllers\\universitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\controllers\\universitycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{02ADB95F-3CC8-4071-838B-3B53B24C1D87}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\dataaccesslayer\\context\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{02ADB95F-3CC8-4071-838B-3B53B24C1D87}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UniversityController.cs",
-              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\UniversityController.cs",
-              "RelativeDocumentMoniker": "MilooApp\\Controllers\\UniversityController.cs",
-              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\UniversityController.cs",
-              "RelativeToolTip": "MilooApp\\Controllers\\UniversityController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAkwFAAAAAkAAAAAAAAAA==",
+              "Title": "SeedData.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\Context\\SeedData\\SeedData.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\SeedData\\SeedData.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\Context\\SeedData\\SeedData.cs",
+              "RelativeToolTip": "DataAccessLayer\\Context\\SeedData\\SeedData.cs",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAQwEoBAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T16:57:55.195Z",
+              "WhenOpened": "2025-01-20T11:24:18.201Z",
               "EditorCaption": ""
             }
           ]

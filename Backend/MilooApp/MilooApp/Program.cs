@@ -1,20 +1,19 @@
 using BusinessLayer;
-using BusinessLayer.Helpers.EmailHelper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using NotArkadasimApi.Infsracture.Extensions;
-using System.Security.Authentication;
-using System.Security;
-using System.Security.Claims;
 using System.Text;
 using System.Globalization;
 using MilooApp.Hubs;
+using NotArkadasimApi.Infsracture.Extensions.NotArkadasimApi.Infsracture.Extensions;
+using Microsoft.AspNetCore.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddBusinessLayerRegistration(builder.Configuration);
 
+
+// Cors ayarlarý
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", builder =>
@@ -26,7 +25,7 @@ builder.Services.AddCors(options =>
 });
 builder.WebHost.ConfigureKestrel(options =>
 {
-    options.ListenAnyIP(5105); // 5000 portundan gelen tüm IP'leri dinle
+    options.ListenAnyIP(5105); // 5105 portunu dinle
 });
 
 // Kültür ayarlarý
@@ -34,16 +33,12 @@ var cultureInfo = new CultureInfo("en-US");
 CultureInfo.DefaultThreadCurrentCulture = cultureInfo;
 CultureInfo.DefaultThreadCurrentUICulture = cultureInfo;
 
-// HTTPS yönlendirme tamamen devre dýþý býrakýldý
-// builder.Services.AddHttpsRedirection(options =>
-// {
-//     options.HttpsPort = null; 
-// });
 
-
+// JWT token doðrulama ayarlarý
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer("Bearer", options =>
     {
+        // Token doðrulama ayarlarýný yapýlandýr
         options.TokenValidationParameters = new()
         {
             ValidateAudience = true,
@@ -53,30 +48,60 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidAudience = builder.Configuration["Token:Audience"],
             ValidIssuer = builder.Configuration["Token:Issuer"],
             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Token:SecurityKey"])),
-            LifetimeValidator = (notBefore, expires, securityToken, validationParameters) => expires != null ? expires > DateTime.UtcNow : false,
-            
-            
+            LifetimeValidator = (notBefore, expires, securityToken, validationParameters) => expires != null ? expires > DateTime.UtcNow : false,               
         };
+        // Middleware davranýþlarýný özelleþtiriyoruz
         options.Events = new JwtBearerEvents
         {
-            OnChallenge = context =>
+            OnChallenge = async context =>
             {
+                // Varsayýlan yanýtý engelle
                 context.HandleResponse();
-                throw new UnauthorizedAccessException("Unauthorized access.");
+
+                // Kendi hata mesajýný dön
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                context.Response.ContentType = "application/json";
+
+                await context.Response.WriteAsJsonAsync(new
+                {
+                    error = "Unauthorized",
+                    message = "Token is missing or invalid."
+                });
             },
-            OnForbidden = context =>
+            
+            OnAuthenticationFailed = async context =>
             {
-                throw new SecurityException("Forbidden access.");
+                context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                context.Response.ContentType = "application/json";
+
+                await context.Response.WriteAsJsonAsync(new
+                {
+                    error = "Authentication Failed",
+                    message = context.Exception?.Message
+                });
             },
-            OnAuthenticationFailed = context =>
+            OnForbidden = async context =>
             {
-                throw new AuthenticationException("Authentication failed.");
-            },
+                context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                context.Response.ContentType = "application/json";
+                await context.Response.WriteAsJsonAsync(new
+                {
+                    error = "Forbidden",
+                    message = "You are not authorized to access this resource."
+                });
+            }
         };
     });
 
+
+
 builder.Services.AddControllers();
+
+
+// SignalR
 builder.Services.AddSignalR();
+
+// Swagger belgeleme
 builder.Services.AddSwaggerGen(options =>
 {
     options.SwaggerDoc("v1", new OpenApiInfo { Title = "API", Version = "v1" });
@@ -105,13 +130,17 @@ builder.Services.AddSwaggerGen(options =>
     });
 });
 
+
+// Response compression
 builder.Services.AddResponseCompression(opt =>
 {
     opt.EnableForHttps = true;
-    opt.MimeTypes = new[] { "application/json" };
+    opt.MimeTypes = ["application/json"];
 });
 
 
+// Register the CustomExceptionHandler
+builder.Services.AddSingleton<IExceptionHandler, CustomExceptionHandler>();
 
 var app = builder.Build();
 
@@ -121,20 +150,39 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// CORS middleware
 app.UseCors("AllowAll");
+
+// SignalR 
 app.MapHub<ChatHub>("/ChatHub");
-app.UseDefaultFiles();
+
+
+// Response compression middleware
 app.UseResponseCompression();
-app.UseStaticFiles(); // wwwroot klasöründeki statik dosyalara eriþimi etkinleþtirir
 
 
-// HTTPS yönlendirme kaldýrýldý
-// app.UseHttpsRedirection();
+app.UseStaticFiles();
 
+
+// Authentication middleware
 app.UseAuthentication();
+
+// Authorization middleware
 app.UseAuthorization();
 
-app.ConfigureExceptionHandling();
+// Exception handling middleware
+app.UseExceptionHandler(appBuilder =>
+{
+    appBuilder.Run(async context =>
+    {
+        var exceptionHandler = context.RequestServices.GetRequiredService<IExceptionHandler>();
+        var exceptionFeature = context.Features.Get<IExceptionHandlerFeature>();
+        if (exceptionFeature?.Error != null)
+        {
+            await exceptionHandler.TryHandleAsync(context, exceptionFeature.Error, CancellationToken.None);
+        }
+    });
+});
 
 app.MapControllers();
 
