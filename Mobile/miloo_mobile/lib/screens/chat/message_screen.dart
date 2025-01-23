@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
+import 'package:intl/intl.dart';
 import 'package:miloo_mobile/services/message_service.dart';
 import 'package:miloo_mobile/models/message.dart';
+import 'package:miloo_mobile/size_config.dart';
 
 class MessageScreen extends StatefulWidget {
   final int toUserId;
@@ -17,6 +18,7 @@ class MessageScreen extends StatefulWidget {
   });
 
   @override
+  // ignore: library_private_types_in_public_api
   _MessageScreenState createState() => _MessageScreenState();
 }
 
@@ -30,6 +32,14 @@ class _MessageScreenState extends State<MessageScreen> {
   void initState() {
     super.initState();
     _initialize();
+  }
+
+  @override
+  void dispose() {
+    _messageService.dispose();
+    _scrollController.dispose();
+    _controller.dispose();
+    super.dispose();
   }
 
   Future<void> _initialize() async {
@@ -54,14 +64,6 @@ class _MessageScreenState extends State<MessageScreen> {
     }
   }
 
-  @override
-  void dispose() {
-    _messageService.dispose();
-    _scrollController.dispose();
-    _controller.dispose();
-    super.dispose();
-  }
-
   Future<void> _sendMessage(String messageText) async {
     try {
       await _messageService.sendMessage(
@@ -71,7 +73,7 @@ class _MessageScreenState extends State<MessageScreen> {
       _controller.clear();
       setState(() {
         messages.add(Message(
-          id: 1,
+          id: -1,
           senderId: _messageService.userId,
           receiverId: widget.toUserId,
           messageText: messageText,
@@ -111,23 +113,10 @@ class _MessageScreenState extends State<MessageScreen> {
             Text(widget.fullName!),
           ],
         ),
-        actions: [
-          PopupMenuButton<String>(
-            onSelected: (value) {
-              if (value == 'view_user') {
-                Navigator.pushNamed(context, UserDetailScreen.routeName,
-                    arguments: widget.toUserId);
-              }
-            },
-            itemBuilder: (BuildContext context) {
-              return [
-                const PopupMenuItem<String>(
-                  value: 'view_user',
-                  child: Text('Kullanıcıyı Görüntüle'),
-                ),
-              ];
-            },
-          ),
+        actions: const [
+          Icon(
+            Icons.more_vert_rounded,
+          )
         ],
       ),
       body: Column(
@@ -138,30 +127,18 @@ class _MessageScreenState extends State<MessageScreen> {
               itemCount: messages.length,
               itemBuilder: (context, index) {
                 final message = messages[index];
-                return Align(
-                  alignment: message.senderId == _messageService.userId
-                      ? Alignment.centerRight
-                      : Alignment.centerLeft,
-                  child: Container(
-                    padding: const EdgeInsets.all(10),
-                    margin: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                      color: message.senderId == _messageService.userId
-                          ? Colors.blue
-                          : Colors.grey,
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                    child: Text(
-                      message.messageText,
-                      style: const TextStyle(color: Colors.white),
-                    ),
-                  ),
+                return MessageWidget(
+                  messageText: message.messageText,
+                  sentOn: message.sentOn,
+                  senderId: message.senderId,
+                  currentUserId:
+                      _messageService.userId, // Kendi kullanıcı ID'si
                 );
               },
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(getProportionateScreenWidth(8)),
             child: Row(
               children: [
                 Expanded(
@@ -184,6 +161,64 @@ class _MessageScreenState extends State<MessageScreen> {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class MessageWidget extends StatelessWidget {
+  final String messageText;
+  final DateTime sentOn;
+  final int senderId;
+  final int currentUserId;
+
+  const MessageWidget({
+    super.key,
+    required this.messageText,
+    required this.sentOn,
+    required this.senderId,
+    required this.currentUserId,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final formattedTime = DateFormat('hh:mm a').format(sentOn);
+
+    return Align(
+      alignment: senderId == currentUserId
+          ? Alignment.centerRight // Kendi mesajlarımız sağa yaslanacak
+          : Alignment
+              .centerLeft, // Diğer kullanıcıların mesajları sola yaslanacak
+      child: Container(
+        constraints: BoxConstraints(maxWidth: getProportionateScreenWidth(250)),
+        padding: EdgeInsets.all(getProportionateScreenWidth(10)),
+        margin: EdgeInsets.all(getProportionateScreenWidth(5)),
+        decoration: BoxDecoration(
+          color: senderId == currentUserId
+              ? Colors.blue // Kendi mesajlarımız mavi
+              : Colors.grey, // Diğer kullanıcıların mesajları gri
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Mesaj metni
+            Text(
+              messageText,
+              style: const TextStyle(color: Colors.white),
+              softWrap: true, // Metnin birden fazla satıra sığmasını sağlar
+              overflow: TextOverflow.visible, // Taşan metni gösterir
+            ),
+            SizedBox(height: getProportionateScreenHeight(5)),
+            Text(
+              formattedTime,
+              style: const TextStyle(
+                color: Colors.white70,
+                fontSize: 12,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

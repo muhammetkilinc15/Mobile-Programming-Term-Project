@@ -26,10 +26,10 @@ class AuthProvider extends ChangeNotifier {
     return success;
   }
 
-  Future<bool> login(String email, String password) async {
+  Future<bool> login(String email, String password, bool isRemember) async {
     try {
-      final success =
-          await _authService.login(email: email, password: password);
+      final success = await _authService.login(
+          email: email, password: password, isRemember: isRemember);
       if (success) {
         _isAuthenticated = true;
         _accessToken = await _authService.getAccessToken();

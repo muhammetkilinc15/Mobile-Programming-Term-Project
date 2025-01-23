@@ -27,8 +27,8 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   final _formKey = GlobalKey<FormState>();
   bool _isLoading = false;
 
-  String firstName = 'Yıldız';
-  String lastName = 'oruk';
+  String firstName = 'Muhammet';
+  String lastName = 'Kılınç';
   String _selectedUniversity = 'Adana Alparslan Türkeş University';
   int _selectedUniversityId = 1; // Default university id
 
@@ -53,7 +53,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
               text: 'Continue',
               press: () async {
                 if (_formKey.currentState!.validate()) {
-                  _formKey.currentState!.save(); // Form değerlerini günceller
+                  _formKey.currentState!.save();
                   setState(() => _isLoading = true);
 
                   try {
@@ -78,8 +78,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
                     } else {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text("An error occurred while registering!"),
+                          content: Text("User already exists"),
                           backgroundColor: Colors.red,
+                          duration: const Duration(seconds: 1),
                         ),
                       );
                     }
@@ -90,6 +91,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
                         content:
                             Text("An error occurred while registering: $e"),
                         backgroundColor: Colors.red,
+                        duration: const Duration(seconds: 1),
                       ),
                     );
                   } finally {

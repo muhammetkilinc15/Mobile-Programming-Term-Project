@@ -16,14 +16,15 @@ class CategoryProvider extends ChangeNotifier {
   int get selectedCategoryId => _selectedCategoryId;
   int get selectedSubcategoryId => _selectedSubcategoryId;
 
-  Future<void> getCategories() async {
+// Kategorileri Getirmek İçin
+  Future<void> getCategories({int pageNumber = 1, int pageSize = 5}) async {
     if (isLoading) return;
 
     try {
       isLoading = true;
       notifyListeners();
-      List<CategoryModel> fetchedCategories =
-          await _categoryService.getCategories(pageNumber: 1, pageSize: 5);
+      List<CategoryModel> fetchedCategories = await _categoryService
+          .getCategories(pageNumber: pageNumber, pageSize: pageSize);
       categories = fetchedCategories.map((category) {
         return CategoryModel(
           id: category.id,
@@ -38,6 +39,30 @@ class CategoryProvider extends ChangeNotifier {
     }
   }
 
+// Alt Kategorileri Getirmek İçin
+  Future<void> getSubCategories(int categoryId) async {
+    if (isLoading) return;
+    try {
+      isLoading = true;
+      notifyListeners();
+
+      final fetchedSubcategories =
+          await _categoryService.getSubCategories(categoryId: categoryId);
+      subcategories = fetchedSubcategories.map((subcategory) {
+        return SubCategoryModel(
+          id: subcategory.id,
+          name: subcategory.name,
+        );
+      }).toList();
+    } catch (e) {
+      error = e.toString();
+    } finally {
+      isLoading = false;
+      notifyListeners();
+    }
+  }
+
+// Ana Ekranda Gelen Kategoriler
   Future<void> getHomeCategories() async {
     if (homecategories.isNotEmpty)
       return; // Check if homecategories are already loaded
@@ -65,28 +90,7 @@ class CategoryProvider extends ChangeNotifier {
     }
   }
 
-  Future<void> getSubCategories(int categoryId) async {
-    if (isLoading) return;
-    try {
-      isLoading = true;
-      notifyListeners();
-
-      final fetchedSubcategories =
-          await _categoryService.getSubCategories(categoryId: categoryId);
-      subcategories = fetchedSubcategories.map((subcategory) {
-        return SubCategoryModel(
-          id: subcategory.id,
-          name: subcategory.name,
-        );
-      }).toList();
-    } catch (e) {
-      error = e.toString();
-    } finally {
-      isLoading = false;
-      notifyListeners();
-    }
-  }
-
+// Kategori Seçimi
   void setSelectedCategory(int categoryId) {
     _selectedCategoryId = categoryId;
     _selectedSubcategoryId = -1;
@@ -94,6 +98,7 @@ class CategoryProvider extends ChangeNotifier {
     getSubCategories(categoryId);
   }
 
+// Alt Kategori Seçimi
   void setSelectedSubcategory(int subcategoryId) {
     _selectedSubcategoryId = subcategoryId;
     notifyListeners();

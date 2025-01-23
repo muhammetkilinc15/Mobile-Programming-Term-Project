@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/screens/auth/sign_up/sign_up_screen.dart';
+import 'package:miloo_mobile/size_config.dart';
 
 class NoAccountText extends StatelessWidget {
   const NoAccountText({
@@ -12,18 +13,18 @@ class NoAccountText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text(
+        Text(
           "Don't have an account? ",
-          style: TextStyle(fontSize: 16),
+          style: TextStyle(fontSize: getProportionateScreenWidth(16)),
         ),
         GestureDetector(
           onTap: () {
             Navigator.pushNamed(context, SignUpScreen.routeName);
           },
-          child: const Text(
+          child: Text(
             'Sign Up',
             style: TextStyle(
-              fontSize: 16,
+              fontSize: getProportionateScreenWidth(16),
               color: kPrimaryColor,
             ),
           ),

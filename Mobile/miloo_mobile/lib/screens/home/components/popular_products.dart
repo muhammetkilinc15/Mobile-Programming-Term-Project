@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/models/product_model.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
-import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
+import 'package:miloo_mobile/screens/product/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/home/components/product_card.dart';
 import 'package:miloo_mobile/screens/home/components/section_tile.dart';
 import 'package:miloo_mobile/screens/store/store_screen.dart';

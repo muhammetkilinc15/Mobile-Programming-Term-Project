@@ -1,16 +1,16 @@
 class UserVerifyEmail {
-  final String Email;
-  final String Code;
+  final String email;
+  final String code;
 
   UserVerifyEmail({
-    required this.Email,
-    required this.Code,
+    required this.email,
+    required this.code,
   });
 
   Map<String, dynamic> toJson() {
     return {
-      "Email": Email,
-      "Code": Code,
+      "Email": email,
+      "Code": code,
     };
   }
 }

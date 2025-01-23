@@ -13,9 +13,12 @@ class SignUpForm extends StatefulWidget {
 
 class _SignUpFormState extends State<SignUpForm> {
   final _formKey = GlobalKey<FormState>();
-  String username = 'yildiz65';
-  String email = '210129004@ogr.atu.edu.tr';
-  String password = '12345678';
+  final TextEditingController _usernameController =
+      TextEditingController(text: "mami07");
+  final TextEditingController _emailController =
+      TextEditingController(text: "210129049@ogr.atu.edu.tr");
+  final TextEditingController _passwordController =
+      TextEditingController(text: "12345678");
 
   @override
   Widget build(BuildContext context) {
@@ -40,9 +43,9 @@ class _SignUpFormState extends State<SignUpForm> {
                   context,
                   CompleteProfileScreen.routerName,
                   arguments: CompleteProfileArguments(
-                    username: username,
-                    email: email,
-                    password: password,
+                    username: _usernameController.text,
+                    email: _emailController.text,
+                    password: _passwordController.text,
                   ),
                 );
               }
@@ -55,9 +58,9 @@ class _SignUpFormState extends State<SignUpForm> {
 
   TextFormField buildUsernameField() {
     return TextFormField(
-      initialValue: username,
-      onSaved: (newValue) => username = newValue!,
-      validator: usernameValidator,
+      initialValue: _usernameController.text,
+      onSaved: (newValue) => _usernameController.text = newValue!,
+      validator: usernameValidator.call,
       decoration: const InputDecoration(
         labelText: 'Username',
         hintText: 'Enter your username',
@@ -69,10 +72,10 @@ class _SignUpFormState extends State<SignUpForm> {
 
   TextFormField buildEmailField() {
     return TextFormField(
-      initialValue: email,
+      initialValue: _emailController.text,
       keyboardType: TextInputType.emailAddress,
-      onSaved: (newValue) => email = newValue!,
-      validator: emailValidator,
+      onSaved: (newValue) => _emailController.text = newValue!,
+      validator: emailValidator.call,
       decoration: const InputDecoration(
         labelText: 'Email',
         hintText: 'Enter your email',
@@ -86,10 +89,10 @@ class _SignUpFormState extends State<SignUpForm> {
 
   TextFormField buildPasswordField() {
     return TextFormField(
-      initialValue: password,
+      initialValue: _passwordController.text,
       obscureText: true,
-      onSaved: (newValue) => password = newValue!,
-      validator: passwordValidator,
+      onSaved: (newValue) => _passwordController.text = newValue!,
+      validator: passwordValidator.call,
       maxLength: 20,
       decoration: const InputDecoration(
         labelText: 'Password',

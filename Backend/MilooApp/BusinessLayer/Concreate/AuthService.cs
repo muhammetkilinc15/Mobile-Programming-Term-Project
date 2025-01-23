@@ -52,7 +52,7 @@ namespace BusinessLayer.Concreate
                 PasswordHash = BCrypt.Net.BCrypt.HashPassword(request.Password),
                 EmailVerificationCode = GenerateVerificationCode(),
                 EmailVerificationCodeExpiresOn = DateTime.Now.AddMinutes(15),
-                UserPhotos = new List<UserPhoto> { new UserPhoto { ImagePath = "defaulProfilePhoto.png", isProfilePhoto = true } },
+                UserPhotos = new List<UserPhoto> { new UserPhoto { ImagePath = "default-profile.png", isProfilePhoto = true } },
                 UserRoles = new List<UserRole>()
                 {
                     new UserRole()
@@ -121,7 +121,7 @@ namespace BusinessLayer.Concreate
             User user = await _repository.AsQueryable()
                  .Include(x => x.UserRoles)
                  .ThenInclude(ur => ur.Role)
-                 .Include(x => x.UserPhotos)  // Include UserPhotos here
+                 .Include(x => x.UserPhotos) 
                  .Where(x => x.Email == request.usernameOrEmail || x.UserName == request.usernameOrEmail)
                  .FirstOrDefaultAsync()
                  ?? throw new Exception("Kullanıcı adı veya şifre hatalı");

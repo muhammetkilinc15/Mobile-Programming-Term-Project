@@ -54,8 +54,8 @@ namespace BusinessLayer.Validators.AuthValidators
             RuleFor(x => x.Password).MustAsync(async (string password, CancellationToken cancellation) => await ValidatePasswordLowerCase(password))
                 .WithMessage("Password must contain at least one lowercase letter");
 
-            RuleFor(x => x.Password).MustAsync(async (string password, CancellationToken cancellation) => await ValidatePasswordHasSpecialCharacter(password))
-                .WithMessage("Password must contain at least one special character");
+            //RuleFor(x => x.Password).MustAsync(async (string password, CancellationToken cancellation) => await ValidatePasswordHasSpecialCharacter(password))
+            //    .WithMessage("Password must contain at least one special character");
 
         }
 

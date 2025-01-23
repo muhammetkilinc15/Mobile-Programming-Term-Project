@@ -13,7 +13,6 @@ class CompleteProfileScreen extends StatefulWidget {
 class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
   @override
   Widget build(BuildContext context) {
-    // Retrieve the arguments passed to the route
     final CompleteProfileArguments args =
         ModalRoute.of(context)!.settings.arguments as CompleteProfileArguments;
 
@@ -26,6 +25,11 @@ class _CompleteProfileScreenState extends State<CompleteProfileScreen> {
             color: Colors.black,
           ),
         ),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back_ios_new_outlined)),
       ),
       body: Body(
         email: args.email, // Pass email

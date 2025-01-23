@@ -12,6 +12,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddBusinessLayerRegistration(builder.Configuration);
 
+// Response caching
+builder.Services.AddResponseCaching();
 
 // Cors ayarlarý
 builder.Services.AddCors(options =>
@@ -155,6 +157,9 @@ app.UseCors("AllowAll");
 
 // SignalR 
 app.MapHub<ChatHub>("/ChatHub");
+
+
+app.UseResponseCaching();
 
 
 // Response compression middleware

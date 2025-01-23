@@ -80,7 +80,11 @@ class AuthService {
     );
   }
 
-  Future<bool> login({required String email, required String password}) async {
+  Future<bool> login({
+    required String email,
+    required String password,
+    required bool isRemember,
+  }) async {
     try {
       final response = await http.post(
         Uri.parse("${url}login"),
@@ -103,13 +107,10 @@ class AuthService {
           storage.write(key: "tokenExpiration", value: body["expiration"]),
         ]);
 
-        // Verify token storage
-        final storedToken = await storage.read(key: "accessToken");
-        if (storedToken == null) {
-          throw Exception("Failed to store access token");
-        }
-
         final prefs = await SharedPreferences.getInstance();
+        if (isRemember) {
+          await prefs.setBool("isRemember", isRemember);
+        }
         String profileImage =
             JwtDecoder.decode(body["accessToken"])["profileImage"];
         await prefs.setString("profileImage", profileImage);
@@ -118,7 +119,6 @@ class AuthService {
       }
       return false;
     } catch (e) {
-      print('Login error: $e');
       return false;
     }
   }
@@ -145,7 +145,6 @@ class AuthService {
 
       return token;
     } catch (e) {
-      print('GetAccessToken error: $e');
       return null;
     }
   }
@@ -156,8 +155,9 @@ class AuthService {
       final prefs = await SharedPreferences.getInstance();
       await prefs.remove("profileImage");
       await prefs.remove("userRoles");
+      await prefs.remove("isRemember");
     } catch (e) {
-      print('Logout error: $e');
+      throw Exception("Logout error: $e");
     }
   }
 }

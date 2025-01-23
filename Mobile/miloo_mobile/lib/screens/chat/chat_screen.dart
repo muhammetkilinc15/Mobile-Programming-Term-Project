@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/screens/chat/message_screen.dart';
 import 'package:miloo_mobile/services/chat_service.dart';
 import 'package:miloo_mobile/models/user_message.dart';
@@ -20,6 +21,7 @@ class _ChatScreenState extends State<ChatScreen> {
     _chatUsersFuture = _fetchChatUsers();
   }
 
+// Fetch chat users
   Future<List<UserMessage>> _fetchChatUsers() async {
     try {
       return await _chatService.getUsers();
@@ -36,12 +38,20 @@ class _ChatScreenState extends State<ChatScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chats'),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back_ios_new_outlined)),
       ),
       body: FutureBuilder<List<UserMessage>>(
         future: _chatUsersFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
+            return const Center(
+                child: CircularProgressIndicator(
+              color: kPrimaryColor,
+            ));
           } else if (snapshot.hasError) {
             return Center(child: Text('Error: ${snapshot.error}'));
           } else if (!snapshot.hasData || snapshot.data!.isEmpty) {

@@ -67,6 +67,11 @@ namespace DataAccessLayer.Migrations
                         {
                             Id = 5,
                             Name = "Shoes"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Toys"
                         });
                 });
 
@@ -106,6 +111,17 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("SenderId");
 
                     b.ToTable("Messages");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsRead = true,
+                            MessageText = "Merhaba iyi günler, ürünü kaç tl ye satıyorsunuz",
+                            ReceiverId = 2,
+                            SenderId = 1,
+                            SentOn = new DateTime(2025, 1, 23, 0, 28, 53, 115, DateTimeKind.Local).AddTicks(1644)
+                        });
                 });
 
             modelBuilder.Entity("EntityLayer.Entites.MessageFiles", b =>
@@ -185,21 +201,6 @@ namespace DataAccessLayer.Migrations
                     b.HasIndex("Title");
 
                     b.ToTable("Products");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Description = "Apple Iphone 12",
-                            IsDeleted = false,
-                            Price = 10000m,
-                            PublisherId = 1,
-                            SubCategoryId = 1,
-                            Title = "Iphone 12",
-                            Views = 25,
-                            isSold = false
-                        });
                 });
 
             modelBuilder.Entity("EntityLayer.Entites.ProductImages", b =>
@@ -1077,29 +1078,29 @@ namespace DataAccessLayer.Migrations
                         {
                             Id = 2,
                             CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "ahmet@gmail.com",
-                            FirstName = "Ahmet",
+                            Email = "210129001@ogr.atu.edu.tr",
+                            FirstName = "Beyza",
                             IsDeleted = false,
                             IsEmailVerified = false,
                             LastName = "Kılınç",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                             Status = "offline",
-                            UniversityId = 12,
+                            UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            UserName = "ahmetkilinc"
+                            UserName = "beyza"
                         },
                         new
                         {
                             Id = 3,
                             CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "osmankaya@gmail.com",
+                            Email = "210129002@ogr.atu.edu.tr",
                             FirstName = "Osman",
                             IsDeleted = false,
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                             Status = "offline",
-                            UniversityId = 4,
+                            UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "osmankaya"
                         },
@@ -1111,25 +1112,25 @@ namespace DataAccessLayer.Migrations
                             FirstName = "Mehmet",
                             IsDeleted = false,
                             IsEmailVerified = false,
-                            LastName = "Kaya",
+                            LastName = "Ulutaş",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                             Status = "offline",
-                            UniversityId = 5,
+                            UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            UserName = "mehmetkaya"
+                            UserName = "mehmetulutas"
                         },
                         new
                         {
                             Id = 5,
                             CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "ali@gmail.com",
+                            Email = "210129003@ogr.atu.edu.tr",
                             FirstName = "Ali",
                             IsDeleted = false,
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                             Status = "offline",
-                            UniversityId = 6,
+                            UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "alikaya"
                         },
@@ -1137,16 +1138,151 @@ namespace DataAccessLayer.Migrations
                         {
                             Id = 6,
                             CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "veli@gmail.com",
+                            Email = "210129004@ogr.atu.edu.tr",
                             FirstName = "Veli",
                             IsDeleted = false,
                             IsEmailVerified = false,
                             LastName = "Kaya",
                             PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                             Status = "offline",
-                            UniversityId = 7,
+                            UniversityId = 1,
                             UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             UserName = "velikaya"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129005@ogr.atu.edu.tr",
+                            FirstName = "Tarık",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "köklü",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 2,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "tarikkoklu"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129006@ogr.atu.edu.tr",
+                            FirstName = "Ayse",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Bozkurt",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 2,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "aysebzkrt"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129007@ogr.atu.edu.tr",
+                            FirstName = "Ceren",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Tokgöz",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 2,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "cerentkgz"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129008@ogr.stu.edu.tr",
+                            FirstName = "Kayra",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Kabakcioglu",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 2,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "kayra"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129053@ogr.atu.edu.tr",
+                            FirstName = "Ugur",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Tansal",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 7,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "ugurtansal"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129009@ogr.atu.edu.tr",
+                            FirstName = "Batuhan",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Özsürmeli",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 7,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "batuozsurmeli"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129011@ogr.atu.edu.tr",
+                            FirstName = "Raziye",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Kök",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 7,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "raziye"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129013@ogr.atu.edu.tr",
+                            FirstName = "Mustafa",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Acikkar",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 7,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "mustafaacikkar"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "210129014@ogr.atu.edu.tr",
+                            FirstName = "Yavuz",
+                            IsDeleted = false,
+                            IsEmailVerified = false,
+                            LastName = "Akkoç",
+                            PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                            Status = "offline",
+                            UniversityId = 7,
+                            UpdatedOn = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserName = "beyzaakkoc"
                         });
                 });
 
@@ -1243,6 +1379,69 @@ namespace DataAccessLayer.Migrations
                             ImagePath = "default-profile.png",
                             UserId = 6,
                             isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ImagePath = "default-profile.png",
+                            UserId = 7,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 8,
+                            ImagePath = "default-profile.png",
+                            UserId = 8,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 9,
+                            ImagePath = "default-profile.png",
+                            UserId = 9,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 10,
+                            ImagePath = "default-profile.png",
+                            UserId = 10,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 11,
+                            ImagePath = "default-profile.png",
+                            UserId = 11,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 12,
+                            ImagePath = "default-profile.png",
+                            UserId = 12,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 13,
+                            ImagePath = "default-profile.png",
+                            UserId = 13,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 14,
+                            ImagePath = "default-profile.png",
+                            UserId = 14,
+                            isProfilePhoto = false
+                        },
+                        new
+                        {
+                            Id = 15,
+                            ImagePath = "default-profile.png",
+                            UserId = 15,
+                            isProfilePhoto = false
                         });
                 });
 
@@ -1286,6 +1485,78 @@ namespace DataAccessLayer.Migrations
                             Id = 3,
                             RoleId = 2,
                             UserId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            RoleId = 2,
+                            UserId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            RoleId = 2,
+                            UserId = 5
+                        },
+                        new
+                        {
+                            Id = 6,
+                            RoleId = 2,
+                            UserId = 6
+                        },
+                        new
+                        {
+                            Id = 7,
+                            RoleId = 2,
+                            UserId = 7
+                        },
+                        new
+                        {
+                            Id = 8,
+                            RoleId = 2,
+                            UserId = 8
+                        },
+                        new
+                        {
+                            Id = 9,
+                            RoleId = 2,
+                            UserId = 9
+                        },
+                        new
+                        {
+                            Id = 10,
+                            RoleId = 2,
+                            UserId = 10
+                        },
+                        new
+                        {
+                            Id = 11,
+                            RoleId = 2,
+                            UserId = 11
+                        },
+                        new
+                        {
+                            Id = 12,
+                            RoleId = 2,
+                            UserId = 12
+                        },
+                        new
+                        {
+                            Id = 13,
+                            RoleId = 2,
+                            UserId = 13
+                        },
+                        new
+                        {
+                            Id = 14,
+                            RoleId = 2,
+                            UserId = 14
+                        },
+                        new
+                        {
+                            Id = 15,
+                            RoleId = 2,
+                            UserId = 15
                         });
                 });
 
@@ -1300,7 +1571,7 @@ namespace DataAccessLayer.Migrations
                     b.HasOne("EntityLayer.Entites.User", "Sender")
                         .WithMany("SentMessages")
                         .HasForeignKey("SenderId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Receiver");

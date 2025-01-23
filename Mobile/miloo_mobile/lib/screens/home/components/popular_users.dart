@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/providers/user_provider.dart';
 import 'package:miloo_mobile/screens/home/components/popular_user_card.dart';
-import 'package:miloo_mobile/screens/user_detail/user_detail_screen.dart';
+import 'package:miloo_mobile/screens/user/user_detail/user_detail_screen.dart';
 import 'package:miloo_mobile/models/popular_user_model.dart';
 import 'package:provider/provider.dart';
 import 'package:shimmer/shimmer.dart'; // Shimmer importu

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:miloo_mobile/components/custom_navigation_bar.dart';
 import 'package:miloo_mobile/screens/favorites/favorites_screen.dart';
+import 'package:miloo_mobile/size_config.dart';
 import 'package:provider/provider.dart';
 import 'package:miloo_mobile/providers/navigation_provider.dart';
 import 'package:miloo_mobile/screens/home/home_screen.dart';
@@ -13,6 +14,7 @@ class MainScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Consumer<NavigationProvider>(
       builder: (context, provider, _) {
         return Scaffold(

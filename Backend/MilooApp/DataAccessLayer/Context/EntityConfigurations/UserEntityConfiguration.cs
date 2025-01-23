@@ -39,7 +39,7 @@ namespace DataAccessLayer.Context.EntityConfigurations
 
             builder.HasMany(x => x.UserPhotos).WithOne(x => x.User).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);
             builder.HasMany(x => x.Products).WithOne(x => x.Publisher).HasForeignKey(x => x.PublisherId).OnDelete(DeleteBehavior.Cascade);
-            builder.HasMany(x => x.SentMessages).WithOne(x => x.Sender).HasForeignKey(x => x.SenderId).OnDelete(DeleteBehavior.Restrict);
+            builder.HasMany(x => x.SentMessages).WithOne(x => x.Sender).HasForeignKey(x => x.SenderId).OnDelete(DeleteBehavior.Cascade);
             builder.HasMany(x => x.ReceivedMessages).WithOne(x => x.Receiver).HasForeignKey(x => x.ReceiverId).OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(x => x.University).WithMany(x => x.Users).HasForeignKey(x => x.UniversityId).OnDelete(DeleteBehavior.Restrict);
             builder.HasMany(x => x.UserRoles).WithOne(x => x.User).HasForeignKey(x => x.UserId).OnDelete(DeleteBehavior.Cascade);

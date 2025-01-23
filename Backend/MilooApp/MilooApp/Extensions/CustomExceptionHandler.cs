@@ -24,35 +24,43 @@ namespace NotArkadasimApi.Infsracture.Extensions
                 _logger = logger;
             }
 
-            public async Task HandleAsync(HttpContext context, Exception exception, bool includeExceptionDetails)
+            private async Task HandleAsync(HttpContext context, Exception exception, bool includeExceptionDetails=false)
             {
                 HttpStatusCode status = HttpStatusCode.InternalServerError;
                 string message = "An unexpected error occurred.";
 
                 if (exception is UnauthorizedAccessException)
                 {
+                    includeExceptionDetails = false;
                     status = HttpStatusCode.Unauthorized;
                     message = "Unauthorized access.";
                 }
                 else if (exception is AuthenticationException)
                 {
+                    includeExceptionDetails = false;
                     status = HttpStatusCode.Unauthorized;
                     message = "Authentication failed.";
                 }
                 else if (exception is SecurityException)
                 {
+                    includeExceptionDetails = false;
                     status = HttpStatusCode.Forbidden;
                     message = "Forbidden access.";
                 }
                 else if (exception is DbValidationException dbValidationException)
                 {
                     status = HttpStatusCode.BadRequest;
-                    var validationResponse = new ValidationResponseModel(Errors: new List<string> { dbValidationException.Message });
+                    var validationResponse = new ValidationResponseModel(Errors: [dbValidationException.Message]);
                     await WriteResponse(context, status, validationResponse);
                     return;
                 }
                 else if (exception is FluentValidation.ValidationException validationException)
                 {
+
+                    // Hataları logla
+                    _logger.LogError("Validation failed: {Errors}", validationException.Errors);
+
+
                     status = HttpStatusCode.BadRequest;
                     var validationResponse = new ValidationResponseModel(validationException.Errors.Select(e => e.ErrorMessage).ToList());
                     await WriteResponse(context, status, validationResponse);

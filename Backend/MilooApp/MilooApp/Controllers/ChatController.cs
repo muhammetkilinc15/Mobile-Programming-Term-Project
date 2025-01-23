@@ -17,7 +17,7 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ChatController(IHubContext<ChatHub> hubContext, IChatService chatService) : ControllerBase
     {
         [HttpGet("users/{userId}")]

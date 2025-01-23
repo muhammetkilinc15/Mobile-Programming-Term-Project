@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:miloo_mobile/helper/jwt_helper.dart';
+import 'package:miloo_mobile/helper/token_manager.dart';
 import 'package:miloo_mobile/providers/auth_provider.dart';
 import 'package:miloo_mobile/providers/navigation_provider.dart';
-import 'package:miloo_mobile/screens/add_product/add_product_screen.dart';
+import 'package:miloo_mobile/screens/product/add_product/add_product_screen.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/sign_in_screen.dart';
-import 'package:miloo_mobile/screens/my_shared_products/my_shared_products_screen.dart';
-import 'package:miloo_mobile/screens/my_account/my_account_screen.dart';
+import 'package:miloo_mobile/screens/user/my_shared_products/my_shared_products_screen.dart';
+import 'package:miloo_mobile/screens/user/my_account/my_account_screen.dart';
 import 'package:miloo_mobile/screens/profile/components/profile_menu.dart';
 import 'package:miloo_mobile/screens/profile/components/profile_picture.dart';
 import 'package:miloo_mobile/size_config.dart';
@@ -42,9 +42,10 @@ class _BodyState extends State<Body> {
   @override
   void initState() {
     super.initState();
-    getUserRole().then((roles) {
+    TokenManager tokenManager = TokenManager();
+    tokenManager.getUserRoles().then((value) {
       setState(() {
-        userRoles = roles ?? [];
+        userRoles = value;
       });
     });
     getProfileImage();

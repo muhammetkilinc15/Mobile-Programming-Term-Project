@@ -15,7 +15,14 @@ class ChatService {
   Future<List<UserMessage>> getUsers() async {
     final token = await _tokenManager.getAccessToken();
     int userId = int.parse(JwtDecoder.decode(token)["userId"]);
-    final response = await http.get(Uri.parse("$url/users/$userId"));
+    final response = await http.get(
+        Uri.parse(
+          "$url/users/$userId",
+        ),
+        headers: {
+          'Authorization': 'Bearer $token',
+          'Content-Type': 'application/json'
+        });
     if (response.statusCode == 200) {
       final List<dynamic> data = json.decode(response.body);
       return data.map((json) => UserMessage.fromJson(json)).toList();

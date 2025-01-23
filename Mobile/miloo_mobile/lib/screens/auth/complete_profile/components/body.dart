@@ -26,7 +26,7 @@ class _BodyState extends State<Body> {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            Text(
+            const Text(
               'Complete Profile',
               style: headingStyle,
             ),

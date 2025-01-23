@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{02ADB95F-3CC8-4071-838B-3B53B24C1D87}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\dataaccesslayer\\context\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{02ADB95F-3CC8-4071-838B-3B53B24C1D87}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\context\\seeddata\\seeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1E0E6476-15B4-4E95-AD13-EE4009C4A3D6}|BusinessLayer\\BusinessLayer.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\businesslayer\\concreate\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1E0E6476-15B4-4E95-AD13-EE4009C4A3D6}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\concreate\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|c:\\users\\bemu\\desktop\\mobile-programming-term-project\\backend\\milooapp\\milooapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3EA0621-9600-445D-9FA4-D11F3DDBAE36}|MilooApp\\MilooApp.csproj|solutionrelative:milooapp\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,14 +27,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SeedData.cs",
-              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\Context\\SeedData\\SeedData.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Context\\SeedData\\SeedData.cs",
-              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\DataAccessLayer\\Context\\SeedData\\SeedData.cs*",
-              "RelativeToolTip": "DataAccessLayer\\Context\\SeedData\\SeedData.cs*",
-              "ViewState": "AgIAADMBAAAAAAAAAAAQwKkAAAAAAAAAAAAAAA==",
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\Concreate\\ProductService.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Concreate\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\BusinessLayer\\Concreate\\ProductService.cs",
+              "RelativeToolTip": "BusinessLayer\\Concreate\\ProductService.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAowIQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T11:24:18.201Z",
+              "WhenOpened": "2025-01-23T11:23:30.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "MilooApp\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "MilooApp\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T08:49:16.873Z",
               "EditorCaption": ""
             }
           ]

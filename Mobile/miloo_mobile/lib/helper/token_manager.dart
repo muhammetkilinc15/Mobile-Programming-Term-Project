@@ -55,4 +55,22 @@ class TokenManager {
       throw Exception("Token refresh failed: $e");
     }
   }
+
+  Future<List<String>> getUserRoles() async {
+    try {
+      final token = await getAccessToken();
+      final Map<String, dynamic> decodedToken = JwtDecoder.decode(token);
+      final dynamic rolesData = decodedToken["roles"];
+
+      if (rolesData is String) {
+        return [rolesData];
+      } else if (rolesData is List) {
+        return rolesData.map((role) => role.toString()).toList();
+      }
+
+      return [];
+    } catch (e) {
+      throw Exception("Failed to get user roles: $e");
+    }
+  }
 }

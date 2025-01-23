@@ -75,7 +75,7 @@ class ProductProvider extends ChangeNotifier {
   Future<void> getProductDetail(int productId) async {
     try {
       isDetailLoading = true;
-      notifyListeners();
+
       productDetail = await _productService.getProductDetail(productId);
       await _productService.increaseView(productId);
     } catch (e) {

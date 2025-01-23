@@ -12,10 +12,11 @@ namespace MilooApp.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize] 
+    [Authorize]
     public class CategoryController(ICategoryService categoryService) : ControllerBase
     {
         private readonly ICategoryService _categoryService = categoryService;
+
 
         [HttpGet("getall")]
         public async Task<IActionResult> GetResult([FromQuery] BaseRequest request)

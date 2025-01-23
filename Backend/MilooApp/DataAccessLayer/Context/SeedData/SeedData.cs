@@ -75,94 +75,95 @@ namespace DataAccessLayer.Context.SeedData
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 1,
                 },
+                 new User
+                 {
+                     Id = 7,
+                     FirstName = "Tarık",
+                     LastName = "köklü",
+                     UserName = "tarikkoklu",
+                     Email = "210129005@ogr.atu.edu.tr",
+                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
+                     UniversityId = 2,
+                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
+                    Id = 8,
+                    FirstName = "Ayse",
+                    LastName = "Bozkurt",
+                    UserName = "aysebzkrt",
                     Email = "210129006@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 2,
                 },
+
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "210129005@ogr.atu.edu.tr",
-                    PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
-                    UniversityId = 2,
-                },
-                new User
-                {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
+                    Id = 9,
+                    FirstName = "Ceren",
+                    LastName = "Tokgöz",
+                    UserName = "cerentkgz",
                     Email = "210129007@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 2,
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 10,
+                    FirstName = "Kayra",
+                    LastName = "Kabakcioglu",
+                    UserName = "kayra",
+                    Email = "210129008@ogr.stu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 2,
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 11,
+                    FirstName = "Ugur",
+                    LastName = "Tansal",
+                    UserName = "ugurtansal",
+                    Email = "210129053@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 7,
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 12,
+                    FirstName = "Batuhan",
+                    LastName = "Özsürmeli",
+                    UserName = "batuozsurmeli",
+                    Email = "210129009@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 7,
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 13,
+                    FirstName = "Raziye",
+                    LastName = "Kök",
+                    UserName = "raziye",
+                    Email = "210129011@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 7,
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 14,
+                    FirstName = "Mustafa",
+                    LastName = "Acikkar",
+                    UserName = "mustafaacikkar",
+                    Email = "210129013@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 7,
 
                 },
                 new User
                 {
-                    Id = 6,
-                    FirstName = "Veli",
-                    LastName = "Kaya",
-                    UserName = "velikaya",
-                    Email = "veli@gmail.com",
+                    Id = 15,
+                    FirstName = "Yavuz",
+                    LastName = "Akkoç",
+                    UserName = "beyzaakkoc",
+                    Email = "210129014@ogr.atu.edu.tr",
                     PasswordHash = "$2y$10$AHPdSk33YAaA4KAEyc9XcexFBlDY/ehwdmhvhg0snjKyXnjE9yvVC",
                     UniversityId = 7,
                 }
@@ -178,8 +179,20 @@ namespace DataAccessLayer.Context.SeedData
             builder.Entity<UserRole>().HasData(
                  new UserRole { Id = 1, UserId = 1, RoleId = 1 },
                  new UserRole { Id = 2, UserId = 2, RoleId = 2 },
-                 new UserRole { Id = 3, UserId = 3, RoleId = 2 }
-             );
+                 new UserRole { Id = 3, UserId = 3, RoleId = 2 },
+                 new UserRole { Id = 4, UserId = 4, RoleId = 2 },
+                 new UserRole { Id = 5, UserId = 5, RoleId = 2 },
+                 new UserRole { Id = 6, UserId = 6, RoleId = 2 },
+                 new UserRole { Id = 7, UserId = 7, RoleId = 2 },
+                 new UserRole { Id = 8, UserId = 8, RoleId = 2 },
+                 new UserRole { Id = 9, UserId = 9, RoleId = 2 },
+                 new UserRole { Id = 10, UserId = 10, RoleId = 2 },
+                 new UserRole { Id = 11, UserId = 11, RoleId = 2 },
+                 new UserRole { Id = 12, UserId = 12, RoleId = 2 },
+                 new UserRole { Id = 13, UserId = 13, RoleId = 2 },
+                 new UserRole { Id = 14, UserId = 14, RoleId = 2 },
+                 new UserRole { Id = 15, UserId = 15, RoleId = 2 }
+            );
 
             builder.Entity<UserPhoto>().HasData(
                 new UserPhoto { Id = 1, UserId = 1, ImagePath = "default-profile.png" },
@@ -187,8 +200,24 @@ namespace DataAccessLayer.Context.SeedData
                 new UserPhoto { Id = 3, UserId = 3, ImagePath = "default-profile.png" },
                 new UserPhoto { Id = 4, UserId = 4, ImagePath = "default-profile.png" },
                 new UserPhoto { Id = 5, UserId = 5, ImagePath = "default-profile.png" },
-                new UserPhoto { Id = 6, UserId = 6, ImagePath = "default-profile.png" }
+                new UserPhoto { Id = 6, UserId = 6, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 7, UserId = 7, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 8, UserId = 8, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 9, UserId = 9, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 10, UserId = 10, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 11, UserId = 11, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 12, UserId = 12, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 13, UserId = 13, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 14, UserId = 14, ImagePath = "default-profile.png" },
+                new UserPhoto { Id = 15, UserId = 15, ImagePath = "default-profile.png" }
+
             );
+
+
+            builder.Entity<Message>().HasData(
+              new Message() { Id = 1, SenderId = 1, ReceiverId = 2, MessageText = "Merhaba iyi günler, ürünü kaç tl ye satıyorsunuz", IsRead = true, SentOn = DateTime.Now, }
+            );
+
 
 
             builder.Entity<Category>().HasData(
@@ -196,7 +225,8 @@ namespace DataAccessLayer.Context.SeedData
                 new Category { Id = 2, Name = "Books" },
                 new Category { Id = 3, Name = "Games" },
                 new Category { Id = 4, Name = "Clothes" },
-                new Category { Id = 5, Name = "Shoes" }
+                new Category { Id = 5, Name = "Shoes" },
+                new Category { Id = 6, Name = "Toys" }
 
              );
 
@@ -333,11 +363,7 @@ namespace DataAccessLayer.Context.SeedData
                 new University { Id = 111, Name = "Yüzüncü Yıl Üniversitesi" },
                 new University { Id = 112, Name = "Zonguldak Bülent Ecevit Üniversitesi" }
               );
-
-
-            builder.Entity<Product>().HasData(
-                new Product { Id = 1, Title = "Iphone 12", Description = "Apple Iphone 12", Price = 10000, SubCategoryId = 1, Views = 25, PublisherId = 1 }
-            );
+           
         }
     }
 }

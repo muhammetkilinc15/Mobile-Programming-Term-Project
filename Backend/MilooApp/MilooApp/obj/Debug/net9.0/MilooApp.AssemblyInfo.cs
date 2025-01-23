@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MilooApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca6a5921e9676a4b00e92e74519cf91ec531d252")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d21e28e16abd51c909718af98da963fff94eef1b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MilooApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MilooApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

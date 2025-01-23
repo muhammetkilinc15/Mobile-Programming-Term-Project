@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:miloo_mobile/models/product_model.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
-import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
+import 'package:miloo_mobile/screens/product/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/screens/home/components/product_card.dart';
 import 'package:miloo_mobile/size_config.dart';
 import 'package:provider/provider.dart';
@@ -37,10 +36,12 @@ class _FavoritesScreenState extends State<FavoritesScreen> {
         elevation: 0,
         leading: Padding(
           padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
-          child: SvgPicture.asset(
-            'assets/logo/Shoplon.svg',
-            width: getProportionateScreenWidth(50),
-            height: getProportionateScreenHeight(50),
+          child: ClipOval(
+            child: Image.asset(
+              'assets/logo/logo.jpeg',
+              width: getProportionateScreenWidth(50),
+              height: getProportionateScreenHeight(50),
+            ),
           ),
         ),
       ),

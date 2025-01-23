@@ -30,6 +30,7 @@ class UserProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+// Get popular users
   Future<void> getPopularUsers({int top = 5}) async {
     if (isLoading) return;
 
@@ -47,6 +48,7 @@ class UserProvider extends ChangeNotifier {
     }
   }
 
+// Get users
   Future<void> getUsers({int pageNumber = 1, int pageSize = 9}) async {
     try {
       isLoading = true;
@@ -63,6 +65,7 @@ class UserProvider extends ChangeNotifier {
     }
   }
 
+// Get user with product detail by username
   Future<void> getUserWithProductDetail(String username) async {
     try {
       isLoading = true;
@@ -79,6 +82,7 @@ class UserProvider extends ChangeNotifier {
     }
   }
 
+// Get user detail
   Future<void> getUserDetail() async {
     try {
       isLoading = true;
@@ -94,6 +98,7 @@ class UserProvider extends ChangeNotifier {
     }
   }
 
+// Update user info
   Future<void> updateUserInfo({
     required String profileImage,
     required String userName,

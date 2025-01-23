@@ -1,11 +1,10 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:miloo_mobile/models/popular_product_model.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
 import 'package:miloo_mobile/screens/chat/chat_screen.dart';
 import 'package:miloo_mobile/screens/home/components/body.dart';
-import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
+import 'package:miloo_mobile/screens/product/product_detail/product_detail_screen.dart';
 import 'package:miloo_mobile/size_config.dart';
 import 'package:shimmer/shimmer.dart';
 
@@ -24,10 +23,12 @@ class _HomeScreenState extends State<HomeScreen> {
         title: const Text('Home'),
         leading: Padding(
           padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
-          child: SvgPicture.asset(
-            'assets/logo/Shoplon.svg',
-            width: getProportionateScreenWidth(50),
-            height: getProportionateScreenHeight(50),
+          child: ClipOval(
+            child: Image.asset(
+              'assets/logo/logo.jpeg',
+              width: getProportionateScreenWidth(50),
+              height: getProportionateScreenHeight(50),
+            ),
           ),
         ),
         actions: [
@@ -72,7 +73,7 @@ class CustomSearchDelegate extends SearchDelegate {
   @override
   Widget? buildLeading(BuildContext context) {
     return IconButton(
-      icon: const Icon(Icons.arrow_back),
+      icon: const Icon(Icons.arrow_back_ios_new_outlined),
       onPressed: () {
         close(context, null);
       },

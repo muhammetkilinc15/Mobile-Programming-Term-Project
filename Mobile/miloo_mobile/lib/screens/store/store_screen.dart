@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
-import 'package:miloo_mobile/models/product_model.dart';
+import 'package:miloo_mobile/screens/product/product_detail/product_detail_screen.dart';
+import 'package:miloo_mobile/screens/store/components/subcategory_list.dart';
+import 'package:provider/provider.dart';
 import 'package:miloo_mobile/providers/category_provider.dart';
 import 'package:miloo_mobile/providers/product_provider.dart';
-import 'package:miloo_mobile/screens/home/components/product_card.dart';
-import 'package:miloo_mobile/screens/product_detail/product_detail_screen.dart';
-import 'package:miloo_mobile/size_config.dart';
-import 'package:provider/provider.dart';
+import 'components/store_app_bar.dart';
+import 'components/category_list.dart';
+import 'components/product_list.dart';
 
 class StoreScreen extends StatefulWidget {
   final int? initialCategoryId;
-  const StoreScreen({
-    super.key,
-    this.initialCategoryId,
-  });
+  const StoreScreen({super.key, this.initialCategoryId});
 
   @override
-  _StoreScreenState createState() => _StoreScreenState();
+  State<StoreScreen> createState() => _StoreScreenState();
 }
 
 class _StoreScreenState extends State<StoreScreen> {
@@ -34,7 +31,7 @@ class _StoreScreenState extends State<StoreScreen> {
       final categoryProvider = context.read<CategoryProvider>();
       final productProvider = context.read<ProductProvider>();
 
-      await categoryProvider.getCategories();
+      await categoryProvider.getCategories(pageNumber: 1, pageSize: 20);
 
       if (widget.initialCategoryId != null) {
         categoryProvider.setSelectedCategory(widget.initialCategoryId!);
@@ -75,158 +72,66 @@ class _StoreScreenState extends State<StoreScreen> {
     );
   }
 
+  void _handleSort(String value) async {
+    final categoryProvider = context.read<CategoryProvider>();
+    final productProvider = context.read<ProductProvider>();
+
+    await productProvider.getProducts(
+      categoryId: categoryProvider.selectedCategoryId,
+      subcategoryId: categoryProvider.selectedSubcategoryId,
+      orderBy: value,
+    );
+  }
+
+  void _navigateToProduct(int productId) {
+    Navigator.pushNamed(
+      context,
+      ProductDetailScreen.routeName,
+      arguments: ProductDetailsArgument(productId: productId),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Store'),
-        leading: Padding(
-          padding: EdgeInsets.only(left: getProportionateScreenWidth(10)),
-          child: widget.initialCategoryId != null
-              ? IconButton(
-                  icon: const Icon(Icons.arrow_back_ios_new),
-                  onPressed: () => Navigator.pop(context),
-                )
-              : SvgPicture.asset(
-                  'assets/logo/Shoplon.svg',
-                  width: getProportionateScreenWidth(50),
-                  height: getProportionateScreenHeight(50),
-                ),
-        ),
-        actions: [
-          Consumer<ProductProvider>(
-            builder: (context, provider, _) => DropdownButton<String>(
-              value: provider.sortBy,
-              underline: const SizedBox(),
-              icon: const Icon(Icons.sort, color: Colors.white),
-              items: const [
-                DropdownMenuItem(value: 'popular', child: Text('Popular')),
-                DropdownMenuItem(value: 'price', child: Text('Price')),
-                DropdownMenuItem(value: 'newest', child: Text('Newest')),
-              ],
-              onChanged: (value) async {
-                if (value != null) {
-                  final categoryProvider = context.read<CategoryProvider>();
-                  await provider.getProducts(
-                    categoryId: categoryProvider.selectedCategoryId,
-                    subcategoryId: categoryProvider.selectedSubcategoryId,
-                    orderBy: value,
-                  );
-                }
-              },
-            ),
-          ),
-        ],
+      appBar: StoreAppBar(
+        initialCategoryId: widget.initialCategoryId,
+        currentSort: context.watch<ProductProvider>().sortBy,
+        onSortChanged: _handleSort,
       ),
       body: Column(
         children: [
-          // Main Categories
           Consumer<CategoryProvider>(
-            builder: (context, categoryProvider, _) => SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: ChoiceChip(
-                      label: const Text('All'),
-                      selected: categoryProvider.selectedCategoryId == -1,
-                      selectedColor: kPrimaryColor,
-                      onSelected: (_) => _onCategorySelected(-1),
-                    ),
-                  ),
-                  ...categoryProvider.categories.map((category) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                      child: ChoiceChip(
-                        label: Text(category.name),
-                        selected:
-                            categoryProvider.selectedCategoryId == category.id,
-                        selectedColor: kPrimaryColor,
-                        onSelected: (_) => _onCategorySelected(category.id),
-                      ),
-                    );
-                  }).toList(),
-                ],
-              ),
+            builder: (_, provider, __) => CategoryList(
+              categories: provider.categories,
+              selectedCategoryId: provider.selectedCategoryId,
+              onCategorySelected: _onCategorySelected,
             ),
           ),
-
-          // Subcategories (only shown when a main category is selected)
           Consumer<CategoryProvider>(
-            builder: (context, categoryProvider, _) {
-              if (categoryProvider.selectedCategoryId == -1 ||
-                  categoryProvider.subcategories.isEmpty) {
+            builder: (_, provider, __) {
+              if (provider.selectedCategoryId == -1) {
                 return const SizedBox.shrink();
               }
-
-              return SingleChildScrollView(
-                scrollDirection: Axis.horizontal,
-                child: Row(
-                  children: [
-                    ...categoryProvider.subcategories.map(
-                      (subcategory) {
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                          child: ChoiceChip(
-                            backgroundColor:
-                                categoryProvider.selectedSubcategoryId ==
-                                        subcategory.id
-                                    ? kPrimaryColor
-                                    : Colors.grey[200],
-                            label: Text(subcategory.name),
-                            selected: categoryProvider.selectedSubcategoryId ==
-                                subcategory.id,
-                            selectedColor: kPrimaryColor,
-                            onSelected: (_) =>
-                                _onSubCategorySelected(subcategory.id),
-                          ),
-                        );
-                      },
-                    )
-                  ],
-                ),
+              return SubcategoryList(
+                subcategories: provider.subcategories,
+                selectedSubcategoryId: provider.selectedSubcategoryId,
+                onSubcategorySelected: _onSubCategorySelected,
               );
             },
           ),
-
-          // Products Grid
           Expanded(
             child: Consumer<ProductProvider>(
-              builder: (context, provider, _) {
+              builder: (_, provider, __) {
                 if (provider.isLoading) {
-                  return const Center(child: CircularProgressIndicator());
+                  return const Center(
+                      child: CircularProgressIndicator(
+                    color: kPrimaryColor,
+                  ));
                 }
-                if (provider.filteredProducts.isEmpty) {
-                  return const Center(child: Text('No products found'));
-                }
-                return GridView.builder(
-                  padding: const EdgeInsets.all(8),
-                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 0.75,
-                    mainAxisSpacing: 8,
-                    crossAxisSpacing: 8,
-                  ),
-                  itemCount: provider.filteredProducts.length,
-                  itemBuilder: (_, index) {
-                    final product = provider.filteredProducts[index];
-                    return ProductCard(
-                      product: ProductModel(
-                        id: product.id,
-                        title: product.title,
-                        description: '',
-                        price: product.price,
-                        image: product.image!,
-                      ),
-                      press: () => Navigator.pushNamed(
-                        context,
-                        ProductDetailScreen.routeName,
-                        arguments:
-                            ProductDetailsArgument(productId: product.id),
-                      ),
-                    );
-                  },
+                return ProductGrid(
+                  products: provider.filteredProducts,
+                  onProductTap: _navigateToProduct,
                 );
               },
             ),

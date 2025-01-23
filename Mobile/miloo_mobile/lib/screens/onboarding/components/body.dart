@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:miloo_mobile/components/default_button.dart';
 import 'package:miloo_mobile/constraits/constrait.dart';
 import 'package:miloo_mobile/screens/auth/sign_in/sign_in_screen.dart';
-import 'package:miloo_mobile/screens/onboarding/components/splash_content.dart';
-import 'package:miloo_mobile/screens/onboarding/splash_data.dart';
+import 'package:miloo_mobile/screens/onboarding/components/onboarding_content.dart';
+import 'package:miloo_mobile/screens/onboarding/onboarding_data.dart';
 import 'package:miloo_mobile/size_config.dart';
 
 class Body extends StatefulWidget {
@@ -40,7 +40,7 @@ class _BodyState extends State<Body> {
                   },
                   itemCount: splashData.length,
                   itemBuilder: (context, index) {
-                    return SplashContent(
+                    return OnboardingContent(
                       image: splashData[index].image,
                       text: splashData[index].text,
                     );

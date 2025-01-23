@@ -11,13 +11,15 @@ class ProductCard extends StatelessWidget {
     this.aspectRatio = 1.02,
     required this.product,
     required this.press,
-    this.onFavorite, // Add this
+    this.onFavorite,
+    this.isStore = false,
   });
 
   final double width, aspectRatio;
   final GestureTapCallback press;
-  final Function()? onFavorite; // Add this
+  final Function()? onFavorite;
   final ProductModel product;
+  final bool isStore;
 
   @override
   Widget build(BuildContext context) {
@@ -56,33 +58,35 @@ class ProductCard extends StatelessWidget {
                         color: kPrimaryColor,
                         fontWeight: FontWeight.w600),
                   ),
-                  InkWell(
-                    borderRadius: BorderRadius.circular(30),
-                    onTap: onFavorite ??
-                        () {
-                          ProductService _productService = ProductService();
-                          _productService.makeFavorite(product.id);
-                        },
-                    child: Container(
-                      padding: EdgeInsets.symmetric(
-                          horizontal: getProportionateScreenWidth(5),
-                          vertical: getProportionateScreenHeight(5)),
-                      height: getProportionateScreenHeight(28),
-                      width: getProportionateScreenWidth(28),
-                      decoration: BoxDecoration(
-                        color: kSecondaryColor.withOpacity(0.1),
-                        shape: BoxShape.circle,
+                  if (!isStore && onFavorite != null) // Only show if not store
+                    InkWell(
+                      borderRadius: BorderRadius.circular(30),
+                      onTap: onFavorite ??
+                          () {
+                            ProductService productService = ProductService();
+                            productService.makeFavorite(product.id);
+                          },
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                            horizontal: getProportionateScreenWidth(5),
+                            vertical: getProportionateScreenHeight(5)),
+                        height: getProportionateScreenHeight(28),
+                        width: getProportionateScreenWidth(28),
+                        decoration: BoxDecoration(
+                          color: kSecondaryColor.withOpacity(0.1),
+                          shape: BoxShape.circle,
+                        ),
+                        child: Icon(
+                          product.isFavourite
+                              ? Icons.favorite
+                              : Icons.favorite_border,
+                          color: product.isFavourite
+                              ? Colors.red
+                              : kSecondaryColor,
+                          size: getProportionateScreenWidth(16),
+                        ),
                       ),
-                      child: Icon(
-                        product.isFavourite
-                            ? Icons.favorite
-                            : Icons.favorite_border,
-                        color:
-                            product.isFavourite ? Colors.red : kSecondaryColor,
-                        size: getProportionateScreenWidth(16),
-                      ),
-                    ),
-                  )
+                    )
                 ],
               ),
             ],
