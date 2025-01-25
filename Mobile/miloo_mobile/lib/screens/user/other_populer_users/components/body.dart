@@ -15,8 +15,6 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   final ScrollController _scrollController = ScrollController();
   bool _isLoading = false;
-  int _currentPage = 1;
-  final int _pageSize = 10;
 
   @override
   void initState() {
@@ -24,7 +22,6 @@ class _BodyState extends State<Body> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _fetchUsers();
     });
-    _scrollController.addListener(_onScroll);
   }
 
   Future<void> _fetchUsers() async {
@@ -35,25 +32,13 @@ class _BodyState extends State<Body> {
     });
 
     try {
-      await context
-          .read<UserProvider>()
-          .getUsers(pageNumber: _currentPage, pageSize: _pageSize);
+      await context.read<UserProvider>().getUsers(pageNumber: 1, pageSize: 50);
     } catch (e) {
       print('Error fetching users: $e');
     } finally {
       setState(() {
         _isLoading = false;
       });
-    }
-  }
-
-  void _onScroll() {
-    if (_scrollController.position.pixels ==
-        _scrollController.position.maxScrollExtent) {
-      setState(() {
-        _currentPage++;
-      });
-      _fetchUsers();
     }
   }
 
@@ -77,7 +62,6 @@ class _BodyState extends State<Body> {
           List<UsersModel> users = userProvider.users;
 
           return ListView.builder(
-            controller: _scrollController,
             itemCount: users.length + (_isLoading ? 1 : 0),
             itemBuilder: (context, index) {
               if (index == users.length) {

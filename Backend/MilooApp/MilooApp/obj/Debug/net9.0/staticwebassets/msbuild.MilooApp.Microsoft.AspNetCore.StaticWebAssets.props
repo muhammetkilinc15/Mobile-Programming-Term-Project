@@ -18,6 +18,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\default-profile.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18\profiles\053d2608-2ab1-4b70-86bf-f8e2e431cd22.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MilooApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MilooApp</BasePath>
+      <RelativePath>images/18/profiles/053d2608-2ab1-4b70-86bf-f8e2e431cd22.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>d27lb0bd4h</Fingerprint>
+      <Integrity>+w0gopjFAXWqskyDzNBhII3spgor2jWseb4np7Pfmus=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18\profiles\053d2608-2ab1-4b70-86bf-f8e2e431cd22.png'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\18\profiles\27dfba9c-c231-4753-bc12-ab336a91e94f.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>MilooApp</SourceId>
@@ -665,6 +683,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4\products\fd4bca0d-8eb5-44ae-8d2f-2e1153587697.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4\profiles\085ffdcf-4b29-4db9-a540-5fd11013b214.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>MilooApp</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MilooApp</BasePath>
+      <RelativePath>images/4/profiles/085ffdcf-4b29-4db9-a540-5fd11013b214.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1oj7mpgb3r</Fingerprint>
+      <Integrity>UfnPn/+eErQCeiuOCi6YWWc9q7xh5uL6DihastlDDrc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4\profiles\085ffdcf-4b29-4db9-a540-5fd11013b214.png'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4\profiles\c8f84f28-b7ba-4e54-84c6-9cba436f18bc.jpg'))">
       <SourceType>Package</SourceType>

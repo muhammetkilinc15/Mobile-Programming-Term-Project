@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\default-profile.png"
     },
     {
+      "Id": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\18\\profiles\\053d2608-2ab1-4b70-86bf-f8e2e431cd22.png",
+      "PackagePath": "staticwebassets\\images\\18\\profiles\\053d2608-2ab1-4b70-86bf-f8e2e431cd22.png"
+    },
+    {
       "Id": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\18\\profiles\\27dfba9c-c231-4753-bc12-ab336a91e94f.jpg",
       "PackagePath": "staticwebassets\\images\\18\\profiles\\27dfba9c-c231-4753-bc12-ab336a91e94f.jpg"
     },
@@ -147,6 +151,10 @@
     {
       "Id": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\4\\products\\fd4bca0d-8eb5-44ae-8d2f-2e1153587697.jpg",
       "PackagePath": "staticwebassets\\images\\4\\products\\fd4bca0d-8eb5-44ae-8d2f-2e1153587697.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\4\\profiles\\085ffdcf-4b29-4db9-a540-5fd11013b214.png",
+      "PackagePath": "staticwebassets\\images\\4\\profiles\\085ffdcf-4b29-4db9-a540-5fd11013b214.png"
     },
     {
       "Id": "C:\\Users\\Bemu\\Desktop\\Mobile-Programming-Term-Project\\Backend\\MilooApp\\MilooApp\\wwwroot\\images\\4\\profiles\\c8f84f28-b7ba-4e54-84c6-9cba436f18bc.jpg",
